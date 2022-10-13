@@ -4,12 +4,12 @@
 
 ## 파일 구조
 * static<br>
- ㄴ css　　　　
- ㄴ image　　　　　　　　
- ㄴ js　　　　　　　　　　　
+ ㄴ css<br>　
+ ㄴ image<br>　　　　　　　
+ ㄴ js<br>　　　　　　　　　　
 * views<br>
- ㄴ common	                
- ㄴ 페이지들	             
+ ㄴ common<br>               
+ ㄴ 페이지들<br>             
 * app.js<br>
 
 
