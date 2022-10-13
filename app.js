@@ -11,11 +11,19 @@ app.get('/',function(req,res){
     res.render('pages/start');
 })
 
+app.get('/',function(req,res){
+    res.render('pages/result');
+})
+
 app.get('/pages/start', function (req, res) {
     res.render('pages/start');
+});
+
+app.get('/pages/result', function (req, res) {
+    res.render('pages/result');
 });
 
 
 app.listen(PORT, function () {
     console.log(`Listening on port ${PORT}`);
-  });
+});
