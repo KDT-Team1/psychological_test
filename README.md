@@ -8,8 +8,8 @@
  ㄴ image<br>
  ㄴ js<br>
 * views<br>
- ㄴ common<br>
- ㄴ 페이지들<br>
+ ㄴ common - header, footer 등<br>
+ ㄴ pages - ejs 파일<br>
 * app.js<br>
 
 
