@@ -19,6 +19,10 @@ app.get('/start', function (req, res) {
     res.render('pages/start');
 });
 
+app.get('/result', function (req, res) {
+    res.render('pages/result');
+});
+
 app.listen(PORT, function () {
     console.log(`Listening on port ${PORT}`);
-  });
+});
