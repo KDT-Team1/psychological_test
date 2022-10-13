@@ -3,7 +3,7 @@
 
 
 # 파일 구조
-static
+static<br>
  ㄴ css		// css 파일 
  ㄴ image	// img 파일
  ㄴ js		// js 파일
