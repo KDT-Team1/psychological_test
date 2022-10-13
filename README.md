@@ -4,12 +4,12 @@
 
 ## 파일 구조
 * static<br>
- ㄴ css                    // css 파일 <br>
- ㄴ image                  // img 파일<br>
- ㄴ js                     // js 파일<br>
+ ㄴ css　　　　
+ ㄴ image　　　　　　　　
+ ㄴ js　　　　　　　　　　　
 * views<br>
- ㄴ common	                // header, footer 등<br>
- ㄴ 페이지들	              // main.ejs, result.ejs, start.ejs 등<br>
+ ㄴ common	                
+ ㄴ 페이지들	             
 * app.js<br>
 
 
