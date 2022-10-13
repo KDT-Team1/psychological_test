@@ -11,9 +11,9 @@ app.get('/',function(req,res){
     res.render('pages/start');
 })
 
-app.get('/',function(req,res){
-    res.render('pages/result');
-})
+app.get('/pTest', function (req, res) {
+    res.render('pages/pTest');
+});
 
 app.get('/pages/start', function (req, res) {
     res.render('pages/start');
