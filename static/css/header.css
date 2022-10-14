@@ -2,8 +2,29 @@ header{
     font-family: 'Jua', sans-serif;
     font-weight: 400;
     margin: 50px;
+    /* height:3vh; */
 }
+
+/* header > .navbar{
+    height:3vh;
+} */
+
 .navbar-brand{
     font-family: 'Jua', sans-serif;
     font-weight: 700;
+    white-space: nowrap;
 }
+
+.bi-clipboard-data{
+    white-space: nowrap;
+}
+.header-text{
+    white-space: nowrap;
+}
+
+
+@media (max-width: 290px) {
+    .header-text{
+        display:none;
+    }
+  }

@@ -1,4 +1,13 @@
 main{
     font-family: 'Jua', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.btn-outline-secondary{
+    display: flex;
+    align-items: center;
+    margin:auto;
+    width: 50%;
 }
