@@ -1,0 +1,15 @@
+.progress {
+    margin: 100px;
+    margin-top: 10px;
+    height: 17px;
+}
+
+.progress-bar {
+    background-color: rgb(33, 37, 41);
+}
+
+.page {
+    margin-top: 5px;
+    margin-right: 100px;
+    text-align: right;
+}
