@@ -23,6 +23,13 @@ app.get('/result', function (req, res) {
     res.render('pages/result');
 });
 
+
+// 자바스크립트 연습용 페이지
+app.get('/jstest',function(req, res){
+    res.render('pages/test')
+})
+
+
 app.listen(PORT, function () {
     console.log(`Listening on port ${PORT}`);
 });
