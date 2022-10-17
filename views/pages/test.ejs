@@ -18,12 +18,13 @@
 
     <!-- 모든 지문 출력 -->
     <%  for(let i=0; i<text.length; i++){ %>
-        <div><%=text[i][0]; %></div><br>
+        <div class="<%=i %>"><%=text[i][0]; %><br>
         <% answer.push('answer'+i); %>
         <%for(let j=1; j<text[i].length; j++){ %>
                 <input type="radio" name="<%=`${answer[`${i}`]}` %>" value="<%=j; %>"><%=j %>
                 <div><%= text[i][j]; %></div>
             <% } %> <br><br><br>
+        </div>
         <% } %>
     <br><button onclick="getResult(8)">결과보기</button><br><br>
 
