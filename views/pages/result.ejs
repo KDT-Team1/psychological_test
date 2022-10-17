@@ -10,7 +10,12 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/css/main.css">
+    <link rel="stylesheet" href="../../static/css/header.css">
+    <!-- CDN Link (icon) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
     <style>
     body {
     font-family: 'Jua', sans-serif;
@@ -20,29 +25,23 @@
 </head>
 
 <body>
+    <%- include('../common/header.ejs') %>
     <div class="container text-center">
         <div class="row justify-content-start">
             <div class="col-12">
             <h2><img class="col-12" src="/static/img/header.png" alt="header"></h2>
         </div>
-        <div class="col-12">
+        
+    <% let result = 7%>
+    <% if(result > 25) {%>
+        <div class="result1 col-12">
             <h2><img class="col-12" src="/static/img/testResult_Simpsons/1.png" alt="01"></h2>
-            <!--
-            <h2><img class="col-12" src="/static/img/testResult_Simpsons/2.png" alt="01"></h2>
-            <h2><img class="col-12" src="/static/img/testResult_Simpsons/3.png" alt="01"></h2>
-            <h2><img class="col-12" src="/static/img/testResult_Simpsons/4.png" alt="01"></h2>
-            -->
         </div>
-        <div class="col-12 d-grid gap-3">
+        <div class="result1 col-12 d-grid gap-3">
             <p class="fs-1">호머 심슨(Homer Simpson)</p>
-            <!--
-            <p class="fs-1">마지 심슨(Marge Simpson)</p>
-            <p class="fs-1">바트 심슨(Bart Simpson)</p>
-            <p class="fs-1">리사 심슨(Lisa Simpson)</p>
-            -->
         </div>
 
-        <div class="border border-dark text-start fs-5 pt-3 pb-3">
+        <div class="result1 border border-dark text-start fs-5 pt-3 pb-3">
             <li>타인의 말이나 행동에 휩쓸리지 않고 자기 스타일대로 인생을 살아가는 호머 심슨!</li>
             <li>신념이 굳고 주관이 뚜렷한 성격이지만, 가끔 자기 중심적이고 겸허함이 없다고 평가될 수 있다.</li>
             <li>외향적이고 사교적인 성격으로 주변에 사람이 항상 많다.</li>
@@ -51,82 +50,146 @@
                 주변에서 기가 세다는 말을 종종 듣는다.</li>
         </div>
 
-        <!--
-        <div class="border border-dark text-start fs-5 pt-3 pb-3">
-            <li>배려심이 많고 이타적이며 모든 사람들과 원만한 관계로 인생을 살아가는 마지 심슨!</li>
-            <li>희생정신이 강하고 내 사람들을 돌보며 그에 기쁨과 보람을 느끼는 긍정적인 성격이다.</li>
-            <li>이례적으로 한 번씩 자신이 좋아하는 것에 빠지면 좀처럼 그만두지 못하는 인간적인 면도 있다.</li>
-            <li>가끔 사람들에게 어려운 부탁을 받아도 거절을 잘 못한다.</li>
-            <li>체계적이고 계획적이어서 주변 환경이 정돈이 잘 되어있으며, 그런 성격 덕에 생산적이고 효과적으로 문제를 해결한다.</li>
+        <span class="border border-dark d-grid fs-2 pt-2 pb-2">캐릭터의 MBTI</span>
+        <span class="border border-dark">
+            <ul class="result1 fs-3 pt-3">ESFP</ul>
+
+        </span>
+        <div class="container col-12 d-flex border border-dark">
+        <div class="result1 col-6 fs-3 pt-2">잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/2.png" alt="05">마지 심슨</div>
+        <div class="result1 col-6 fs-3 pt-2">안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/3.png" alt="02">바트 심슨</div>
+        <% }    %>
+
+    <% if(result > 9) {%>
+    <div class="result1 col-12">
+        <h2><img class="result2 col-12" src="/static/img/testResult_Simpsons/2.png" alt="01"></h2>
+    </div>
+    <div class="result1 col-12 d-grid gap-3">
+
+    <p class="result2 fs-1">마지 심슨(Marge Simpson)</p>
+    </div>
+    <div class="result2 border border-dark text-start fs-5 pt-3 pb-3">
+        <li>배려심이 많고 이타적이며 모든 사람들과 원만한 관계로 인생을 살아가는 마지 심슨!</li>
+        <li>희생정신이 강하고 내 사람들을 돌보며 그에 기쁨과 보람을 느끼는 긍정적인 성격이다.</li>
+        <li>이례적으로 한 번씩 자신이 좋아하는 것에 빠지면 좀처럼 그만두지 못하는 인간적인 면도 있다.</li>
+        <li>가끔 사람들에게 어려운 부탁을 받아도 거절을 잘 못한다.</li>
+        <li>체계적이고 계획적이어서 주변 환경이 정돈이 잘 되어있으며, 그런 성격 덕에 생산적이고 효과적으로 문제를 해결한다.</li>
+    </div>
+
+    <span class="border border-dark d-grid fs-2 pt-2 pb-2">캐릭터의 MBTI</span>
+    <span class="border border-dark">
+        <ul class="result2 fs-3 pt-3">ISFJ</ul>
+    </span>
+
+    <div class="container col-12 d-flex border border-dark">    
+    <div class="result2 col-6 fs-3 pt-2">잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/1.png" alt="05">호머 심슨</div>
+    <div class="result2 col-6 fs-3 pt-2">안 맞는 유형<p>없음</p></div>
+    <% }    %>
+
+    <% if(result > 18) {%>
+        <div class="result1 col-12">
+            <h2><img class="result3 col-12" src="/static/img/testResult_Simpsons/3.png" alt="01"></h2>
+        </div>
+        <div class="result1 col-12 d-grid gap-3">
+            <p class="result3 fs-1">바트 심슨(Bart Simpson)</p>
         </div>
 
-        <div class="border border-dark text-start fs-5 pt-3 pb-3">
+        <div class="result3 border border-dark text-start fs-5 pt-3 pb-3">
             <li>행동을 좋아하고 현실적인 목표와 계획으로 인생을 살아가는 바트 심슨!</li>
             <li>매우 현실적인 성격으로 특히 어려움이나 위기를 겪는 동안 적절한 역할을 한다. </li>
             <li>할 줄 아는 재주가 많고, 사교적인 성격으로 남들과 항상 친밀한 관계를 유지한다.</li>
             <li>목표를 의심하고, 추측하고, 망설이는 일이 없으며, 결과에 도달하기 위해서 위험을 무릅쓰고 실수도 주저하지 않는다.</li>
             <li>목표에 도달하는 다른 방법이 항상 있다고 믿으며, 그래서 실패의 가능성을 직면할 때 물러서지 않는 굳건한 성격이다.</li>
         </div>
-
-        <div class="border border-dark text-start fs-5 pt-3 pb-3">
-            <li>합리적인 사고체계를 지니고 있는 리사 심슨!</li>
-            <li>매우 어른스럽고 도덕적 신념도 강한데다 늘 합리적이고 이성적으로 생각하는 편이다./li>
-            <li>내향적인 성격으로 소수의 친한 사람들과만 교류하는 경향이 있다.</li>
-            <li>신념을 거스르는 일은 절대 참지 못해서 주변 사람들에게 예민하다는 말을 종종 듣는다.</li>
-            <li>하지만 세상은 예민한 사람들로 인해 변하는 것이므로 우리 사회에 중요한 사람이라고 할 수 있다.</li>
-        </div>
-
-        -->
-
-
-        <span class="border border-dark d-grid fs-2 pt-2 pb-2">캐릭터의 MBTI</span>
-        <span class="border border-dark">
-            <ul class="fs-4 pt-2">ESFP</ul>
-            <!--
-            <ul class="fs-4 pt-2">ISFJ</ul>
-            <ul class="fs-4">ESTP</ul>
-            <ul class="fs-4 pt-2">INFJ</ul>
-            -->
-
-        </span>
+        <span class="border border-dark d-grid fs-2 pt-2 pb-2">캐릭터의 MBTI
+        <ul class="result3 fs-3 pt-3">ESTP</ul>
+    </span>
         <div class="container col-12 d-flex border border-dark">
-        <div class="col-6 fs-3 pt-2">잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/2.png" alt="05">마지 심슨</div>
-        <div class="col-6 fs-3 pt-2">안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/3.png" alt="02">바트 심슨</div>
-        <!--
-        <div class="col-6 fs-3 pt-2">잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/1.png" alt="05">호머 심슨</div>
-        <div class="col-6 fs-3 pt-2">안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/3.png" alt="02"></div>
-        <div class="col-6 fs-3 pt-2">잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/2.png" alt="05">마지 심슨</div>
-        <div class="col-6 fs-3 pt-2">안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/1.png" alt="02">호머 심슨</div>
-        <div class="col-6 fs-3 pt-2">잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/2.png" alt="05">마지 심슨</div>
-        <div class="col-6 fs-3 pt-2">안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/3.png" alt="02">바트 심슨</div>
-        -->
- 
+        <div class="result3 col-6 fs-3 pt-2">잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/2.png" alt="05">마지 심슨</div>
+        <div class="result3 col-6 fs-3 pt-2">안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/1.png" alt="02">호머 심슨</div>
+
+    <% }    %>
+
+    <% if(result < 9) {%>
+            <div class="result1 col-12">
+                <h2><img class="result4 col-12" src="/static/img/testResult_Simpsons/4.png" alt="01"></h2>
+            </div>
+            <div class="result1 col-12 d-grid gap-3">
+                <p class="result4 fs-1">리사 심슨(Lisa Simpson)</p>
+
+            </div>
+            <div class="result4 border border-dark text-start fs-5 pt-3 pb-3">
+                <li>합리적인 사고체계를 지니고 있는 리사 심슨!</li>
+                <li>매우 어른스럽고 도덕적 신념도 강한데다 늘 합리적이고 이성적으로 생각하는 편이다.</li>
+                <li>내향적인 성격으로 소수의 친한 사람들과만 교류하는 경향이 있다.</li>
+                <li>신념을 거스르는 일은 절대 참지 못해서 주변 사람들에게 예민하다는 말을 종종 듣는다.</li>
+                <li>하지만 세상은 예민한 사람들로 인해 변하는 것이므로 우리 사회에 중요한 사람이라고 할 수 있다.</li>
+            </div>
+        
+    <span class="border border-dark d-grid fs-2 pt-2 pb-2">캐릭터의 MBTI</span>
+    <span class="border border-dark">
+        <ul class="result2 fs-3 pt-3">ESTP</ul>
+    </span>
+
+            <div class="container col-12 d-flex border border-dark">
+            <div class="result4 col-6 fs-3 pt-2">잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/2.png" alt="05">마지 심슨</div>
+            <div class="result4 col-6 fs-3 pt-2">안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/3.png" alt="02">바트 심슨</div>
+    <% }    %>
+    
+</div>
+</div>
+</div>
         <div class="container text-center col-12">
         <br>
-            <p class="fs-6">친구에게 결과 공유하기</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-                </svg>
-            </p>
-        </div>
+            <p class="fs-3">테스트 결과 공유하기</p>
+            <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script>
+    Kakao.init("59a4be849355fc1bc58ae7023a9c2724");   // 아까 복사해둔 JavaScript 키
+    function sendLink() {
+      Kakao.Link.sendCustom({
+        templateId: 84301,   // 복사해둔 템플릿 ID
+        templateArgs: {
+          title: "{{ page.title }}",
+          description: "{{ page.excerpt }}",
+          url : "{{ page.url }}",
+        },
+      });
+    }
+</script>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+    <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+</a>
 
+<span class="button"><a href="#" onclick="clip(); return false;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="dark" class="bi bi-share" viewBox="0 0 16 16">
+    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+    </svg></a></span>
 
-</div>
-</div>
-</div>
-<div class="card-footer border border-dark text text-bg-dark text-center">
-    <div class="d-grid gap-2">
-        <button class="btn btn-dark fs-4 pt-2 pb-2" type="button">테스트 공유하기</button>
-    </div>
-</div>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        
+<div class="col-12 row justify-content-center">
+<span class="card-footer border border-dark text text-bg-dark text-center col-6">
+        <button class="btn btn-dark fs-4 pt-2 pb-2 col-12" type="button" onclick="location.href='/start'">테스트 다시하기</button></span>
+<span class="card-footer border border-dark text text-bg-dark text-center col-6">
+        <button class="btn btn-dark fs-4 pt-2 pb-2 col-12" type="button" onclick="location.href='/main'">메인으로 가기</button></span>
+</div>
+
+<script type="text/javascript">
+
+function clip(){
+    
+    var url = '';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    url = window.document.location.href;
+    textarea.value = url;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("URL이 복사되었습니다.")
+    }
+    
+    </script>
+
 </body>
 
 </html>
