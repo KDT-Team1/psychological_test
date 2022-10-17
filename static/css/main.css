@@ -6,8 +6,8 @@ main {
 
 
 .btn-outline-secondary{
-    display: flex;
     align-items: center;
     margin:auto;
     width: 50%;
+    text-align: center;
 }

@@ -51,3 +51,31 @@ h3 {
 .form-check-label {
     font-size: 23px;
 }
+
+.question-none{
+    display:none;
+}
+.question0-none{
+    display:none;
+}
+.question1-none{
+    display:none;
+}
+.question2-none{
+    display:none;
+}
+.question3-none{
+    display:none;
+}
+.question4-none{
+    display:none;
+}
+.question5-none{
+    display:none;
+}
+.question6-none{
+    display:none;
+}
+.question7-none{
+    display:none;
+}
