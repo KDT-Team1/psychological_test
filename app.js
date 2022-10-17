@@ -11,6 +11,7 @@ app.get('/',function(req,res){
     res.render('pages/start');
 })
 
+
 app.get('/pages/start', function (req, res) {
     res.render('pages/start');
 });
