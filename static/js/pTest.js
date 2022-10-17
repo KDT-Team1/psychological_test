@@ -23,6 +23,7 @@
 
 //         const arr = contents.split(/\r?\n/);
 
+
 //         console.log(arr);
 
 //         return arr;
@@ -109,53 +110,35 @@ testAnswers=[
 console.log(testQuestions);
 console.log(testAnswers);
 
-// 설문조사 결과 판독용 변수
-// let answerNum = 0;
 
 
-// submit.addEventListener('click',function(i){
-//     i=i+1
-// })
+for(let i=0; i<8; i++){
+    document.getElementById(`q${i}`).innerHTML=`${testQuestions[i]}`;
+    document.getElementById(`answer${i}0`).innerHTML=`${testAnswers[i][0]}`;
+    document.getElementById(`answer${i}1`).innerHTML=`${testAnswers[i][1]}`;
+    document.getElementById(`answer${i}2`).innerHTML=`${testAnswers[i][2]}`;
+}
 
-// <%submit.addEventListener('click',function(i){ %>
-//     <%    i=i+1 %>
-//     <%}) %>
+document.querySelector('.question0').classList.toggle('question-none');
 
-
-// let i = 0;
-
-// while(i<text.length){
-
-
-// <% for(let i=0; i<text.length; i++){ %>
-//     <div><%= text[i][0]; %></div><br>
-// <%    for(let j=1; j<text[i].length; j++){ %>
-//     <input type="radio" name="chk_info" value="answer<%=j; %>"><%=j %>
-//     <div><%= text[i][j]; %></div>
-// <%    } %>
-//     <br><button onclick="submit">확인</button>
-// <% } %></br>
+const answer = document.querySelectorAll('.answer');
+console.log(answer[0]);
+console.log(answer[1]);
 
 
-// submit.addEventListener('submit',function(){
-//     i+=1;
-// })
+for (var i=0; i<answer.length; i++){
 
+    answer[i].addEventListener('click', function(){
+        for(let i=0 ; i<8 ; i++){
+            if(i==7){
+                break;  //마지막문제
+            }
+            else if(!($('.question'+i).hasClass('question-none'))){
+                document.querySelector('.question'+i).classList.toggle(`question-none`);
+                document.querySelector('.question'+(i+1)).classList.toggle(`question-none`);
+                i=8;
+            }
+        }
+    })
 
-
-// <% for( let i = 0; i < 8; i++ ) { %>
-//     <div class="question">
-//         <h2 id="testQ<%= i %>"></h2>
-//         <div class="answers">
-            // <div class="answer" id="answer<%= i %>-1" onclick="answerSelected(this)">
-            //     <p id="testA<%= i %>-1"></p>
-            // </div>
-            // <div class="answer" id="answer<%= i %>-2" onclick="answerSelected(this)">
-            //     <p id="testA<%= i %>-2"></p>
-            // </div>
-            // <div class="answer" id="answer<%= i %>-3" onclick="answerSelected(this)">
-            //     <p id="testA<%= i %>-3"></p>
-            // </div>
-//         </div>
-//     </div>
-//     <% } %>
+}

@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>성격테스트</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>성격테스트</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../static/css/pTest.css">
-    <link rel="stylesheet" href="../../static/css/main.css">
-    <link rel="stylesheet" href="../../static/css/progressBar.css">
-    <link rel="stylesheet" href="../../static/css/buttons.css">
+        <link rel="stylesheet" href="../../static/css/pTest.css">
+        <link rel="stylesheet" href="../../static/css/main.css">
+        <link rel="stylesheet" href="../../static/css/header.css">
+        <link rel="stylesheet" href="../../static/css/progressBar.css">
+        <link rel="stylesheet" href="../../static/css/buttons.css">
 
-</head>
+        <!-- <script src="static/js/test.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    </head>
 
-<body class="d-flex flex-column min-vh-100 ">
-    <main>
+    <body class="d-flex flex-column min-vh-100 ">
+        <main>
 
         <!-- Header include -->
         <%- include('../common/header.ejs') %>
 
             <!-- Title of the Test -->
-            <H1>남들이 보는 나는?</H1>
+            <div class="wrapper">
+                <H1>남들이 보는 나는?</H1>
+            </div>
 
             <!-- Progress Bar -->
             <div class="container-md-auto ">
@@ -38,23 +43,30 @@
             <!-- Container -->
             <div class="container ">
                 <!-- Go back -->
-                <a href="http://... " id="goBack"><i class="bi bi-backspace "></i> 뒤로</a>
-                <div class="row ">
-                    <div class="col-md ">
-                        <h3><span style="font-family: bolder; "></span>
+                <!-- <a href="http://... " id="goBack"><i class="bi bi-backspace "></i> 뒤로</a> -->
+                <!-- Questions using Js for loop -->
+                <!-- Only one Question appears and next one shows up when it is answered -->
 
-                        </h3>
+                    <% for(let i=0; i<8;i++){ %>
+                        <div class="question<%=i%> question-none">
+                            <h2 id="q<%=i%>"></h2><br>
+                            <div class="answers">
+                                <div id="answer<%=i%>0" class="answer"></div>
+                                <div id="answer<%=i%>1" class="answer"></div>
+                                <div id="answer<%=i%>2" class="answer"></div>
+                            </div>
+                        </div>
+                    <% } %>
 
-                        <hr>
-
-                    </div>
-                </div>
+            <!-- End of for loop -->
             </div>
-
 
             <!-- JavaScript Bundle with Popper -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3 " crossorigin="anonymous "></script>
-    </main>
-</body>
+            <script type="module" src="/static/js/pTest.js"></script>
+
+
+        </main>
+    </body>
 
 </html>

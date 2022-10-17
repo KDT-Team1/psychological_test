@@ -22,9 +22,11 @@
     margin-bottom: 30px;
 }
 
-h1 {
-    margin-top: 130px;
-    margin-left: 100px;
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
 }
 
 h3 {
@@ -48,4 +50,32 @@ h3 {
 
 .form-check-label {
     font-size: 23px;
+}
+
+.question-none{
+    display:none;
+}
+.question0-none{
+    display:none;
+}
+.question1-none{
+    display:none;
+}
+.question2-none{
+    display:none;
+}
+.question3-none{
+    display:none;
+}
+.question4-none{
+    display:none;
+}
+.question5-none{
+    display:none;
+}
+.question6-none{
+    display:none;
+}
+.question7-none{
+    display:none;
 }
