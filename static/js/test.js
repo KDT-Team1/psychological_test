@@ -1,31 +1,6 @@
 // 설문조사 작동을 위한 Js CODE
 
-// // txt파일을 읽어서 배열로 반환하는 함수1
-// async function readTextFile(file) {
-//     var openedFile = await fetch(file);
-//     var text = await openedFile.text();
-//     var lines = text.split(/\r\n|\n/);
-//     return lines;
-// }
-
-// // txt파일을 읽어서 배열로 반환하는 함수2
-// function readTextFile2(file) {
-//     var XMLHttpRequest = require('xhr2');
-//     var rawFile = new XMLHttpRequest();
-//     var allText = "";
-//     rawFile.open("GET", file, false);
-//     rawFile.onreadystatechange = function() {
-//         if (rawFile.readyState === 4) {
-//             if (rawFile.status === 200 || rawFile.status == 0) {
-//                 allText = rawFile.responseText;
-//             }
-//         }
-//     }
-//     rawFile.send(null);
-//     var lines = allText.split(/\r\n|\n/);
-//     return lines;
-// }
-
+// 심리테스트 설문 지문을 저장한 txt 파일에서 지문을 읽어와서 string 리스트로 반환하는 함수
 // 👇️ if using ES6 Imports uncomment line below
 // import {readFileSync, promises as fsPromises} from 'fs';
 const { readFileSync, promises: fsPromises } = require('fs');
@@ -36,52 +11,47 @@ function syncReadFile(filename) {
 
     const arr = contents.split(/\r?\n/);
 
-    console.log(arr); // 👉️ ['One', 'Two', 'Three', 'Four']
+    // console.log(arr);
 
     return arr;
 }
 
-syncReadFile('./files/simpson.txt');
-
 // --------------------------------------------------------------
 
-// ✅ read file ASYNCHRONOUSLY
-async function asyncReadFile(filename) {
-    try {
-        const contents = await fsPromises.readFile(filename, 'utf-8');
+// // ✅ read file ASYNCHRONOUSLY
+// async function asyncReadFile(filename) {
+//     try {
+//         const contents = await fsPromises.readFile(filename, 'utf-8');
 
-        const arr = contents.split(/\r?\n/);
+//         const arr = contents.split(/\r?\n/);
 
-        console.log(arr); // 👉️ ['One', 'Two', 'Three', 'Four']
+//         console.log(arr);
 
-        return arr;
-    } catch (err) {
-        console.log(err);
-    }
-}
-
-asyncReadFile('./files/simpson.txt');
+//         return arr;
+//     } catch (err) {
+//         console.log(err);
+//     }
+// }
 
 
-
-
-let testLines = [];
-
+let testLines = syncReadFile('static/js/files/simpson.txt');
 console.log(testLines);
+
 
 let testQuestions = [];
 let testAnswers = [];
 
 // 양자택일 설문조사에서 지문과 답변 분리해서 각 리스트에 저장해주는 함수
 function testWith2A(testLines) {
-    let j = 0;
+    let arr = [];
     for (let i = 0; i < testLines.length; i++) {
         if (i % 3 == 0) {
             testQuestions.push(testLines[i]);
-            j++;
         } else {
-            for (let k = 0; k < 2; k++) {
-                testAnswers[j - 1][k].push(testLines[i]);
+            arr.push(testLines[i]);
+            if (arr.length == 2) {
+                testAnswers.push(arr);
+                arr = [];
             }
         }
     }
@@ -89,18 +59,27 @@ function testWith2A(testLines) {
 
 // 삼자택일 설문조사에서 지문과 답변 분리해서 각 리스트에 저장해주는 함수
 function testWith3A(testLines) {
-    let j = 0;
+    let arr = [];
     for (let i = 0; i < testLines.length; i++) {
         if (i % 4 == 0) {
             testQuestions.push(testLines[i]);
-            j++;
         } else {
-            for (let k = 0; k < 3; k++) {
-                testAnswers[j - 1][k].push(testLines[i]);
+            arr.push(testLines[i]);
+            if (arr.length == 3) {
+                testAnswers.push(arr);
+                arr = [];
             }
         }
     }
 }
+
+testWith3A(testLines);
+
+console.log(testQuestions);
+console.log(testAnswers);
+
+// 설문조사 결과 판독용 변수
+let answerNum = 0;
 
 
 // submit.addEventListener('click',function(i){
