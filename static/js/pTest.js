@@ -11,10 +11,7 @@ function syncReadFile(filename) {
     return arr;
 }
 
-syncReadFile('./files/simpson.txt');
-
-
-let testLines = [];
+let testLines = syncReadFile('./files/simpson.txt');
 
 let testQuestions = [];
 let testAnswers = [];
