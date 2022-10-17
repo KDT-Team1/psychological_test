@@ -11,8 +11,6 @@ function syncReadFile(filename) {
 
     const arr = contents.split(/\r?\n/);
 
-    // console.log(arr);
-
     return arr;
 }
 
