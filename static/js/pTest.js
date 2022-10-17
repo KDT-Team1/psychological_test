@@ -8,8 +8,6 @@ function syncReadFile(filename) {
 
     const arr = contents.split(/\r?\n/);
 
-    console.log(arr); // 👉️ ['One', 'Two', 'Three', 'Four']
-
     return arr;
 }
 
@@ -18,21 +16,20 @@ syncReadFile('./files/simpson.txt');
 
 let testLines = [];
 
-console.log(testLines);
-
 let testQuestions = [];
 let testAnswers = [];
 
 // 양자택일 설문조사에서 지문과 답변 분리해서 각 리스트에 저장해주는 함수
 function testWith2A(testLines) {
-    let j = 0;
+    let arr = [];
     for (let i = 0; i < testLines.length; i++) {
         if (i % 3 == 0) {
             testQuestions.push(testLines[i]);
-            j++;
         } else {
-            for (let k = 0; k < 2; k++) {
-                testAnswers[j - 1][k].push(testLines[i]);
+            arr.push(testLines[i]);
+            if (arr.length == 2) {
+                testAnswers.push(arr);
+                arr = [];
             }
         }
     }
@@ -40,14 +37,16 @@ function testWith2A(testLines) {
 
 // 삼자택일 설문조사에서 지문과 답변 분리해서 각 리스트에 저장해주는 함수
 function testWith3A(testLines) {
-    let j = 0;
+    let arr = [];
     for (let i = 0; i < testLines.length; i++) {
         if (i % 4 == 0) {
             testQuestions.push(testLines[i]);
             j++;
         } else {
-            for (let k = 0; k < 3; k++) {
-                testAnswers[j - 1][k].push(testLines[i]);
+            arr.push(testLines[i]);
+            if (arr.length == 3) {
+                testAnswers.push(arr);
+                arr = [];
             }
         }
     }
@@ -81,5 +80,3 @@ function testWith3A(testLines) {
 // submit.addEventListener('submit',function(){
 //     i+=1;
 // })
->>>
->>> > 65e0 cd3(ADD & FIXED: 2022.10 .14 작업분)
