@@ -1,4 +1,84 @@
-let testQuestions = ['Q1. 해야할 일이 많을 때?',
+// 설문조사 작동을 위한 Js CODE
+
+// 심리테스트 설문 지문을 저장한 txt 파일에서 지문을 읽어와서 string 리스트로 반환하는 함수
+// 👇️ if using ES6 Imports uncomment line below
+// import {readFileSync, promises as fsPromises} from 'fs';
+// const { readFileSync, promises: fsPromises } = require('fs');
+// var fs = require('fs');
+// const { readFileSync, promises: fsPromises } = require('fs');
+
+// ✅ read file SYNCHRONOUSLY
+// function syncReadFile(filename) {
+//     const contents = readFileSync(filename, 'utf-8');
+
+//     const arr = contents.split(/\r?\n/);
+
+//     return arr;
+// }
+
+// --------------------------------------------------------------
+
+// // ✅ read file ASYNCHRONOUSLY
+// async function asyncReadFile(filename) {
+//     try {
+//         const contents = await fsPromises.readFile(filename, 'utf-8');
+
+//         const arr = contents.split(/\r?\n/);
+
+
+//         console.log(arr);
+
+//         return arr;
+//     } catch (err) {
+//         console.log(err);
+//     }
+// }
+
+
+// let testLines = syncReadFile('static/js/files/simpson.txt');
+// console.log(testLines);
+
+// let testLines = syncReadFile('static/js/files/simpson.txt');
+// console.log(testLines);
+
+let testQuestions = [];
+let testAnswers = [];
+
+// 양자택일 설문조사에서 지문과 답변 분리해서 각 리스트에 저장해주는 함수
+// function testWith2A(testLines) {
+//     let arr = [];
+//     for (let i = 0; i < testLines.length; i++) {
+//         if (i % 3 == 0) {
+//             testQuestions.push(testLines[i]);
+//         } else {
+//             arr.push(testLines[i]);
+//             if (arr.length == 2) {
+//                 testAnswers.push(arr);
+//                 arr = [];
+//             }
+//         }
+//     }
+// }
+
+// 삼자택일 설문조사에서 지문과 답변 분리해서 각 리스트에 저장해주는 함수
+// function testWith3A(testLines) {
+//     let arr = [];
+//     for (let i = 0; i < testLines.length; i++) {
+//         if (i % 4 == 0) {
+//             testQuestions.push(testLines[i]);
+//         } else {
+//             arr.push(testLines[i]);
+//             if (arr.length == 3) {
+//                 testAnswers.push(arr);
+//                 arr = [];
+//             }
+//         }
+//     }
+// }
+
+// testWith3A(testLines);
+
+testQuestions = ['Q1. 해야할 일이 많을 때?',
     'Q2. 친구의 고민을 들어줄 때?',
     'Q3. 카페에 갔는데 얼굴만 아는 지인이 있을 때?',
     'Q4. 가장 중요한 것은?',
@@ -8,7 +88,7 @@ let testQuestions = ['Q1. 해야할 일이 많을 때?',
     'Q8. 아는 사람이 적은 파티에 가야할 때?'
 ]
 
-let testAnswers = [
+testAnswers = [
     [
         '계획을 세워서 최대한 빨리 처리한다.',
         '미루고 미루다 마감일 하루 전에 처리한다.',
@@ -42,9 +122,6 @@ document.querySelector('.question0').classList.toggle('question-none');
 
 const answer = document.querySelectorAll('.answer');
 let result = 0;
-let percent = 0; // test progress meter
-let page = 1; // page progress meter
-progress(percent, page);
 
 for (var i = 0; i < answer.length; i++) {
     answer[i].addEventListener('click', function() {
@@ -54,50 +131,17 @@ for (var i = 0; i < answer.length; i++) {
         for (let i = 0; i < 8; i++) {
             if (i == 7) {
                 document.querySelector('.question' + i).classList.toggle(`question-none`);
-                document.querySelector('.result').classList.toggle(`question-none`);
-                document.querySelector('.result').innerHTML = `${result}`;
+                // document.querySelector('.result').classList.toggle(`question-none`);
+                // document.querySelector('.result').innerHTML=`${result}`;
+                console.log(result);
                 localStorage.setItem('result', `${result}`);
-                // console.log(localStorage.getItem('result'));
-                // console.log(result);
+                location.href = '/result';
                 // break;  //마지막문제
             } else if (!($('.question' + i).hasClass('question-none'))) {
                 document.querySelector('.question' + i).classList.toggle(`question-none`);
                 document.querySelector('.question' + (i + 1)).classList.toggle(`question-none`);
                 i = 8;
-                percent = percent + 12.5;
-                page = page + 1;
-                progress(percent, page);
             }
         }
     })
-}
-
-// // back 버튼 
-
-// const back = document.getElementById('goBack');
-// back.addEventListener('click', function() {
-//     for (let i = 0; i < 8; i++) {
-//         if (i == 0) {
-//             document.querySelector('.question' + i).classList.toggle(`question-none`);
-//             document.querySelector('.result').classList.toggle(`question-none`);
-//             i = 8;
-//         } else if (!($('.question' + i).hasClass('question-none'))) {
-//             document.querySelector('.question' + i).classList.toggle(`question-none`);
-//             document.querySelector('.question' + (i - 1)).classList.toggle(`question-none`);
-//             i = 8;
-//         }
-//     }
-// });
-
-// progress bar 진행하게 만들기
-
-function progress(percent, page) {
-    if (percent == 0) {
-        document.querySelector('.progress-bar').style.width = `${percent+4}%`;
-    } else {
-        document.querySelector('.progress-bar').style.width = `${percent}%`;
-    }
-    document.querySelector('.progress-bar').ariaValueNow = `${percent}`;
-    document.querySelector('.progress-bar').innerHTML = `${percent}%`;
-    document.querySelector('.page').innerHTML = `${page}/${testQuestions.length}`;
 }
