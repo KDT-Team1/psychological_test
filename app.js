@@ -16,14 +16,25 @@ app.get('/start', function(req, res) {
     res.render('pages/start');
 });
 
+app.get('/start_simpson', function(req, res) {
+    res.render('pages/start_simpson');
+});
+
+app.get('/start_disney', function(req, res) {
+    res.render('pages/start_disney');
+});
+
 app.get('/pTest', function(req, res) {
     res.render('pages/pTest');
 });
 
-app.get('/result', function(req, res) {
-    res.render('pages/result');
+app.get('/result_simpson', function(req, res) {
+    res.render('pages/result_simpson');
 });
 
+app.get('/result_disney', function(req, res) {
+    res.render('pages/result_disney');
+});
 
 // 연습용 페이지
 app.get('/jstest', function(req, res) {
