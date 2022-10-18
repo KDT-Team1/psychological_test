@@ -30,7 +30,6 @@ let testAnswers = [
         '파티에서 새로운 친구를 사귄다.'
     ]
 ]
-
 for (let i = 0; i < 8; i++) {
     document.getElementById(`q${i}`).innerHTML = `${testQuestions[i]}`;
     document.getElementById(`answer${i}0`).innerHTML = `${testAnswers[i][0]}`;
@@ -58,7 +57,11 @@ for (var i = 0; i < answer.length; i++) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 localStorage.setItem('result', `${result}`);
                 // console.log(result);
+<<<<<<< HEAD
                 location.href='/result';
+=======
+                location.href = '/result';
+>>>>>>> mgL
             } else if (!($('.question' + j).hasClass('question-none'))) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 document.querySelector('.question' + (j + 1)).classList.toggle(`question-none`);
@@ -72,20 +75,12 @@ for (var i = 0; i < answer.length; i++) {
     })
 }
 
-// // back 버튼 
+// back 버튼 
 
 // const back = document.getElementById('goBack');
 // back.addEventListener('click', function() {
-//     for (let i = 0; i < 8; i++) {
-//         if (i == 0) {
-//             document.querySelector('.question' + i).classList.toggle(`question-none`);
-//             document.querySelector('.result').classList.toggle(`question-none`);
-//             i = 8;
-//         } else if (!($('.question' + i).hasClass('question-none'))) {
-//             document.querySelector('.question' + i).classList.toggle(`question-none`);
-//             document.querySelector('.question' + (i - 1)).classList.toggle(`question-none`);
-//             i = 8;
-//         }
+//     if (page == 1) {
+
 //     }
 // });
 
