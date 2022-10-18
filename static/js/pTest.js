@@ -127,11 +127,11 @@ for (var i=0; i<answer.length; i++){
         for(let i=0 ; i<8 ; i++){
             if(i==7){
                 document.querySelector('.question'+i).classList.toggle(`question-none`);
-                document.querySelector('.result').classList.toggle(`question-none`);
-                document.querySelector('.result').innerHTML=`${result}`;
+                // document.querySelector('.result').classList.toggle(`question-none`);
+                // document.querySelector('.result').innerHTML=`${result}`;
+                console.log(result);
                 localStorage.setItem('result',`${result}`);
-                // console.log(localStorage.getItem('result'));
-                // console.log(result);
+                location.href = '/result';
                 // break;  //마지막문제
             }
             else if(!($('.question'+i).hasClass('question-none'))){

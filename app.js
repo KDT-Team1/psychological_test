@@ -29,9 +29,6 @@ app.get('/result', function(req, res) {
 app.get('/jstest', function(req, res) {
     res.render('pages/test')
 })
-app.get('/getresult', function(req, res) {
-    res.render('pages/getresult')
-})
 
 
 
