@@ -29,7 +29,7 @@
 
             <!-- Title of the Test -->
             <div class="wrapper">
-                <H1>심슨 테스트</H1>
+                <H1>디즈니 공주 테스트</H1>
             </div>
 
             <!-- Progress Bar -->
@@ -46,7 +46,7 @@
                 <a class="goBack goBack-none"><i class="bi bi-backspace "></i> 뒤로</a>
                 <!-- Questions using Js for loop -->
                 <!-- Only one Question appears and next one shows up when it is answered -->
-                <% for(let i=0; i<8;i++){ %>
+                <% for(let i=0; i<10;i++){ %>
                     <div class="question<%=i%> question-none">
                         <h2 id="q<%=i%>"></h2><br>
                         <div>
@@ -58,9 +58,6 @@
                                 <p id="answer<%=i%>1" class="glowPen answers"></p>
                             </div>
                             <hr>
-                            <div class="answer">
-                                <p id="answer<%=i%>2" class="glowPen answers"></p>
-                            </div>
                         </div>
                     </div>
                     <% } %>
