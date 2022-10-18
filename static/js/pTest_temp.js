@@ -71,39 +71,32 @@ function testWith3A(testLines) {
 
 testWith3A(testLines);
 
-// 설문조사 결과 판독용 변수
-let answerNum = 0;
+// ------------------------------------
 
-for (let i = 0; i < testQuestions.length; i++) {
-    document.getElementById(`testQ${i}`).innerHTML = testQuestions[i];
-    for (let j = 0; j < testAnswers[i].length; j++) {
-        document.getElementById(`testA${i}-${j+1}`).innerHTML = testAnswers[i][j];
-    }
-}
-
-// document.querySelectorAll('.question').style.display = 'none';
-// document.getElementById('testElement1').style.display = 'block';
-
-// 설문조사 지문들 하나씩만 보이게 하는 기능
-function showQuestion(index) {
-    let question = document.querySelectorAll('.question');
-    question[index + 1].style.display == 'block';
-    question[index].style.display = 'none';
+for (let i = 0; i < 8; i++) {
+    document.getElementById(`q${i}`).innerHTML = `${testQuestions[i]}`;
+    document.getElementById(`answer${i}0`).innerHTML = `${testAnswers[i][0]}`;
+    document.getElementById(`answer${i}1`).innerHTML = `${testAnswers[i][1]}`;
+    document.getElementById(`answer${i}2`).innerHTML = `${testAnswers[i][2]}`;
 }
 
 document.querySelector('.question0').classList.toggle('question-none');
 
 const answer = document.querySelectorAll('.answer');
-console.log(answer[0]);
-console.log(answer[1]);
-
+let result = 0;
 
 for (var i = 0; i < answer.length; i++) {
-
     answer[i].addEventListener('click', function() {
+
+        result = result + 1 + parseInt(this.id[7]);
+
         for (let i = 0; i < 8; i++) {
             if (i == 7) {
-                break; //마지막문제
+                document.querySelector('.question' + i).classList.toggle(`question-none`);
+                document.querySelector('.result').classList.toggle(`question-none`);
+                document.querySelector('.result').innerHTML = `${result}`;
+                console.log(result);
+                // break;  //마지막문제
             } else if (!($('.question' + i).hasClass('question-none'))) {
                 document.querySelector('.question' + i).classList.toggle(`question-none`);
                 document.querySelector('.question' + (i + 1)).classList.toggle(`question-none`);
@@ -111,8 +104,27 @@ for (var i = 0; i < answer.length; i++) {
             }
         }
     })
-
 }
+// ------------------------------------
+
+
+// for (let i = 0; i < testQuestions.length; i++) {
+//     document.getElementById(`testQ${i}`).innerHTML = testQuestions[i];
+//     for (let j = 0; j < testAnswers[i].length; j++) {
+//         document.getElementById(`testA${i}-${j+1}`).innerHTML = testAnswers[i][j];
+//     }
+// }
+
+// document.querySelectorAll('.question').style.display = 'none';
+// document.getElementById('testElement1').style.display = 'block';
+
+// // 설문조사 지문들 하나씩만 보이게 하는 기능
+// function showQuestion(index) {
+//     let question = document.querySelectorAll('.question');
+//     question[index + 1].style.display == 'block';
+//     question[index].style.display = 'none';
+// }
+
 
 // for (let i = 0; i < testQuestions.length; i++) {
 //     let radio = document.getElementsByName(`testQ${i}`);
