@@ -25,10 +25,14 @@ app.get('/result', function(req, res) {
 });
 
 
-// 자바스크립트 연습용 페이지
+// 연습용 페이지
 app.get('/jstest', function(req, res) {
     res.render('pages/test')
 })
+app.get('/getresult', function(req, res) {
+    res.render('pages/getresult')
+})
+
 
 
 app.listen(PORT, function() {
