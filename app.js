@@ -15,23 +15,28 @@ app.get('/', function (req, res) {
 app.get('/start', function(req, res) {
     res.render('pages/start');
 });
-
 app.get('/start_simpson', function(req, res) {
     res.render('pages/start_simpson');
 });
-
 app.get('/start_disney', function(req, res) {
     res.render('pages/start_disney');
 });
 
+
 app.get('/pTest', function(req, res) {
     res.render('pages/pTest');
 });
+app.get('/test_simpson', function(req, res) {
+    res.render('pages/test_simpson');
+});
+app.get('/test_disney', function(req, res) {
+    res.render('pages/test_disney');
+});
+
 
 app.get('/result_simpson', function(req, res) {
     res.render('pages/result_simpson');
 });
-
 app.get('/result_disney', function(req, res) {
     res.render('pages/result_disney');
 });
