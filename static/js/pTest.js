@@ -107,11 +107,6 @@ testAnswers=[
     ]
   ]
 
-console.log(testQuestions);
-console.log(testAnswers);
-
-
-
 for(let i=0; i<8; i++){
     document.getElementById(`q${i}`).innerHTML=`${testQuestions[i]}`;
     document.getElementById(`answer${i}0`).innerHTML=`${testAnswers[i][0]}`;
@@ -122,16 +117,20 @@ for(let i=0; i<8; i++){
 document.querySelector('.question0').classList.toggle('question-none');
 
 const answer = document.querySelectorAll('.answer');
-console.log(answer[0]);
-console.log(answer[1]);
-
+let result = 0;
 
 for (var i=0; i<answer.length; i++){
-
     answer[i].addEventListener('click', function(){
+
+      result=result+1+parseInt(this.id[7]);
+
         for(let i=0 ; i<8 ; i++){
             if(i==7){
-                break;  //마지막문제
+                document.querySelector('.question'+i).classList.toggle(`question-none`);
+                document.querySelector('.result').classList.toggle(`question-none`);
+                document.querySelector('.result').innerHTML=`${result}`;
+                console.log(result);
+                // break;  //마지막문제
             }
             else if(!($('.question'+i).hasClass('question-none'))){
                 document.querySelector('.question'+i).classList.toggle(`question-none`);
@@ -140,5 +139,4 @@ for (var i=0; i<answer.length; i++){
             }
         }
     })
-
 }
