@@ -107,14 +107,15 @@ testAnswers=[
     ]
   ]
 
+
 for(let i=0; i<8; i++){
     document.getElementById(`q${i}`).innerHTML=`${testQuestions[i]}`;
     document.getElementById(`answer${i}0`).innerHTML=`${testAnswers[i][0]}`;
     document.getElementById(`answer${i}1`).innerHTML=`${testAnswers[i][1]}`;
     document.getElementById(`answer${i}2`).innerHTML=`${testAnswers[i][2]}`;
 }
-
 document.querySelector('.question0').classList.toggle('question-none');
+
 
 const answer = document.querySelectorAll('.answer');
 let result = 0;
@@ -123,16 +124,13 @@ for (var i=0; i<answer.length; i++){
     answer[i].addEventListener('click', function(){
 
       result=result+1+parseInt(this.id[7]);
-
+      
         for(let i=0 ; i<8 ; i++){
-            if(i==7){
+            if(i==7){   // 마지막 문제
                 document.querySelector('.question'+i).classList.toggle(`question-none`);
-                // document.querySelector('.result').classList.toggle(`question-none`);
-                // document.querySelector('.result').innerHTML=`${result}`;
                 console.log(result);
                 localStorage.setItem('result',`${result}`);
                 location.href = '/result';
-                // break;  //마지막문제
             }
             else if(!($('.question'+i).hasClass('question-none'))){
                 document.querySelector('.question'+i).classList.toggle(`question-none`);
