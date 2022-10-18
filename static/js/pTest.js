@@ -47,7 +47,6 @@ let percent = 0; // test progress meter
 let page = 1; // page progress meter
 progress(percent, page);
 
-console.log(answer[0]);
 
 for (var i = 0; i < answer.length; i++) {
     answer[i].addEventListener('click', function() {
