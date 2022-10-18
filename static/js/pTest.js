@@ -54,12 +54,9 @@ for (var i = 0; i < answer.length; i++) {
         for (let i = 0; i < 8; i++) {
             if (i == 7) {
                 document.querySelector('.question' + i).classList.toggle(`question-none`);
-                document.querySelector('.result').classList.toggle(`question-none`);
-                document.querySelector('.result').innerHTML = `${result}`;
                 localStorage.setItem('result', `${result}`);
-                // console.log(localStorage.getItem('result'));
                 // console.log(result);
-                // break;  //마지막문제
+                location.href='/result';
             } else if (!($('.question' + i).hasClass('question-none'))) {
                 document.querySelector('.question' + i).classList.toggle(`question-none`);
                 document.querySelector('.question' + (i + 1)).classList.toggle(`question-none`);
