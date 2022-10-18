@@ -30,7 +30,6 @@ let testAnswers = [
         '파티에서 새로운 친구를 사귄다.'
     ]
 ]
-
 for (let i = 0; i < 8; i++) {
     document.getElementById(`q${i}`).innerHTML = `${testQuestions[i]}`;
     document.getElementById(`answer${i}0`).innerHTML = `${testAnswers[i][0]}`;
@@ -40,27 +39,29 @@ for (let i = 0; i < 8; i++) {
 
 document.querySelector('.question0').classList.toggle('question-none');
 
-const answer = document.querySelectorAll('.answer');
+const answer = document.querySelectorAll('.answers');
+
 let result = 0;
 let percent = 0; // test progress meter
 let page = 1; // page progress meter
 progress(percent, page);
 
+console.log(answer[0]);
+
 for (var i = 0; i < answer.length; i++) {
     answer[i].addEventListener('click', function() {
-
         result = result + 1 + parseInt(this.id[7]);
 
-        for (let i = 0; i < 8; i++) {
-            if (i == 7) {
-                document.querySelector('.question' + i).classList.toggle(`question-none`);
+        for (let j = 0; j < 8; j++) {
+            if (j == 7) {
+                document.querySelector('.question' + j).classList.toggle(`question-none`);
                 localStorage.setItem('result', `${result}`);
                 // console.log(result);
                 location.href = '/result';
-            } else if (!($('.question' + i).hasClass('question-none'))) {
-                document.querySelector('.question' + i).classList.toggle(`question-none`);
-                document.querySelector('.question' + (i + 1)).classList.toggle(`question-none`);
-                i = 8;
+            } else if (!($('.question' + j).hasClass('question-none'))) {
+                document.querySelector('.question' + j).classList.toggle(`question-none`);
+                document.querySelector('.question' + (j + 1)).classList.toggle(`question-none`);
+                j = 8;
                 // progress bar 연동 변수들
                 percent = percent + 12.5;
                 page = page + 1;
@@ -70,20 +71,12 @@ for (var i = 0; i < answer.length; i++) {
     })
 }
 
-// // back 버튼 
+// back 버튼 
 
 // const back = document.getElementById('goBack');
 // back.addEventListener('click', function() {
-//     for (let i = 0; i < 8; i++) {
-//         if (i == 0) {
-//             document.querySelector('.question' + i).classList.toggle(`question-none`);
-//             document.querySelector('.result').classList.toggle(`question-none`);
-//             i = 8;
-//         } else if (!($('.question' + i).hasClass('question-none'))) {
-//             document.querySelector('.question' + i).classList.toggle(`question-none`);
-//             document.querySelector('.question' + (i - 1)).classList.toggle(`question-none`);
-//             i = 8;
-//         }
+//     if (page == 1) {
+
 //     }
 // });
 
