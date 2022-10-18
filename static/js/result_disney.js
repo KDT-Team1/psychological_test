@@ -6,7 +6,7 @@ console.log(result);
 
 // document.querySelector('.getresult').innerHTML = `${result}`;
 
-if (result > 19) {
+if (result > 7 && result < 11) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/1.png" alt="01">';
     document.querySelector('.name').innerHTML = '메리다(Merida)';
     document.querySelector('.first').innerHTML = '루틴이 있어야 일을 제대로 시작하고 끝낼 수 있다.';
@@ -18,7 +18,7 @@ if (result > 19) {
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/2.png" alt="02">신데렐라';
 }
 
-if (result > 8 && result < 16) {
+if (result > -11 && result < -6) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/2.png" alt="02">';
     document.querySelector('.name').innerHTML = '신데렐라(Cinderella)';
     document.querySelector('.first').innerHTML = '혼자 있는 것을 좋아하고, 사람들과 있을 땐 조용하다.';
@@ -30,7 +30,7 @@ if (result > 8 && result < 16) {
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/1.png" alt="01">메리다';
 }
 
-if (result > 15 && result < 24) {
+if (result > -4 && result < 1) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/3.png" alt="03">';
     document.querySelector('.name').innerHTML = '인어공주(Ariel)';
     document.querySelector('.first').innerHTML = '재미없는 삶은 의미 없는 삶이라고 생각한다.';
@@ -43,7 +43,7 @@ if (result > 15 && result < 24) {
 }
 
 
-if (result < 9) {
+if (result > 0 && result < 4) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/4.png" alt="04">';
     document.querySelector('.name').innerHTML = '라푼젤(Rapunzel)';
     document.querySelector('.first').innerHTML = '처음에는 낮을 가리지만 친해지면 바로 tmi 대방출';
@@ -55,7 +55,7 @@ if (result < 9) {
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/6.png" alt="06">자스민';
 }
 
-if (result < 9) {
+if (result > 3 && result < 6) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/5.png" alt="05">';
     document.querySelector('.name').innerHTML = '포카혼타스(Pocahontas)';
     document.querySelector('.first').innerHTML = '독특한 세계를 가지고있어 한 가지를 깊게 파고들 뿐 아니라 생각이 이리저리 튀는 편이다.';
@@ -67,7 +67,7 @@ if (result < 9) {
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/5.png" alt="05">포카혼타스';
 }
 
-if (result < 9) {
+if (result > 5 && result < 9) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/5.png" alt="05">';
     document.querySelector('.name').innerHTML = '자스민(Jasmine)';
     document.querySelector('.first').innerHTML = '사소한 것에도 쉽게 감동하는 편이라 친해지기 쉽다.';

@@ -34,7 +34,7 @@ if (result > 8 && result < 16) {
 
 if (result > 15 && result < 24) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Simpsons/3.png" alt="03">';
-    document.querySelector('.name').innerHTML = '바트 심슨(Bart Simpson';
+    document.querySelector('.name').innerHTML = '바트 심슨(Bart Simpson)';
     document.querySelector('.first').innerHTML = '행동을 좋아하고 현실적인 목표와 계획으로 인생을 살아가는 바트 심슨!';
     document.querySelector('.second').innerHTML = '매우 현실적인 성격으로 특히 어려움이나 위기를 겪는 동안 적절한 역할을 한다..';
     document.querySelector('.third').innerHTML = '할 줄 아는 재주가 많고, 사교적인 성격으로 남들과 항상 친밀한 관계를 유지한다.';
