@@ -1,3 +1,18 @@
+// // 👇️ if using ES6 Imports uncomment line below
+// // import {readFileSync, promises as fsPromises} from 'fs';
+// var fs = require('fs');
+// const { readFileSync, promises: fsPromises } = require('fs');
+
+
+// // ✅ read file SYNCHRONOUSLY
+// function syncReadFile(filename) {
+//     const contents = readFileSync(filename, 'utf-8');
+
+//     const arr = contents.split(/\r?\n/);
+
+//     return arr;
+// }
+
 const testLines = ['Q1. 해야할 일이 많을 때?',
     '계획을 세워서 최대한 빨리 처리한다.',
     '미루고 미루다 마감일 하루 전에 처리한다.',

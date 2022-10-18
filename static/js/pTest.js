@@ -42,6 +42,9 @@ document.querySelector('.question0').classList.toggle('question-none');
 
 const answer = document.querySelectorAll('.answer');
 let result = 0;
+let percent = 0; // test progress meter
+let page = 1; // page progress meter
+progress(percent, page);
 
 for (var i = 0; i < answer.length; i++) {
     answer[i].addEventListener('click', function() {
@@ -61,7 +64,40 @@ for (var i = 0; i < answer.length; i++) {
                 document.querySelector('.question' + i).classList.toggle(`question-none`);
                 document.querySelector('.question' + (i + 1)).classList.toggle(`question-none`);
                 i = 8;
+                percent = percent + 12.5;
+                page = page + 1;
+                progress(percent, page);
             }
         }
     })
+}
+
+// // back 버튼 
+
+// const back = document.getElementById('goBack');
+// back.addEventListener('click', function() {
+//     for (let i = 0; i < 8; i++) {
+//         if (i == 0) {
+//             document.querySelector('.question' + i).classList.toggle(`question-none`);
+//             document.querySelector('.result').classList.toggle(`question-none`);
+//             i = 8;
+//         } else if (!($('.question' + i).hasClass('question-none'))) {
+//             document.querySelector('.question' + i).classList.toggle(`question-none`);
+//             document.querySelector('.question' + (i - 1)).classList.toggle(`question-none`);
+//             i = 8;
+//         }
+//     }
+// });
+
+// progress bar 진행하게 만들기
+
+function progress(percent, page) {
+    if (percent == 0) {
+        document.querySelector('.progress-bar').style.width = `${percent+4}%`;
+    } else {
+        document.querySelector('.progress-bar').style.width = `${percent}%`;
+    }
+    document.querySelector('.progress-bar').ariaValueNow = `${percent}`;
+    document.querySelector('.progress-bar').innerHTML = `${percent}%`;
+    document.querySelector('.page').innerHTML = `${page}/${testQuestions.length}`;
 }
