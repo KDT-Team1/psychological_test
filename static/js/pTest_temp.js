@@ -51,8 +51,6 @@ function testWith2A(testLines) {
     }
 }
 
-
-
 // 삼자택일 설문조사에서 지문과 답변 분리해서 각 리스트에 저장해주는 함수
 function testWith3A(testLines) {
     let arr = [];
