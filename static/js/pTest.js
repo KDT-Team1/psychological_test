@@ -129,7 +129,9 @@ for (var i=0; i<answer.length; i++){
                 document.querySelector('.question'+i).classList.toggle(`question-none`);
                 document.querySelector('.result').classList.toggle(`question-none`);
                 document.querySelector('.result').innerHTML=`${result}`;
-                console.log(result);
+                localStorage.setItem('result',`${result}`);
+                // console.log(localStorage.getItem('result'));
+                // console.log(result);
                 // break;  //마지막문제
             }
             else if(!($('.question'+i).hasClass('question-none'))){
