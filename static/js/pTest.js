@@ -66,19 +66,36 @@ for (var i = 0; i < answer.length; i++) {
                 percent = percent + 12.5;
                 page = page + 1;
                 progress(percent, page);
+                goBack(page);
             }
         }
     })
 }
 
 // back 버튼 
+function goBack(page) {
+    const back = document.querySelector(".goBack");
+    if (page > 1 && back.classList.contains("goBack-none")) {
+        back.classList.toggle('goBack-none');
+    }
+    // click event 발생시 현재 question class를 none으로 바꾸고 이전 question class를 none 해제
+    back.addEventListener('click', function() {
+        for (let j = 0; j < 8; j++) {
+            if (!($('.question' + j).hasClass('question-none'))) {
+                document.querySelector('.question' + j).classList.toggle(`question-none`);
+                document.querySelector('.question' + (j - 1)).classList.toggle(`question-none`);
+                j = 8;
+                // progress bar 연동 변수들
+                percent = percent - 12.5;
+                page = page - 1;
+                progress(percent, page);
+                goBack(page);
+            }
+        }
 
-// const back = document.getElementById('goBack');
-// back.addEventListener('click', function() {
-//     if (page == 1) {
 
-//     }
-// });
+    });
+}
 
 // progress bar 진행하게 만들기
 
