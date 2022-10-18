@@ -57,11 +57,7 @@ for (var i = 0; i < answer.length; i++) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 localStorage.setItem('result', `${result}`);
                 // console.log(result);
-<<<<<<< HEAD
-                location.href='/result';
-=======
                 location.href = '/result';
->>>>>>> mgL
             } else if (!($('.question' + j).hasClass('question-none'))) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 document.querySelector('.question' + (j + 1)).classList.toggle(`question-none`);
