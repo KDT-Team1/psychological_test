@@ -56,7 +56,13 @@ for (var i = 0; i < answer.length; i++) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 localStorage.setItem('result', `${result}`);
                 // console.log(result);
-                location.href = '/result_simpson';
+                // loading page for 1 second
+                progress(100, page);
+                document.querySelector('.loading').classList.toggle('dot-wave-none');
+                setTimeout(function() {
+                    location.href = '/result_simpson';
+                }, 1000); // 1초 후에 result_simpson으로 이동
+
             } else if (!($('.question' + j).hasClass('question-none'))) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 document.querySelector('.question' + (j + 1)).classList.toggle(`question-none`);
