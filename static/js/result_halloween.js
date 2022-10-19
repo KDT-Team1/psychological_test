@@ -18,7 +18,7 @@ if (result > 8 && result < 12) {
     document.querySelector('.bad').innerHTML = '같이 놀면 재미 없는 애<img class="col-12" src="/static/img/testResult_Halloween/3.png" alt="03">스폰지밥 룩';
 }
 
-if (result > -12 && result < -7) {
+if (result > -12 && result < -6) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Halloween/2.png" alt="02">';
     document.querySelector('.name').innerHTML = '생존마스터 슈퍼마리오 룩';
     document.querySelector('.first').innerHTML = '지구 어디에 떨어뜨려도 생존할 수 있는 강인한 생존력의 소유자! 어딜가서 굶어 죽을 일은 없다.';
@@ -30,7 +30,7 @@ if (result > -12 && result < -7) {
     document.querySelector('.bad').innerHTML = '같이 놀면 재미 없는 애<img class="col-12" src="/static/img/testResult_Halloween/3.png" alt="03">스폰지밥 룩';
 }
 
-if (result > -8 && result < 0) {
+if (result > -7 && result < 0) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Halloween/3.png" alt="03">';
     document.querySelector('.name').innerHTML = '동심의 스폰지밥 룩';
     document.querySelector('.first').innerHTML = '동심과 사랑이 가득 느껴지는 폭신폭신한 코스튬!';
@@ -42,7 +42,7 @@ if (result > -8 && result < 0) {
     document.querySelector('.bad').innerHTML = '같이 놀면 재미 없는 애<img class="col-12" src="/static/img/testResult_Halloween/1.png" alt="01">할리퀸 룩';
 }
 
-if (result > 0 && result < 4) {
+if (result > 0 && result < 5) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Halloween/4.png" alt="04">';
     document.querySelector('.name').innerHTML = 'Nerdy 매력 해리포터 룩';
     document.querySelector('.first').innerHTML = '한번 꽂히면 빠져 나올 수가 없다는 &#39;너드&#39;의 매력을 머리부터 발끝까지 뽐낸다.';
@@ -60,7 +60,7 @@ if (result > 4 && result < 9) {
     document.querySelector('.first').innerHTML = '당신의 인생을 영화로 만든다면, 아마 그 영화의 제목은 &#39;관종의 일생&#39;일 것.. 본인은 스스로를 샤이관종이라고 생각할지도 모르지만, 당신은 진성관종이다.';
     document.querySelector('.second').innerHTML = '관심을 받기 위해선 노출도 감수하는 당신은 할로윈 파티의 진정한 자연인. 유교걸, 유교보이들의 나라에서 태어난 것이 아쉬울 정도에요.';
     document.querySelector('.third').innerHTML = '&#39;오늘 내가 이 구역 접수하러 왔다&#39;는 마음으로 할로윈 파티에 입성! 개쩌는 사교력으로 다음 날 눈뜨면 핸드폰 사진첩에 모르는 사람들과 찍은 셀카가 가득할지도?';
-    document.querySelector('.fourth').innerHTML = '근데 은근 쿠크멘탈.... 가끔 사람들이 나를 우습게 보는 게 아닌가... 내가 싫은가... 이런 고민에 휩싸인다.';
+    document.querySelector('.fourth').innerHTML = '근데 은근 쿠크멘탈... 가끔 사람들이 나를 우습게 보는 게 아닌가... 내가 싫은가... 이런 고민에 휩싸인다.';
     document.querySelector('.fifth').innerHTML = '그치만 우울함에 절대 깊이 빠져있지 않는다! 금방 이겨내고 다시 아좌좌~';
     document.querySelector('.good').innerHTML = '같이 놀면 재밌는 애<img class="col-12" src="/static/img/testResult_Halloween/3.png" alt="03">스폰지밥 룩';
     document.querySelector('.bad').innerHTML = '같이 놀면 재미 없는 애<img class="col-12" src="/static/img/testResult_Halloween/4.png" alt="04">해리포터 룩';
