@@ -70,8 +70,29 @@ for (var i = 0; i < answer.length; i++) {
                 page = page + 1;
                 progress(percent, page);
             }
+            // back 버튼 활성화
+            if (page > 1 && document.querySelector('.goBack').classList.contains("goBack-none")) {
+                document.querySelector('.goBack').classList.toggle('goBack-none');
+            }
+            // back button function
+            document.querySelector('.goBack').addEventListener('click', function() {
+                if (page == 2) {
+                    document.querySelector('.goBack').classList.toggle('goBack-none');
+                }
+                if (page > 1) {
+                    document.querySelector('.question' + (page - 2)).classList.toggle(`question-none`);
+                    document.querySelector('.question' + (page - 1)).classList.toggle(`question-none`);
+                    // progress bar 연동 변수들
+                    percent = percent - 9;
+                    page = page - 1;
+                    progress(percent, page);
+                    // result 값 조정
+                    result = 0;
+                }
+            });
         }
-    })
+    });
+
 }
 
 // back 버튼 
