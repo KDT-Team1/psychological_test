@@ -66,14 +66,14 @@ for (var i = 0; i < answer.length; i++) {
                 percent = percent + 12.5;
                 page = page + 1;
                 progress(percent, page);
-                goBack(page);
+                goBack(j);
             }
         }
     })
 }
 
 // back 버튼 
-function goBack(page) {
+function goBack(j) {
     // 1번째 질문에서는 back 버튼이 없음
     const back = document.querySelector(".goBack");
     if (page > 1 && back.classList.contains("goBack-none")) {
@@ -88,6 +88,7 @@ function goBack(page) {
             percent = percent - 12.5;
             page = page - 1;
             progress(percent, page);
+            j -= 1;
         }
     });
 }
