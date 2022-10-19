@@ -1,6 +1,6 @@
-if(localStorage.getItem('result')){
+if (localStorage.getItem('result')) {
     var result = localStorage.getItem('result')
-   }
+}
 
 console.log(result);
 
@@ -58,3 +58,16 @@ if (result < 9) {
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/3.png" alt="03">바트 심슨';
 }
 
+// browser back button event handler
+window.addEventListener('popstate', function(e) {
+    history.go(-2);
+});
+
+history.pushState(null, null, '');
+
+window.onpopstate = function(event) { //뒤로가기 이벤트를 캐치합니다.
+
+    history.back(); // pushState로 인하여 페이지가 하나 더 생성되기 떄문에 한번에 뒤로가기 위해서 뒤로가기를 한번 더 해줍니다.
+    history.go(-2);
+
+};
