@@ -62,16 +62,33 @@
       <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
       <script>
       Kakao.init("59a4be849355fc1bc58ae7023a9c2724");
+
+      // function sendLink() {
+      //   Kakao.Link.sendCustom({
+      //     templateId: 84301,
+      //     templateArgs: {
+      //     title: "{{ page.title }}",
+      //     description: "{{ page.excerpt }}",
+      //     url : "{{ page.url }}",
+      //     },
+      //   });
+      // }
+
       function sendLink() {
-        Kakao.Link.sendCustom({
-          templateId: 84301,
-          templateArgs: {
-          title: "{{ page.title }}",
-          description: "{{ page.excerpt }}",
-          url : "{{ page.url }}",
-          },
-        });
+          Kakao.Link.sendDefault({
+              objectType: 'feed',
+              content: {
+                  title: '디즈니 공주 테스트',
+                  description: '디즈니 공주 테스트 함께해요!',
+                  imageUrl: 'http://115.85.180.118:8080/static/img/main_disney.png',
+                  link: {
+                      mobileWebUrl: 'http://115.85.180.118:8080/start_disney',
+                      webUrl: 'http://115.85.180.118:8080/start_disney',
+                  },
+              },
+          })
       }
+
       </script>
 
       <a id="kakao-link-btn" href="javascript:sendLink()">
@@ -84,7 +101,7 @@
 
   <!-- JavaScript Bundle with Popper -->
         
-  <div class="col-12 row justify-content-center">
+  <div class="d-flex justify-content-center">
   <span class="card-footer btn btn-danger border bordertext text-center col-6">
         <button class="btn btn-danger fs-4 pt-2 pb-2 col-12" type="button" onclick="location.href='/start_disney'">테스트 다시하기</button></span>
 <span class="card-footer btn btn-danger border text text-center col-6">
