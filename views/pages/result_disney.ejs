@@ -66,16 +66,33 @@
       <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
       <script>
       Kakao.init("59a4be849355fc1bc58ae7023a9c2724");
+
+      // function sendLink() {
+      //   Kakao.Link.sendCustom({
+      //     templateId: 84301,
+      //     templateArgs: {
+      //     title: "{{ page.title }}",
+      //     description: "{{ page.excerpt }}",
+      //     url : "{{ page.url }}",
+      //     },
+      //   });
+      // }
+
       function sendLink() {
-        Kakao.Link.sendCustom({
-          templateId: 84301,
-          templateArgs: {
-          title: "{{ page.title }}",
-          description: "{{ page.excerpt }}",
-          url : "{{ page.url }}",
-          },
-        });
+          Kakao.Link.sendDefault({
+              objectType: 'feed',
+              content: {
+                  title: '디즈니 공주 테스트',
+                  description: '디즈니 공주 테스트 함께해요!',
+                  imageUrl: 'http://115.85.180.118:8080/static/img/main_disney.png',
+                  link: {
+                      mobileWebUrl: 'http://115.85.180.118:8080/start_disney',
+                      webUrl: 'http://115.85.180.118:8080/start_disney',
+                  },
+              },
+          })
       }
+
       </script>
 
       <a id="kakao-link-btn" href="javascript:sendLink()">
