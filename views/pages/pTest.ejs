@@ -25,7 +25,7 @@
     <!-- Header include -->
     <%- include('../common/header.ejs') %>
 
-    <main>
+        <main>
 
             <!-- Title of the Test -->
             <div class="wrapper">
@@ -65,6 +65,14 @@
                     </div>
                     <% } %>
                         <!-- End of for loop -->
+                        <!-- Loading animation -->
+                        <div class="dot-wave dot-wave-none loading">
+                            <div class="dot-wave__dot"></div>
+                            <div class="dot-wave__dot"></div>
+                            <div class="dot-wave__dot"></div>
+                            <div class="dot-wave__dot"></div>
+                        </div>
+
             </div>
 
             <!-- JavaScript Bundle with Popper -->
@@ -72,7 +80,7 @@
             <script type="module" src="/static/js/pTest.js"></script>
 
 
-    </main>
+        </main>
 </body>
 
 </html>

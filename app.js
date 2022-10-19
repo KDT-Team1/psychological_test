@@ -36,6 +36,9 @@ app.get('/test_simpson', function(req, res) {
 app.get('/test_disney', function(req, res) {
     res.render('pages/test_disney');
 });
+app.get('/test_halloween', function(req, res) {
+    res.render('pages/test_halloween');
+});
 
 
 app.get('/result_simpson', function(req, res) {
