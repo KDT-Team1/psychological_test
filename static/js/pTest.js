@@ -73,13 +73,29 @@ for (var i = 0; i < answer.length; i++) {
                 percent = percent + 12.5;
                 page = page + 1;
                 progress(percent, page);
-
             }
-            goBack();
+            // back 버튼 활성화
+            if (page > 1 && document.querySelector('.goBack').classList.contains("goBack-none")) {
+                document.querySelector('.goBack').classList.toggle('goBack-none');
+            }
         }
-    })
-
+    });
+    // back button function
+    document.querySelector('.goBack').addEventListener('click', function() {
+        for (let j = 0; j < 8; j++) {
+            if (!($('.question' + j).hasClass('question-none'))) {
+                document.querySelector('.question' + j).classList.toggle(`question-none`);
+                document.querySelector('.question' + (j - 1)).classList.toggle(`question-none`);
+                j = 8;
+                // progress bar 연동 변수들
+                percent = percent - 12.5;
+                page = page - 1;
+                progress(percent, page);
+            }
+        }
+    });
 }
+
 
 // back 버튼 
 function goBack() {
@@ -94,13 +110,13 @@ function goBack() {
             if (!($('.question' + j).hasClass('question-none'))) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 document.querySelector('.question' + (j - 1)).classList.toggle(`question-none`);
-                j = 8;
                 // result 값도 1 감소
                 result = result - 1 - parseInt(this.id[7]);
                 // progress bar 연동 변수들
                 percent = percent - 12.5;
                 page = page - 1;
                 progress(percent, page);
+                j = 8;
             }
         }
     })
