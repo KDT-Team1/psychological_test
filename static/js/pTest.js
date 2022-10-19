@@ -78,48 +78,24 @@ for (var i = 0; i < answer.length; i++) {
             if (page > 1 && document.querySelector('.goBack').classList.contains("goBack-none")) {
                 document.querySelector('.goBack').classList.toggle('goBack-none');
             }
+            // back button function
+            document.querySelector('.goBack').addEventListener('click', function() {
+                if (page == 2) {
+                    document.querySelector('.goBack').classList.toggle('goBack-none');
+                }
+                if (page > 1) {
+                    document.querySelector('.question' + (page - 2)).classList.toggle(`question-none`);
+                    document.querySelector('.question' + (page - 1)).classList.toggle(`question-none`);
+                    // progress bar 연동 변수들
+                    percent = percent - 12.5;
+                    page = page - 1;
+                    progress(percent, page);
+                    // result 값 조정
+                    result = 0;
+                }
+            });
         }
     });
-    // back button function
-    document.querySelector('.goBack').addEventListener('click', function() {
-        for (let j = 0; j < 8; j++) {
-            if (!($('.question' + j).hasClass('question-none'))) {
-                document.querySelector('.question' + j).classList.toggle(`question-none`);
-                document.querySelector('.question' + (j - 1)).classList.toggle(`question-none`);
-                j = 8;
-                // progress bar 연동 변수들
-                percent = percent - 12.5;
-                page = page - 1;
-                progress(percent, page);
-            }
-        }
-    });
-}
-
-
-// back 버튼 
-function goBack() {
-    // 1번째 질문에서는 back 버튼이 없음
-    const back = document.querySelector(".goBack");
-    if (page > 1 && back.classList.contains("goBack-none")) {
-        back.classList.toggle('goBack-none');
-    }
-    // click event 발생시 현재 question class를 none으로 바꾸고 이전 question class를 none 해제
-    back.addEventListener('click', function() {
-        for (let j = 0; j < 8; j++) {
-            if (!($('.question' + j).hasClass('question-none'))) {
-                document.querySelector('.question' + j).classList.toggle(`question-none`);
-                document.querySelector('.question' + (j - 1)).classList.toggle(`question-none`);
-                // result 값도 1 감소
-                result = result - 1 - parseInt(this.id[7]);
-                // progress bar 연동 변수들
-                percent = percent - 12.5;
-                page = page - 1;
-                progress(percent, page);
-                j = 8;
-            }
-        }
-    })
 }
 
 // progress bar 진행하게 만들기
