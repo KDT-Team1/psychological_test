@@ -48,6 +48,8 @@ progress(percent, page);
 
 console.log(answer[0]);
 
+
+
 for (var i = 0; i < answer.length; i++) {
     answer[i].addEventListener('click', function() {
         result = result + 1 + parseInt(this.id[7]);
@@ -71,14 +73,16 @@ for (var i = 0; i < answer.length; i++) {
                 percent = percent + 12.5;
                 page = page + 1;
                 progress(percent, page);
-                goBack(j);
+
             }
+            goBack();
         }
     })
+
 }
 
 // back 버튼 
-function goBack(j) {
+function goBack() {
     // 1번째 질문에서는 back 버튼이 없음
     const back = document.querySelector(".goBack");
     if (page > 1 && back.classList.contains("goBack-none")) {
@@ -86,16 +90,20 @@ function goBack(j) {
     }
     // click event 발생시 현재 question class를 none으로 바꾸고 이전 question class를 none 해제
     back.addEventListener('click', function() {
-        if (!($('.question' + page - 1).hasClass('question-none'))) {
-            document.querySelector('.question' + j).classList.toggle(`question-none`);
-            document.querySelector('.question' + (j - 1)).classList.toggle(`question-none`);
-            // progress bar 연동 변수들
-            percent = percent - 12.5;
-            page = page - 1;
-            progress(percent, page);
-            j -= 1;
+        for (let j = 0; j < 8; j++) {
+            if (!($('.question' + j).hasClass('question-none'))) {
+                document.querySelector('.question' + j).classList.toggle(`question-none`);
+                document.querySelector('.question' + (j - 1)).classList.toggle(`question-none`);
+                j = 8;
+                // result 값도 1 감소
+                result = result - 1 - parseInt(this.id[7]);
+                // progress bar 연동 변수들
+                percent = percent - 12.5;
+                page = page - 1;
+                progress(percent, page);
+            }
         }
-    });
+    })
 }
 
 // progress bar 진행하게 만들기
