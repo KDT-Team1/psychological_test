@@ -22,6 +22,10 @@ app.get('/start_disney', function(req, res) {
     res.render('pages/start_disney');
 });
 
+app.get('/start_halloween', function(req, res) {
+    res.render('pages/start_halloween');
+});
+
 
 app.get('/pTest', function(req, res) {
     res.render('pages/pTest');
@@ -39,6 +43,9 @@ app.get('/result_simpson', function(req, res) {
 });
 app.get('/result_disney', function(req, res) {
     res.render('pages/result_disney');
+});
+app.get('/result_halloween', function(req, res) {
+    res.render('pages/result_halloween');
 });
 
 // 연습용 페이지
