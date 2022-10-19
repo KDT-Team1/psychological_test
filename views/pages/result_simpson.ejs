@@ -58,38 +58,10 @@
                 </div>
             </div>
         </div>
+
         <div class="container text-center col-12">
             <br>
-            <p class="fs-3">테스트 결과 공유하기</p>
-            <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-            <script>
-                Kakao.init("59a4be849355fc1bc58ae7023a9c2724");
-
-                function sendLink() {
-                    Kakao.Link.sendCustom({
-                        templateId: 84301,
-                        templateArgs: {
-                            title: "{{ page.title }}",
-                            description: "{{ page.excerpt }}",
-                            url: "{{ page.url }}",
-                        },
-                    });
-                }
-            </script>
-
-            <a id="kakao-link-btn" href="javascript:sendLink()">
-                <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
-            </a>
-
-            <div class="container col-12 d-flex border border-dark justify-content-center">
-                <div class="good col-6 fs-3 pt-2 col-lg-4"></div>
-                <div class="bad col-6 fs-3 pt-2 col-lg-4"></div>
-            </div>
-        </div>
-        </div>
-        <div class="container text-center col-12">
-            <br>
-            <p class="fs-3">테스트 결과 공유하기</p>
+            <p class="fs-3">이 테스트 공유하기</p>
             <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
             <script>
                 Kakao.init("59a4be849355fc1bc58ae7023a9c2724");
@@ -120,6 +92,7 @@
                     })
                 }
             </script>
+
 
             <a id="kakao-link-btn" href="javascript:sendLink()">
                 <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />

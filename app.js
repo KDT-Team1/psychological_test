@@ -52,8 +52,8 @@ app.get('/result_halloween', function(req, res) {
 });
 
 // 연습용 페이지
-app.get('/jstest', function(req, res) {
-    res.render('pages/test')
+app.get('/main_test', function(req, res) {
+    res.render('pages/main_test')
 })
 
 
