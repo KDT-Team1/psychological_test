@@ -1,0 +1,49 @@
+body {
+  font-family: 'Do Hyeon';
+  height: 100%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+ }
+ .bodys {
+    background-color: #ecebc9;
+  }
+
+ .bodyd {
+    background-color: #FAE4E8;
+  }
+
+  .bodyh {
+    color: #1C3238;
+    background-color: rgb(136, 135, 135);
+  }
+
+
+.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ .btns {
+    background-color: #FAD820;
+ }
+
+ .btnd {
+    background-color: pink;
+  }
+
+  .btnh {
+    color: orange;
+    background-color: #1C3238;
+  }
+
+  .border {
+    border-radius: 10px;
+    background-color: #fff;
+    border-color: pink;
+    padding-top: 20px;
+    padding-bottom: 20px;;
+  }
+
+  .first {
+    text-align: center;
+  }
