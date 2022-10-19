@@ -41,17 +41,13 @@
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 400;
 }
 
 h3 {
     text-align: center;
     margin: 50px;
-}
-
-.form-check-input {
-    text-align: center;
 }
 
 .goBack {
@@ -66,10 +62,6 @@ h3 {
 
 .goBack-none {
     display: none;
-}
-
-.form-check-label {
-    font-size: 23px;
 }
 
 .question-none {
@@ -101,14 +93,3 @@ h3 {
     width: 100%;
     transition: width .3s;
 }
-<<<<<<< Updated upstream
-
-
-/* .contents {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: min-content;
-} */
-=======
->>>>>>> Stashed changes
