@@ -45,8 +45,10 @@
         
         if(search.indexOf('심슨')!=-1 || search.indexOf('simpson')!=-1 || search.indexOf('Simpson')!=-1 || search.indexOf('SIMPSON')!=-1){
           location.href='/start_simpson';
-        }if(search.indexOf('디즈니')!=-1 || search.indexOf('disney')!=-1 || search.indexOf('Disney')!=-1 || search.indexOf('DISNEY')!=-1 || search.indexOf('공주')!=-1 || search.indexOf('princess')!=-1){
+        }else if(search.indexOf('디즈니')!=-1 || search.indexOf('disney')!=-1 || search.indexOf('Disney')!=-1 || search.indexOf('DISNEY')!=-1 || search.indexOf('공주')!=-1 || search.indexOf('princess')!=-1){
           location.href='/start_disney';
+        }else if(search.indexOf('할로윈')!=-1 || search.indexOf('halloween')!=-1 || search.indexOf('Halloween')!=-1 || search.indexOf('HALLOWEEN')!=-1 || search.indexOf('코스튬')!=-1 || search.indexOf('custome')!=-1){
+          location.href='/start_halloween';
         }else{
           location.href='/';  
         }
