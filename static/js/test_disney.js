@@ -47,13 +47,11 @@ for (var i = 0; i < answer.length; i++) {
         }else{
             result+=1;
         }
-        console.log(result);
 
         for (let j = 0; j < 10; j++) {
             if (j == 9) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 localStorage.setItem('result', `${result}`);
-                // console.log(result);
                 location.href = '/result_disney';
             } else if (!($('.question' + j).hasClass('question-none'))) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
