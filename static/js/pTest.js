@@ -56,8 +56,13 @@ for (var i = 0; i < answer.length; i++) {
             if (j == 7) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 localStorage.setItem('result', `${result}`);
+                document.querySelector('.loading').classList.toggle('dot-wave-none');
+                progress(100, 8);
                 // console.log(result);
-                location.href = '/result';
+                // loading 화면 띄우기 
+                setTimeout(function() {
+                    location.href = '/result';
+                }, 1000);
             } else if (!($('.question' + j).hasClass('question-none'))) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 document.querySelector('.question' + (j + 1)).classList.toggle(`question-none`);
