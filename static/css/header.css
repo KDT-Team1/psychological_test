@@ -1,13 +1,8 @@
 header{
     font-family: 'Jua', sans-serif;
     font-weight: 400;
-    margin: 3vh;
-    /* height:3vh; */
+    display: block;
 }
-
-/* header > .navbar{
-    height:3vh;
-} */
 
 .navbar-brand{
     font-family: 'Jua', sans-serif;
@@ -27,4 +22,8 @@ header{
     .header-text{
         display:none;
     }
+  }
+
+  a{
+    text-decoration: none;
   }
