@@ -175,7 +175,6 @@ hr{
 }
 
 
-
 @media (min-width: 880px) {
     .img-container{
         display:none;
@@ -188,6 +187,7 @@ hr{
         position:relative;
         padding-right: 0px;
         float:right;
+        padding: 0px 15px;
     }
     img{
         width:60%;
@@ -209,5 +209,7 @@ hr{
     }
     .media-button{
         display:block;
+        text-align:center;
     }
   }
+  
