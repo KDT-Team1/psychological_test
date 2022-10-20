@@ -4,7 +4,14 @@ main {
     /* 반응형 대응 */
     /* 1px=6.25% | 10px=62.5% | 16px=100% */
     text-align: center;
-    padding-top:50px;
+    padding-top: 50px;
+}
+
+@media (min-width:768px) {
+    main {
+        width: 768px;
+        margin: 0 auto;
+    }
 }
 
 .btn-outline-secondary {
@@ -14,12 +21,12 @@ main {
     text-align: center;
 }
 
-.card{
+.card {
     overflow: hidden;
 }
 
-.card-text{
-    font-size:large;
+.card-text {
+    font-size: large;
 }
 
 .col:hover {
