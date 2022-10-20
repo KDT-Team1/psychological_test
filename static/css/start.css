@@ -136,6 +136,7 @@ element.style {
 .css-1x1sa4f {
     margin: 20px 0px 24px;
     padding: 0px 15px;
+    text-align: center;
 }
 
 .css-dogdke {
@@ -169,6 +170,9 @@ hr{
 .css-8flipp{
     display: none;
 }
+.btn{
+    text-align: center;
+}
 
 .media-button{
     display:none;
@@ -188,6 +192,7 @@ hr{
         position:relative;
         padding-right: 0px;
         float:right;
+        padding: 0px 15px;
     }
     img{
         width:60%;
@@ -209,5 +214,6 @@ hr{
     }
     .media-button{
         display:block;
+        text-align:center;
     }
   }
