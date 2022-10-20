@@ -50,14 +50,6 @@ body {
     padding: 0px 15px;
 }
 
-.css-8flipp {
-    width: 100%;
-    max-width: 140px;
-    overflow: hidden;
-    border-radius: 4px;
-    position: relative;
-}
-
 element.style {
     box-sizing: border-box;
     display: block;
@@ -173,3 +165,49 @@ img{
 hr{
     color:gray;
 }
+
+.css-8flipp{
+    display: none;
+}
+
+.media-button{
+    display:none;
+}
+
+
+
+@media (min-width: 880px) {
+    .img-container{
+        display:none;
+    }
+    .GongbangLayout_gongbang_layout__j1NE2{
+        padding-top:80px;
+    }
+    .css-8flipp{
+        display: block;
+        position:relative;
+        padding-right: 0px;
+        float:right;
+    }
+    img{
+        width:60%;
+        height:90%;
+        border-style: none;
+        border-radius: 4%;
+        margin: auto;
+        display: block;
+        float:right;
+    }
+    .GongbangLayout_gongbang_area__hBLdq{
+        display: flex;
+        justify-content: space-around;
+        padding-right:50px;
+        padding-left:50px;
+    }
+    .css-1x1sa4f{
+        display:none;
+    }
+    .media-button{
+        display:block;
+    }
+  }
