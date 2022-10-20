@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon:400" rel="stylesheet">
-  <link rel="stylesheet" href="../../static/css/result.css">
-  <link rel="stylesheet" href="../../static/css/header.css">
-  
-  <!-- CDN Link (icon) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon:400" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/result.css">
+    <link rel="stylesheet" href="../../static/css/header.css">
+
+    <!-- CDN Link (icon) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
 
 </head>
 
@@ -25,102 +25,101 @@
 
     <%- include('../common/header.ejs') %>
 
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="pt-3 col-12"></div>
-
-        <div class="profile col-12 pt-3">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="pt-3 col-12"></div>
+                <!-- Result Image -->
+                <div class="profile col-12 pt-3">
+                </div>
+                <!-- Result Name -->
+                <div class="col-12 mt-2">
+                    <p class="name fs-1"></p>
+                </div>
+                <!-- Result Description -->
+                <div class="border text-start fs-4 mb-3">
+                    <ul class="first fs-2"></ul>
+                    <ul class="second"></ul>
+                    <ul class="third"></ul>
+                    <ul class="fourth"></ul>
+                    <ul class="fifth"></ul>
+                </div>
+                <!-- MBTI Info -->
+                <div class="border d-grid fs-2">*캐릭터의 MBTI*
+                    <div class="mbti fs-2"></div>
+                </div>
+                <!-- Good & Bad matching -->
+                <div class="container col-12 d-flex justify-content-center">
+                    <div class="border good col-6 fs-3 pt-3 me-3 col-lg-4"></div>
+                    <div class="border bad col-6 fs-3 pt-3 col-lg-4"></div>
+                </div>
+            </div>
         </div>
-        <div class="col-12 mt-2">
-          <p class="name fs-1"></p>
-        </div>
 
-        <div class="border text-start fs-4 mb-3">
-          <ul class="first fs-2"></ul>
-          <ul class="second"></ul>
-          <ul class="third"></ul>
-          <ul class="fourth"></ul>
-          <ul class="fifth"></ul>
-        </div>
-
-        <div class="border d-grid fs-2">*캐릭터의 MBTI*
-        <div class="mbti fs-2"></div>
-      </div>
-
-        <div class="container col-12 d-flex justify-content-center">
-          <div class="border good col-6 fs-3 pt-3 me-3 col-lg-4"></div>
-          <div class="border bad col-6 fs-3 pt-3 col-lg-4"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container text-center col-12">
-        <br>
-        <p class="fs-3">이 테스트 공유하기</p>
-        <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-        <script>
-        Kakao.init("59a4be849355fc1bc58ae7023a9c2724");
-  
-        // function sendLink() {
-        //   Kakao.Link.sendCustom({
-        //     templateId: 84301,
-        //     templateArgs: {
-        //     title: "{{ page.title }}",
-        //     description: "{{ page.excerpt }}",
-        //     url : "{{ page.url }}",
-        //     },
-        //   });
-        // }
-  
-        function sendLink() {
-            Kakao.Link.sendDefault({
-                objectType: 'feed',
-                content: {
-                    title: '심슨 가족',
-                    description: '심슨가족 테스트 함께해요!',
-                    imageUrl: 'http://115.85.180.118:8080/static/img/main_halloween.png',
-                    link: {
-                        mobileWebUrl: 'http://115.85.180.118:8080/start_disney',
-                        webUrl: 'http://115.85.180.118:8080/start_disney',
-                    },
-                },
-            })
-        }
-        </script>
-  
-        <a id="kakao-link-btn" href="javascript:sendLink()">
-          <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
-        </a>
-  
-        <span class="button"><a href="#" onclick="clip(); return false;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="dark" class="bi bi-share" viewBox="0 0 16 16">
+        <div class="container text-center col-12">
+            <br>
+            <p class="fs-3">이 테스트 공유하기</p>
+            <!-- Kakao talk 공유 버튼 -->
+            <a id="kakao-link-btn" href="javascript:sendLink()">
+                <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+            </a>
+            <!-- url 복사 버튼 -->
+            <span class="button"><a href="#" onclick="clip(); return false;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="dark" class="bi bi-share" viewBox="0 0 16 16">
         <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
         </svg></a></span>
-  
-    <!-- JavaScript Bundle with Popper -->
-          
-    <div class="d-flex row text-center">
-      <button class="btns btn fs-4 col-6" type="button" onclick="location.href='/start_simpson'">테스트 다시하기</button></span>
-      <button class="btns btn fs-4 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
-  </div>
-  
-  <script type="text/javascript">
-  
-  function clip(){
-      
-      var url = '';
-      var textarea = document.createElement("textarea");
-      document.body.appendChild(textarea);
-      url = window.document.location.href;
-      textarea.value = url;
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-      alert("URL이 복사되었습니다.")
-      }
-      
-      </script>
-      <script src="static/js/result_simpson.js"></script>
-      
-  </body>
-  
-  </html>
+            <!-- 다시하기, 메인으로 가기 버튼 -->
+            <div class="d-flex row text-center">
+                <button class="btns btn fs-4 col-6" type="button" onclick="location.href='/start_simpson'">테스트 다시하기</button></span>
+                <button class="btns btn fs-4 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
+            </div>
+
+            <!-- JS script tag below -->
+
+            <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+            <script>
+                Kakao.init("59a4be849355fc1bc58ae7023a9c2724");
+
+                // function sendLink() {
+                //   Kakao.Link.sendCustom({
+                //     templateId: 84301,
+                //     templateArgs: {
+                //     title: "{{ page.title }}",
+                //     description: "{{ page.excerpt }}",
+                //     url : "{{ page.url }}",
+                //     },
+                //   });
+                // }
+
+                function sendLink() {
+                    Kakao.Link.sendDefault({
+                        objectType: 'feed',
+                        content: {
+                            title: '심슨 가족',
+                            description: '심슨가족 테스트 함께해요!',
+                            imageUrl: 'http://115.85.180.118:8080/static/img/main_halloween.png',
+                            link: {
+                                mobileWebUrl: 'http://115.85.180.118:8080/start_disney',
+                                webUrl: 'http://115.85.180.118:8080/start_disney',
+                            },
+                        },
+                    })
+                }
+            </script>
+            <script type="text/javascript">
+                function clip() {
+
+                    var url = '';
+                    var textarea = document.createElement("textarea");
+                    document.body.appendChild(textarea);
+                    url = window.document.location.href;
+                    textarea.value = url;
+                    textarea.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(textarea);
+                    alert("URL이 복사되었습니다.")
+                }
+            </script>
+            <script src="static/js/result_simpson.js"></script>
+
+</body>
+
+</html>
