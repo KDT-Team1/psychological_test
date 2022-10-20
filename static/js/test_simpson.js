@@ -96,20 +96,25 @@ for (var i = 0; i < answer.length; i++) {
     });
 }
 
-// back 버튼 
-
-// const back = document.getElementById('goBack');
-// back.addEventListener('click', function() {
-//     if (page == 1) {
-
-//     }
-// });
-
 // progress bar 진행하게 만들기
 
 function progress(percent, page) {
+    let extra = 4;
+    // 모바일 대응 progress bar width 조정
+    if (window.innerWidth < 578) {
+        extra = 6.5;
+    } else if (window.innerWidth < 768) {
+        extra = 5;
+    }
+    window.onresize = function() {
+        if (window.innerWidth < 768) {
+            extra = 5;
+        } else {
+            extra = 4;
+        }
+    }
     if (percent == 0) {
-        document.querySelector('.progress-bar').style.width = `${percent+4}%`;
+        document.querySelector('.progress-bar').style.width = `${extra}%`;
     } else {
         document.querySelector('.progress-bar').style.width = `${percent}%`;
     }

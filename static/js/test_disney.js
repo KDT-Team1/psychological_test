@@ -97,12 +97,14 @@ for (var i = 0; i < answer.length; i++) {
 function progress(percent, page) {
     let extra = 4;
     // 모바일 대응 progress bar width 조정
-    if (window.innerWidth < 500) {
-        extra = 7;
+    if (window.innerWidth < 578) {
+        extra = 6.5;
+    } else if (window.innerWidth < 768) {
+        extra = 5;
     }
     window.onresize = function() {
         if (window.innerWidth < 768) {
-            extra = 7;
+            extra = 5;
         } else {
             extra = 4;
         }
