@@ -58,13 +58,9 @@
         </div>
       </div>
     </div>
-    <div class="container col-12">
+    <div class="container text-center col-12">
       <br>
-<<<<<<< HEAD
-      <div class="fs-3">테스트 결과 공유하기</div>
-=======
       <p class="fs-3">이 테스트 공유하기</p>
->>>>>>> 7cfdac7eaf0fe08149c3742509c819516fb992d9
       <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
       <script>
       Kakao.init("59a4be849355fc1bc58ae7023a9c2724");
@@ -84,9 +80,9 @@
           Kakao.Link.sendDefault({
               objectType: 'feed',
               content: {
-                  title: '디즈니 공주 테스트',
+                  title: '디즈니 공주',
                   description: '디즈니 공주 테스트 함께해요!',
-                  imageUrl: 'http://115.85.180.118:8080/static/img/main_disney.png',
+                  imageUrl: 'http://115.85.180.118:8080/static/img/main_halloween.png',
                   link: {
                       mobileWebUrl: 'http://115.85.180.118:8080/start_disney',
                       webUrl: 'http://115.85.180.118:8080/start_disney',
@@ -94,23 +90,22 @@
               },
           })
       }
-
       </script>
 
       <a id="kakao-link-btn" href="javascript:sendLink()">
         <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
       </a>
 
-      <span class="button"><a href="#" onclick="clip(); return false;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="dark" class="bi bi-share" viewBox="0 0 16 16">
+      <span class="button"><a href="#" onclick="clip(); return false;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-share" viewBox="0 0 16 16">
       <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
       </svg></a></span>
 
   <!-- JavaScript Bundle with Popper -->
         
   <div class="d-flex row text-center">
-        <button class="btnd btn fs-4 col-6" type="button" onclick="location.href='/start_disney'">테스트 다시하기</button></span>
-        <button class="btnd btn fs-4 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
-  </div>
+    <button class="btnd btn fs-4 col-6" type="button" onclick="location.href='/start_disney'">테스트 다시하기</button></span>
+    <button class="btnd btn fs-4 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
+</div>
 
 <script type="text/javascript">
 
@@ -131,3 +126,5 @@ function clip(){
     <script src="static/js/result_disney.js"></script>
     
 </body>
+
+</html>
