@@ -9,9 +9,8 @@
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../static/css/result.css">
     <link rel="stylesheet" href="../../static/css/header.css">
 
@@ -29,35 +28,43 @@
             <div class="row justify-content-start">
                 <div class="pt-3 col-12"></div>
                 <!-- Result Image -->
-                <div class="profile col-12 pt-3">
+                <div class="profile col-12">
                 </div>
                 <!-- Result Name -->
-                <div class="col-12 mt-2">
+                <div class="border d-flex justify-content-between col-12 mt-2 mb-2 ">
+                    <img class= "names" src="/static/img/donut.png" alt="n">
                     <p class="name fs-1"></p>
+                    <img class= "names" src="/static/img/donut.png" alt="n">
                 </div>
                 <!-- Result Description -->
                 <div class="border text-start fs-4 mb-3">
+                    <div class="col-12 d-flex justify-content-center"><img class= "headers" src="/static/img/header-s1.png" alt="header-1"></div>
                     <ul class="first fs-2"></ul>
+                    <div class="col-12 d-flex justify-content-center"><img class= "headers" src="/static/img/header-s2.png" alt="header-2"></div>
                     <ul class="second"></ul>
                     <ul class="third"></ul>
                     <ul class="fourth"></ul>
                     <ul class="fifth"></ul>
                 </div>
+
                 <!-- MBTI Info -->
-                <div class="border d-grid fs-2">*캐릭터의 MBTI*
+                <div class="border d-grid fs-2">
+                    <div class="col-12 d-flex justify-content-center"><img class= "headers" src="/static/img/header-s1.png" alt="header-1"></div>
+                    캐릭터의 MBTI
                     <div class="mbti fs-2"></div>
+                    <div class="col-12 d-flex justify-content-center"><img class= "headers" src="/static/img/header-s2.png" alt="header-2"></div>
                 </div>
+
                 <!-- Good & Bad matching -->
                 <div class="container col-12 d-flex justify-content-center">
-                    <div class="border good col-6 fs-3 pt-3 me-3 col-lg-4"></div>
-                    <div class="border bad col-6 fs-3 pt-3 col-lg-4"></div>
+                    <div class="good col-6 fs-2 pt-3 me-3 col-lg-4"></div>
+                    <div class="bad col-6 fs-2 pt-3 col-lg-4"></div>
                 </div>
             </div>
         </div>
 
         <div class="container text-center col-12">
             <br>
-            <p class="fs-3">이 테스트 공유하기</p>
             <!-- Kakao talk 공유 버튼 -->
             <a id="kakao-link-btn" href="javascript:sendLink()">
                 <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
@@ -68,8 +75,8 @@
         </svg></a></span>
             <!-- 다시하기, 메인으로 가기 버튼 -->
             <div class="d-flex row text-center">
-                <button class="btns btn fs-4 col-6" type="button" onclick="location.href='/start_simpson'">테스트 다시하기</button></span>
-                <button class="btns btn fs-4 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
+                <button class="btn btn-dark fs-4 col-6" type="button" onclick="location.href='/start_simpson'">테스트 다시하기</button></span>
+                <button class="btn btn-dark fs-4 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
             </div>
 
             <!-- JS script tag below -->

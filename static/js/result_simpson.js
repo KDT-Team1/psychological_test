@@ -8,7 +8,7 @@ console.log(result);
 
 if (result > 23) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Simpsons/1.png" alt="01">';
-    document.querySelector('.name').innerHTML = '호머 심슨(Homer Simpson)';
+    document.querySelector('.name').innerHTML = '호머 심슨<br>(Homer Simpson)';
     document.querySelector('.first').innerHTML = '타인의 말이나 행동에 휩쓸리지 않고 자기 스타일대로 인생을 살아가는 호머 심슨!';
     document.querySelector('.second').innerHTML = '-신념이 굳고 주관이 뚜렷한 성격이지만, 가끔 자기 중심적이고 겸허함이 없다고 평가될 수 있다.';
     document.querySelector('.third').innerHTML = '-외향적이고 사교적인 성격으로 주변에 사람이 항상 많다.';
@@ -21,7 +21,7 @@ if (result > 23) {
 
 if (result > 8 && result < 16) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Simpsons/2.png" alt="02">';
-    document.querySelector('.name').innerHTML = '마지 심슨(Marge Simpson)';
+    document.querySelector('.name').innerHTML = '마지 심슨<br>(Marge Simpson)';
     document.querySelector('.first').innerHTML = '배려심이 많고 이타적이며 모든 사람들과 원만한 관계로 인생을 살아가는 마지 심슨!';
     document.querySelector('.second').innerHTML = '-희생정신이 강하고 내 사람들을 돌보며 그에 기쁨과 보람을 느끼는 긍정적인 성격이다.';
     document.querySelector('.third').innerHTML = '-체계적이고 계획적이어서 주변 환경이 정돈이 잘 되어있으며, 그런 성격 덕에 생산적이고 효과적으로 문제를 해결한다.';
@@ -34,8 +34,8 @@ if (result > 8 && result < 16) {
 
 if (result > 15 && result < 24) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Simpsons/3.png" alt="03">';
-    document.querySelector('.name').innerHTML = '바트 심슨(Bart Simpson)';
-    document.querySelector('.first').innerHTML = '행동을 좋아하고 현실적인 목표와 계획으로 인생을 살아가는 바트 심슨!';
+    document.querySelector('.name').innerHTML = '바트 심슨<br>(Bart Simpson)';
+    document.querySelector('.first').innerHTML = '현실적인 목표와 계획으로 인생을 살아가는 바트 심슨!';
     document.querySelector('.second').innerHTML = '-매우 현실적인 성격으로 특히 어려움이나 위기를 겪는 동안 적절한 역할을 한다.';
     document.querySelector('.third').innerHTML = '-할 줄 아는 재주가 많고, 사교적인 성격으로 남들과 항상 친밀한 관계를 유지한다.';
     document.querySelector('.fourth').innerHTML = '-목표를 의심하고, 추측하고, 망설이는 일이 없으며, 결과에 도달하기 위해서 위험을 무릅쓰고 실수도 주저하지 않는다.';
@@ -47,7 +47,7 @@ if (result > 15 && result < 24) {
 
 if (result < 9) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Simpsons/4.png" alt="04">';
-    document.querySelector('.name').innerHTML = '리사 심슨(Lisa Simpson)';
+    document.querySelector('.name').innerHTML = '리사 심슨<br>(Lisa Simpson)';
     document.querySelector('.first').innerHTML = '합리적인 사고체계를 지니고 있는 리사 심슨!';
     document.querySelector('.second').innerHTML = '-매우 어른스럽고 도덕적 신념도 강한데다 늘 합리적이고 이성적으로 생각하는 편이다';
     document.querySelector('.third').innerHTML = '-내향적인 성격으로 소수의 친한 사람들과만 교류하는 경향이 있다.';
