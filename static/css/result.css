@@ -1,5 +1,4 @@
 body {
-    font-family: 'Do Hyeon';
     height: 100%;
     display: grid;
     place-content: center;
@@ -7,7 +6,9 @@ body {
 }
 
 .bodys {
-    background-color: #ecebc9;
+    font-family: 'Gowun Dodum', sans-serif;
+    background-image: url(/static/img/s.webp);
+    background-size: 100%;
 }
 
 .bodyd {
@@ -24,13 +25,11 @@ body {
     padding-bottom: 10px;
 }
 
-.btns {
-    background-color: #FAD820;
-}
 
 .btnd {
     background-color: pink;
 }
+
 
 .btnh {
     color: orange;
@@ -47,4 +46,21 @@ body {
 
 .first {
     text-align: center;
+}
+
+.profile {
+    margin-top: 50px;
+}
+
+.headers {
+    width: 100%;
+    justify-content: center;
+}
+
+.names {
+    width:130px;
+    height: 100px;
+}
+
+ul, li {margin: 3px; padding: 3px;
 }
