@@ -1,11 +1,6 @@
-<div class="tiger-wrap">
-	<input 
-		id="rawr" 
-		aria-label="Flip tiger"
-		class="tiger-control"
-		type="checkbox" 
-	>
-	<label for="rawr" class="tiger">
+<div class="tiger-wrap tiger-clicked">
+    <input id="rawr" aria-label="Flip tiger" class="tiger-control" type="checkbox">
+    <label for="rawr" class="tiger">
 		<div class="tiger-front">
 			<div class="tiger-front-mask">
 				<div class="tiger-head">
@@ -61,12 +56,17 @@
 			</div>
 		</div>
 	</label>
-	<div class="tiger-decor-wrap">
-		<div class="tiger-decor tiger-decor-1"></div>
-		<div class="tiger-decor tiger-decor-2"></div>
-		<div class="tiger-decor tiger-decor-3"></div>
-	</div>
+    <div class="tiger-decor-wrap">
+        <div class="tiger-decor tiger-decor-1"></div>
+        <div class="tiger-decor tiger-decor-2"></div>
+        <!-- <div class="tiger-decor tiger-decor-3"></div> -->
+    </div>
+    <!--말풍선 -->
+    <div class="testCon">
+        Grrrr....
+    </div>
 </div>
+
 <svg class="svg-filter-hide">
 	<defs>
 		<filter id="filterSquiggle1">
@@ -87,3 +87,15 @@
 		</filter>
 	</defs>
 </svg>
+
+<script>
+    // .tiger click event : change the contents of the textCon
+    document.querySelector('.tiger').addEventListener('click', function() {
+        if (document.querySelector('.tiger').classList.contains('tiger-clicked')) {
+            document.querySelector('.testCon').classList.toggle('tiger-clicked');
+            document.querySelector('.testCon').innerHTML = 'Grrrr....';
+        } else {
+            document.querySelector('.testCon').innerHTML = 'Rwar!';
+        }
+    });
+</script>

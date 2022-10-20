@@ -7,6 +7,13 @@ main {
     padding-top: 50px;
 }
 
+@media (min-width:768px) {
+    main {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+
 .btn-outline-secondary {
     align-items: center;
     margin: auto;
@@ -31,4 +38,9 @@ img:hover {
     transform: scaleX(1.1);
     transform: scaleY(1.1);
     filter: brightness(70%);
+}
+
+.ani {
+    display: block;
+    margin: auto;
 }
