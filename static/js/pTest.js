@@ -47,6 +47,10 @@ let page = 1; // page progress meter
 progress(percent, page);
 
 
+
+
+
+
 for (var i = 0; i < answer.length; i++) {
     answer[i].addEventListener('click', function() {
         result = result + 1 + parseInt(this.id[7]);
@@ -55,8 +59,13 @@ for (var i = 0; i < answer.length; i++) {
             if (j == 7) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 localStorage.setItem('result', `${result}`);
+                document.querySelector('.loading').classList.toggle('dot-wave-none');
+                progress(100, 8);
                 // console.log(result);
-                location.href = '/result_simpson';
+                // loading 화면 띄우기 
+                setTimeout(function() {
+                    location.href = '/result';
+                }, 1000);
             } else if (!($('.question' + j).hasClass('question-none'))) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
                 document.querySelector('.question' + (j + 1)).classList.toggle(`question-none`);
@@ -66,18 +75,29 @@ for (var i = 0; i < answer.length; i++) {
                 page = page + 1;
                 progress(percent, page);
             }
+            // back 버튼 활성화
+            if (page > 1 && document.querySelector('.goBack').classList.contains("goBack-none")) {
+                document.querySelector('.goBack').classList.toggle('goBack-none');
+            }
+            // back button function
+            document.querySelector('.goBack').addEventListener('click', function() {
+                if (page == 2) {
+                    document.querySelector('.goBack').classList.toggle('goBack-none');
+                }
+                if (page > 1) {
+                    document.querySelector('.question' + (page - 2)).classList.toggle(`question-none`);
+                    document.querySelector('.question' + (page - 1)).classList.toggle(`question-none`);
+                    // progress bar 연동 변수들
+                    percent = percent - 12.5;
+                    page = page - 1;
+                    progress(percent, page);
+                    // result 값 조정
+                    result = 0;
+                }
+            });
         }
-    })
+    });
 }
-
-// back 버튼 
-
-// const back = document.getElementById('goBack');
-// back.addEventListener('click', function() {
-//     if (page == 1) {
-
-//     }
-// });
 
 // progress bar 진행하게 만들기
 
