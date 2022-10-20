@@ -1,13 +1,213 @@
-.bi-search {
+#__next {
+    height: 100%;
+    padding-top: 10px;
+}
+
+address, article, aside, audio, body, button, canvas, caption, cite, code, dd, del, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, img, input, ins, label, legend, li, mark, nav, ol, p, pre a, section, span, strong, summary, table, tbody, td, textarea, tfoot, th, thead, time, tr, ul, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+body {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+    /* background-color: var(--poomang-colors-gray-100); */
+    word-break: keep-all;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #000;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.GongbangLayout_gongbang_layout__j1NE2 {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.GongbangLayout_gongbang_layout__j1NE2 .GongbangLayout_gongbang_area__hBLdq {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.css-14r34si {
+    background-color: rgb(255, 255, 255);
+}
+
+.css-19xmcei {
+    display: flex;
+    padding: 0px 15px;
+}
+
+element.style {
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    width: initial;
+    height: initial;
+    background: none;
+    opacity: 1;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    inset: 0px;
+}
+
+.css-x1enyj {
+    display: block;
+    margin: 0px 0px 0px 0px;
+}
+
+.css-1jwn9ph {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: bold;
+}
+
+.css-1a49ggk {
+    display: flex;
+    margin: 5px 0px 0px;
+}
+
+.css-1lwiq77 {
+    padding: 0px 15px;
+    color: rgb(37, 40, 43);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.css-1moq0v3 {
+    display: flex;
+    margin: 20px 0px 0px;
+    padding: 0px 15px;
+}
+.css-m7zl8e {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(37, 40, 43);
+}
+.css-1bvx17o {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 16px 10px 0 0;
+    padding: 8px 11px;
+    border-radius: 8px;
+    background-color: #EDF0F3;
     cursor: pointer;
+    height: 2.25rem;
+}
+
+.css-1ada81g {
+    font-weight: 700;
+    color: rgb(157, 160, 163);
+}
+
+.css-1y06947 {
+    display: flex;
+    padding: 0rem;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgb(77, 80, 83);
+}
+
+.css-1x1sa4f {
+    margin: 20px 0px 24px;
+    padding: 0px 15px;
+}
+
+.css-dogdke {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: black;
     color:white;
-    border-radius: 50%;
 }
+
 img{
-    width:70%;
-    height:90%;
+    width:60%;
+    height:60%;
+    border-style: none;
+    border-radius: 4%;
+    margin: auto;
+    display: block;
 }
-main{
-    font-family: 'Jua', sans-serif;
-    background-color: #f8f9fa;
+
+.img-container{
+    padding-top:30px;
+    align-items: center;
+    max-width: 90%;
+    margin: 4%;
 }
+
+hr{
+    color:gray;
+}
+
+.css-8flipp{
+    display: none;
+}
+
+.media-button{
+    display:none;
+}
+
+
+
+@media (min-width: 880px) {
+    .img-container{
+        display:none;
+    }
+    .GongbangLayout_gongbang_layout__j1NE2{
+        padding-top:80px;
+    }
+    .css-8flipp{
+        display: block;
+        position:relative;
+        padding-right: 0px;
+        float:right;
+    }
+    img{
+        width:60%;
+        height:90%;
+        border-style: none;
+        border-radius: 4%;
+        margin: auto;
+        display: block;
+        float:right;
+    }
+    .GongbangLayout_gongbang_area__hBLdq{
+        display: flex;
+        justify-content: space-around;
+        padding-right:50px;
+        padding-left:50px;
+    }
+    .css-1x1sa4f{
+        display:none;
+    }
+    .media-button{
+        display:block;
+    }
+  }
