@@ -1,199 +1,46 @@
-body {
+main {
+    /* font-family: 'Jua', sans-serif; */
     font-size: 156.25%;
+    /* 반응형 대응 */
+    /* 1px=6.25% | 10px=62.5% | 16px=100% */
     text-align: center;
+    padding-top: 50px;
 }
 
-main{
-    font-family: 'Gowun Dodum', sans-serif;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-top:15vh;
-    padding-bottom:5vh;
+@media (min-width:768px) {
+    main {
+        width: 768px;
+        margin: 0 auto;
+    }
 }
 
-.main-d{
-    background-image:url('/static/img/testbg_disney.jpg');
-    background-size: 100% 100%;
-}
-.main-s{
-    background-image:url('/static/img/testbg_simpson.jpg');
-    background-size: 100% 100%;
-}
-.main-h{
-    background-image:url('/static/img/testbg_halloween.jpg');
-    background-size: 100% 100%;
-}
-.container {
-    width:80vw;
-    height:80vh;
-}
-
-.question {
-    /* padding-bottom: 0px; */
-    width: 80%;
-    height: 50vh;
-    position: relative;
-    background-color: white;
-    border-style: none;
-    border-radius: 10px;
+.btn-outline-secondary {
+    align-items: center;
     margin: auto;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 3%;
-    padding-right: 3%;
-}
-
-/* @media (min-width: 668px) {
-    .container {
-        width: 90%;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 80%;
-    }
-} */
-
-
-h1 {
-    /* font-size: 2.2rem;
-    font-weight: 700; */
-}
-.h1-h {
-    font-size: 4rem;
-    font-weight: 700;
-    font-family: 'Kirang Haerang', cursive;
-    color:rgb(200, 110, 25);
-    text-shadow: 2px 2px 6px rgb(0, 0, 0);
-}
-.h1-s {
-    font-size: 6rem;
-    font-weight: 500;
-    font-family: 'Dongle', sans-serif;
-    color:rgb(255, 218, 72);
-    text-shadow: 6px -2px #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-}
-.h1-d {
-    font-size: 6rem;
-    font-weight: 500;
-    font-family: 'Nanum Pen Script', cursive;
-    color:rgb(243, 138, 206);
-    text-shadow: 2px 2px 6px rgb(0, 0, 0);
-}
-
-h2 {
-    font-size: 1.9rem;
-    font-weight: 600;
-}
-
-h3 {
+    width: 50%;
     text-align: center;
-    font-family: 'Gowun Dodum', sans-serif;
-    font-size: 1.3rem;
 }
 
-.goBack {
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    color: #000;
-    font-size: 1rem;
-    text-decoration: none;
-    font-style: normal;
+.card {
+    overflow: hidden;
+}
+
+.card-text {
+    font-size: large;
+}
+
+.col:hover {
     cursor: pointer;
 }
 
-.goBack-none {
-    display: none;
-}
-
-.question-none {
-    display: none;
-}
-
-.answer {
-    color: #aaa;
-    margin-bottom: 10px;
-    font-size: 100%;
-    /* 27.5px */
-}
-
-.answer:hover {
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-}
-
-.glowPen:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 5px;
-    position: relative;
-    left: 0;
-    bottom: 0px;
-    background: rgba(200, 125, 220, .6);
-}
-
-.glow-h > .glowPen:after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 5px;
-    position: relative;
-    left: 0;
-    bottom: 0px;
-    background: rgba(243, 139, 69, 0.6);
-}
-.glow-d > .glowPen:after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 5px;
-    position: relative;
-    left: 0;
-    bottom: 0px;
-    background:rgb(170, 239, 224);
-}
-.glow-s > .glowPen:after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 5px;
-    position: relative;
-    left: 0;
-    bottom: 0px;
-    background: rgba(255, 218, 34, 0.6);
-}
-
-.answer:hover .glowPen:after {
-    width: 100%;
-    transition: width .3s;
+.card > img:hover {
+    transition: transform 2s;
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    filter: brightness(70%);
 }
 
 
-@media (max-width: 700px) {
-    .wrapper{
-        display:none;
-    }
-    .page{
-        display: none;
-    }
-    .question{
-        height:50vh;
-    }
-}
+/* ######################################################## */
 
-@media (max-width: 500px) {
-    h2 {
-        font-size: 1.4rem;
-        font-weight: 700;
-    }
-    .answer{
-        font-size: 1.1rem;
-        font-weight:500;
-    }
-}
+
