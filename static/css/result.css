@@ -36,20 +36,14 @@ body {
     background-color: #1C3238;
 }
 
-.border {
+.border-s {
     border-radius: 10px;
     background-color: #fff;
-    border-color: pink;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding:20px;
 }
 
 .first {
     text-align: center;
-}
-
-.profile {
-    margin-top: 50px;
 }
 
 .headers {
@@ -63,4 +57,31 @@ body {
 }
 
 ul, li {margin: 3px; padding: 3px;
+}
+
+.btn-s{
+    display:flex; 
+    justify-content: space-evenly;
+    padding:20px;
+}
+
+.btns{
+    width:40%
+}
+
+.profile > img{
+    width:30vw;
+    padding-bottom: 15px;
+}
+
+
+.container {
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:100px;
+}
+
+.matching-s{
+    padding:20px;
+    font-weight:600;
 }
