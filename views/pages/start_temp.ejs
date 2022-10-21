@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../../static/css/progressBar.css">
     <link rel="stylesheet" href="../../static/css/loading.css">
 
-
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 
@@ -25,11 +24,11 @@
     <!-- Header include -->
     <%- include('../common/header.ejs') %>
 
-        <main class="main-s">
+        <main class="main-h">
 
             <!-- Title of the Test -->
             <div class="wrapper">
-                <H1>디즈니 공주 테스트</H1>
+                <H1>할로윈 코스튬 테스트</H1>
             </div>
 
             <!-- Progress Bar -->
@@ -41,22 +40,20 @@
             </div>
 
             <!-- Container -->
-            <!-- <div class="container"> -->
-
-                <div class="question">
+            <div class="question">
                 <!-- Go back -->
                 <a class="goBack goBack-none"><i class="bi bi-backspace "></i> 다시하기</a>
                 <!-- Questions using Js for loop -->
                 <!-- Only one Question appears and next one shows up when it is answered -->
-                <% for(let i=0; i<10;i++){ %>
+                <% for(let i=0; i<11;i++){ %>
                     <div class="question<%=i%> question-none">
                         <h2 id="q<%=i%>"></h2><br>
                         <div>
-                            <div class="answer">
+                            <div class="answer glow-h">
                                 <p id="answer<%=i%>0" class="glowPen answers"></p>
                             </div>
-                            <hr/>
-                            <div class="answer">
+                            <hr>
+                            <div class="answer glow-h">
                                 <p id="answer<%=i%>1" class="glowPen answers"></p>
                             </div>
                         </div>
@@ -70,13 +67,12 @@
                             <div class="dot-wave__dot"></div>
                             <div class="dot-wave__dot"></div>
                         </div>
-                <!-- </div> -->
             </div>
-
 
             <!-- JavaScript Bundle with Popper -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3 " crossorigin="anonymous "></script>
-            <script type="module" src="/static/js/test_disney.js"></script>
+            <script type="module" src="/static/js/test_halloween.js"></script>
+
 
         </main>
 
