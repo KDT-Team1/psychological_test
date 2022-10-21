@@ -17,9 +17,7 @@ if (result > 23) {
     document.querySelector('.mbti').innerHTML = 'ESFP - 연예인';
     document.querySelector('.good').innerHTML = '잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/2.png" alt="02">마지 심슨';
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/3.png" alt="02">바트 심슨';
-}
-
-if (result > 8 && result < 16) {
+} else if (result > 8 && result < 16) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Simpsons/2.png" alt="02">';
     document.querySelector('.name').innerHTML = '마지 심슨<br>(Marge Simpson)';
     document.querySelector('.first').innerHTML = '배려심이 많고 이타적이며 모든 사람들과 원만한 관계를 가진 마지 심슨!';
@@ -30,9 +28,7 @@ if (result > 8 && result < 16) {
     document.querySelector('.mbti').innerHTML = 'ISFJ - 수호자';
     document.querySelector('.good').innerHTML = '잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/1.png" alt="01">호머 심슨';
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/5.png" alt="05">크러스티 더 클라운';
-}
-
-if (result > 15 && result < 24) {
+}else if (result > 15 && result < 24) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Simpsons/3.png" alt="03">';
     document.querySelector('.name').innerHTML = '바트 심슨<br>(Bart Simpson)';
     document.querySelector('.first').innerHTML = '현실적인 목표와 계획으로 인생을 살아가는 바트 심슨!';
@@ -43,9 +39,7 @@ if (result > 15 && result < 24) {
     document.querySelector('.mbti').innerHTML = 'ESTP - 사업가';
     document.querySelector('.good').innerHTML = '잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/2.png" alt="02">마지 심슨';
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/1.png" alt="01">호머 심슨';
-}
-
-if (result < 9) {
+}else{
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Simpsons/4.png" alt="04">';
     document.querySelector('.name').innerHTML = '리사 심슨<br>(Lisa Simpson)';
     document.querySelector('.first').innerHTML = '합리적인 사고체계의 소유자 리사 심슨!';
@@ -56,7 +50,7 @@ if (result < 9) {
     document.querySelector('.mbti').innerHTML = 'INFJ - 옹호자';
     document.querySelector('.good').innerHTML = '잘 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/2.png" alt="02">마지 심슨';
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Simpsons/3.png" alt="03">바트 심슨';
-}
+}   //(result < 9)
 
 // browser back button event handler
 window.addEventListener('popstate', function(e) {
