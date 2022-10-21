@@ -9,9 +9,9 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../static/css/pTest.css">
+    <link rel="stylesheet" href="../../static/css/test.css">
     <link rel="stylesheet" href="../../static/css/header.css">
     <link rel="stylesheet" href="../../static/css/progressBar.css">
     <link rel="stylesheet" href="../../static/css/loading.css">
@@ -24,7 +24,7 @@
     <!-- Header include -->
     <%- include('../common/header.ejs') %>
 
-        <main>
+        <main class="main-h">
 
             <!-- Title of the Test -->
             <div class="wrapper">
@@ -40,7 +40,7 @@
             </div>
 
             <!-- Container -->
-            <div class="container">
+            <div class="question">
                 <!-- Go back -->
                 <a class="goBack goBack-none"><i class="bi bi-backspace "></i> 다시하기</a>
                 <!-- Questions using Js for loop -->
@@ -75,6 +75,8 @@
 
 
         </main>
+
+        <%- include('../common/footer.ejs') %>
 </body>
 
 </html>
