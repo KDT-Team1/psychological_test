@@ -1,9 +1,6 @@
 body {
-    font-family: 'Jua', sans-serif;
     font-size: 156.25%;
     text-align: center;
-    font-family: 'Gowun Dodum', sans-serif;
-
 }
 
 main{
@@ -62,8 +59,29 @@ main{
 
 
 h1 {
-    font-size: 2.2rem;
+    /* font-size: 2.2rem;
+    font-weight: 700; */
+}
+.h1-h {
+    font-size: 4rem;
     font-weight: 700;
+    font-family: 'Kirang Haerang', cursive;
+    color:rgb(200, 110, 25);
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+}
+.h1-s {
+    font-size: 6rem;
+    font-weight: 500;
+    font-family: 'Dongle', sans-serif;
+    color:rgb(255, 218, 72);
+    text-shadow: 6px -2px #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.h1-d {
+    font-size: 6rem;
+    font-weight: 500;
+    font-family: 'Dongle', sans-serif;
+    color:rgb(72, 255, 237);
+    text-shadow: 6px -2px #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 h2 {
