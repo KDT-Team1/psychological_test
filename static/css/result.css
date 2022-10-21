@@ -7,7 +7,7 @@ body {
 
 .bodys {
     font-family: 'Gowun Dodum', sans-serif;
-    background-image: url(/static/img/s.webp);
+    background-image: url(/static/img/bg_simpson.png);
     background-size: 100%;
 }
 
@@ -16,13 +16,10 @@ body {
 }
 
 .bodyh {
-    color: #1C3238;
-    background-color: rgb(136, 135, 135);
-}
-
-.btn {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-image: url(/static/img/bg_halloween.png);
+    font-family: 'East Sea Dokdo';
+    color: #1b3711;
+    background-size: 100%;
 }
 
 
@@ -31,14 +28,16 @@ body {
 }
 
 
-.btnh {
-    color: orange;
-    background-color: #1C3238;
-}
-
 .border-s {
     border-radius: 10px;
     background-color: #fff;
+    padding:20px;
+}
+
+.border-h {
+    background-color: #1b3711;
+    color: #eb6123;
+    border-radius: 10px;
     padding:20px;
 }
 
@@ -65,8 +64,20 @@ ul, li {margin: 3px; padding: 3px;
     padding:20px;
 }
 
+.btn-h{
+    display:flex; 
+    justify-content: space-evenly;
+    padding:20px;
+}
+
 .btns{
     width:40%
+}
+
+.btnh{
+    background-color: #1b3711;
+    color: #eb6123;
+    width:40%;
 }
 
 .profile > img{

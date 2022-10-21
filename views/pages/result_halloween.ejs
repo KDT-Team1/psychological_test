@@ -9,8 +9,8 @@
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon:400" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo:400" rel="stylesheet">
     <link rel="stylesheet" href="../../static/css/result.css">
     <link rel="stylesheet" href="../../static/css/header.css">
     <!-- CDN Link (icon) -->
@@ -34,34 +34,36 @@
                     <p class="name fs-1"></p>
                 </div>
                 <!-- Result Description -->
-                <div class="border text-start fs-4 mb-3">
-                    <ul class="first fs-2"></ul>
+                
+                <div class="border-h text-start fs-2 mb-3">
+                    <div class="col-12 d-flex justify-content-center"><img class= "pumpkin" src="/static/img/pumpkin.png" alt="pumpkin"></div>
+                    <ul class="first fs-1"></ul>
                     <ul class="second"></ul>
                     <ul class="third"></ul>
                     <ul class="fourth"></ul>
                     <ul class="fifth"></ul>
                 </div>
+
                 <!-- Good & Bad matching -->
-                <div class="container col-12 d-flex justify-content-center">
-                    <div class="border good col-6 fs-3 pt-2 me-3 col-lg-4"></div>
-                    <div class="border bad col-6 fs-3 pt-2 col-lg-4"></div>
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="good col-6 fs-1 pt-3 me-3 col-lg-4"></div>
+                    <div class="bad col-6 fs-1 pt-3 col-lg-4"></div>
                 </div>
             </div>
         </div>
-        <!-- Test Share -->
-        <div class="container text-center col-12">
+
+        <div class="text-center col-12">
             <br>
-            <p class="fs-3">이 테스트 공유하기</p>
             <!-- Kakao talk 공유 버튼 -->
             <a id="kakao-link-btn" href="javascript:sendLink()">
                 <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
             </a>
             <!-- url 복사 버튼 -->
-            <span class="button"><a href="#" onclick="clip(); return false;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-share" viewBox="0 0 16 16">
-      <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-      </svg></a></span>
+            <span class="button"><a href="#" onclick="clip(); return false;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#1b3711" class="bi bi-share" viewBox="0 0 16 16">
+        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+        </svg></a></span>
             <!-- 다시하기, 메인으로 가기 버튼 -->
-            <div class="d-flex row text-center">
+            <div class="btn-h">
                 <button class="btnh btn fs-4 col-6" type="button" onclick="location.href='/start_halloween'">테스트 다시하기</button></span>
                 <button class="btnh btn fs-4 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
             </div>
@@ -91,8 +93,8 @@
                             description: '할로윈 코스튬 테스트 함께해요!',
                             imageUrl: 'http://115.85.180.118:8080/static/img/main_halloween.png',
                             link: {
-                                mobileWebUrl: 'http://115.85.180.118:8080/start_disney',
-                                webUrl: 'http://115.85.180.118:8080/start_disney',
+                                mobileWebUrl: 'http://115.85.180.118:8080/start_halloween',
+                                webUrl: 'http://115.85.180.118:8080/start_halloween',
                             },
                         },
                     })
@@ -114,6 +116,7 @@
             </script>
             <script src="static/js/result_halloween.js"></script>
 
+            <%- include('../common/footer.ejs') %>
 </body>
 
 </html>

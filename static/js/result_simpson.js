@@ -22,7 +22,7 @@ if (result > 23) {
 if (result > 8 && result < 16) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Simpsons/2.png" alt="02">';
     document.querySelector('.name').innerHTML = '마지 심슨<br>(Marge Simpson)';
-    document.querySelector('.first').innerHTML = '배려심이 많고 이타적이며 모든 사람들과 원만한 관계로 인생을 살아가는 마지 심슨!';
+    document.querySelector('.first').innerHTML = '배려심이 많고 이타적이며 모든 사람들과 원만한 관계를 가진 마지 심슨!';
     document.querySelector('.second').innerHTML = '-희생정신이 강하고 내 사람들을 돌보며 그에 기쁨과 보람을 느끼는 긍정적인 성격이다.';
     document.querySelector('.third').innerHTML = '-체계적이고 계획적이어서 주변 환경이 정돈이 잘 되어있으며, 그런 성격 덕에 생산적이고 효과적으로 문제를 해결한다.';
     document.querySelector('.fourth').innerHTML = '-가끔 사람들에게 어려운 부탁을 받아도 거절을 잘 못한다.';
@@ -48,7 +48,7 @@ if (result > 15 && result < 24) {
 if (result < 9) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Simpsons/4.png" alt="04">';
     document.querySelector('.name').innerHTML = '리사 심슨<br>(Lisa Simpson)';
-    document.querySelector('.first').innerHTML = '합리적인 사고체계를 지니고 있는 리사 심슨!';
+    document.querySelector('.first').innerHTML = '합리적인 사고체계의 소유자 리사 심슨!';
     document.querySelector('.second').innerHTML = '-매우 어른스럽고 도덕적 신념도 강한데다 늘 합리적이고 이성적으로 생각하는 편이다';
     document.querySelector('.third').innerHTML = '-내향적인 성격으로 소수의 친한 사람들과만 교류하는 경향이 있다.';
     document.querySelector('.fourth').innerHTML = '-신념을 거스르는 일은 절대 참지 못해서 주변 사람들에게 예민하다는 말을 종종 듣는다.';
