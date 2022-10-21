@@ -33,7 +33,7 @@ main {
     cursor: pointer;
 }
 
-img:hover {
+.card > img:hover {
     transition: transform 2s;
     transform: scaleX(1.1);
     transform: scaleY(1.1);

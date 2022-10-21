@@ -16,9 +16,7 @@ if (result > 8 && result < 12) {
     document.querySelector('.fifth').innerHTML = '-인생은 노빠꾸. 한 번 정했으면 그 길로 가야해! 안되면? 되게한다!';
     document.querySelector('.good').innerHTML = '같이 놀면 재밌는 애<img class="col-12" src="/static/img/testResult_Halloween/2.png" alt="02">슈퍼마리오 룩';
     document.querySelector('.bad').innerHTML = '같이 놀면 재미 없는 애<img class="col-12" src="/static/img/testResult_Halloween/3.png" alt="03">스폰지밥 룩';
-}
-
-if (result > -12 && result < -6) {
+}else if (result > -12 && result < -6) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Halloween/2.png" alt="02">';
     document.querySelector('.name').innerHTML = '생존마스터 슈퍼마리오 룩';
     document.querySelector('.first').innerHTML = '지구 어디에 떨어뜨려도 생존할 수 있는 강인한 생존력의 소유자! 어딜가서 굶어 죽을 일은 없다.';
@@ -28,9 +26,7 @@ if (result > -12 && result < -6) {
     document.querySelector('.fifth').innerHTML = '-전형적인 사업가 마인드. 파티에서 놀면서도 &#39;이런 사업 괜찮겠는데?&#39; 생각 중! 솔직히 나중에 돈 마를 일은 없을 것 같다.';
     document.querySelector('.good').innerHTML = '같이 놀면 재밌는 애<img class="col-12" src="/static/img/testResult_Halloween/4.png" alt="04">해리포터 룩';
     document.querySelector('.bad').innerHTML = '같이 놀면 재미 없는 애<img class="col-12" src="/static/img/testResult_Halloween/3.png" alt="03">스폰지밥 룩';
-}
-
-if (result > -7 && result < 0) {
+} else if (result > -7 && result < 0) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Halloween/3.png" alt="03">';
     document.querySelector('.name').innerHTML = '동심의 스폰지밥 룩';
     document.querySelector('.first').innerHTML = '동심과 사랑이 가득 느껴지는 폭신폭신한 코스튬!';
@@ -40,9 +36,7 @@ if (result > -7 && result < 0) {
     document.querySelector('.fifth').innerHTML = '-오뚝이 같은 사람. 기분 나쁜 일이 있어도, 슬픈 일이 있어도 금세 특유의 긍정에너지로 이겨내고 행복해진다.';
     document.querySelector('.good').innerHTML = '같이 놀면 재밌는 애<img class="col-12" src="/static/img/testResult_Halloween/5.png" alt="05">좀비 룩';
     document.querySelector('.bad').innerHTML = '같이 놀면 재미 없는 애<img class="col-12" src="/static/img/testResult_Halloween/1.png" alt="01">할리퀸 룩';
-}
-
-if (result > 0 && result < 5) {
+} else if (result > 0 && result < 5) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Halloween/4.png" alt="04">';
     document.querySelector('.name').innerHTML = 'Nerdy 매력 해리포터 룩';
     document.querySelector('.first').innerHTML = '한번 꽂히면 빠져 나올 수가 없다는 &#39;너드&#39;의 매력을 머리부터 발끝까지 뽐낸다.';
@@ -52,9 +46,7 @@ if (result > 0 && result < 5) {
     document.querySelector('.fifth').innerHTML = '-자신의 유니크한 성격을 좋아한다. 인싸? 그런 건 되고싶지 않아. 앞으로도 이렇게 내가 좋아하는 거 덕질하면서 살고 싶다.';
     document.querySelector('.good').innerHTML = '같이 놀면 재밌는 애<img class="col-12" src="/static/img/testResult_Halloween/2.png" alt="02">슈퍼마리오 룩';
     document.querySelector('.bad').innerHTML = '같이 놀면 재미 없는 애<img class="col-12" src="/static/img/testResult_Halloween/5.png" alt="05">좀비 룩';
-}
-
-if (result > 4 && result < 9) {
+}else{
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Halloween/5.png" alt="05">';
     document.querySelector('.name').innerHTML = '나는 자연인이다 좀비 룩';
     document.querySelector('.first').innerHTML = '당신의 인생을 영화로 만든다면, 아마 그 영화의 제목은 &#39;관종의 일생&#39;일 것.. 본인은 스스로를 샤이관종이라고 생각할지도 모르지만, 당신은 진성관종이다.';
@@ -64,4 +56,4 @@ if (result > 4 && result < 9) {
     document.querySelector('.fifth').innerHTML = '-그치만 우울함에 절대 깊이 빠져있지 않는다! 금방 이겨내고 다시 아좌좌~';
     document.querySelector('.good').innerHTML = '같이 놀면 재밌는 애<img class="col-12" src="/static/img/testResult_Halloween/3.png" alt="03">스폰지밥 룩';
     document.querySelector('.bad').innerHTML = '같이 놀면 재미 없는 애<img class="col-12" src="/static/img/testResult_Halloween/4.png" alt="04">해리포터 룩';
-}
+} //(result > 4 && result < 9)

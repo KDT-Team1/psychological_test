@@ -1,13 +1,16 @@
 header{
-    font-family: 'Jua', sans-serif;
+    /* font-family: 'Jua', sans-serif; */
+    font-family: 'Silkscreen', cursive; 
     font-weight: 400;
     display: block;
 }
 
 .navbar-brand{
-    font-family: 'Jua', sans-serif;
+    /* font-family: 'Jua', sans-serif; */
+    font-family: 'Silkscreen', cursive;
     font-weight: 700;
     white-space: nowrap;
+    color:rgb(237, 148, 45);
 }
 
 .bi-clipboard-data{
@@ -18,7 +21,7 @@ header{
 }
 
 
-@media (max-width: 290px) {
+@media (max-width: 500px) {
     .header-text{
         display:none;
     }
@@ -26,4 +29,9 @@ header{
 
   a{
     text-decoration: none;
+  }
+
+
+  #search-form{
+    font-family: 'Nanum Gothic', sans-serif;
   }
