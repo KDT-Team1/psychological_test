@@ -1,0 +1,41 @@
+main {
+    font-family: 'Jua', sans-serif;
+    font-size: 156.25%;
+    /* 반응형 대응 */
+    /* 1px=6.25% | 10px=62.5% | 16px=100% */
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media (min-width:768px) {
+    main {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+
+.btn-outline-secondary {
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-text {
+    font-size: large;
+}
+
+.col:hover {
+    cursor: pointer;
+}
+
+img:hover {
+    transition: transform 2s;
+    transform: scaleX(1.1);
+    transform: scaleY(1.1);
+    filter: brightness(70%);
+}
