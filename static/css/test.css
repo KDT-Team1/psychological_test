@@ -12,6 +12,7 @@ main{
     padding-top:15vh;
     padding-bottom:5vh;
 }
+
 .main-d{
     background-image:url('/static/img/testbg_disney.jpg');
     background-size: 100% 100%;
@@ -64,7 +65,6 @@ h1 {
 }
 .h1-h {
     font-size: 4rem;
-    font-weight: 700;
     font-family: 'Kirang Haerang', cursive;
     color:rgb(200, 110, 25);
     text-shadow: 2px 2px 6px rgb(0, 0, 0);
@@ -91,7 +91,7 @@ h2 {
 
 h3 {
     text-align: center;
-    margin: 50px;
+    font-family: 'Gowun Dodum', sans-serif;
     font-size: 1.3rem;
 }
 
