@@ -26,18 +26,17 @@
 
         <div class="container">
             <div class="row justify-content-start">
-                <div class="pt-3 col-12"></div>
                 <!-- Result Image -->
                 <div class="profile col-12">
                 </div>
                 <!-- Result Name -->
-                <div class="border d-flex justify-content-between col-12 mt-2 mb-2 ">
+                <div class="border-s d-flex justify-content-between col-12 mt-2 mb-2 ">
                     <img class= "names" src="/static/img/donut.png" alt="n">
                     <p class="name fs-1"></p>
                     <img class= "names" src="/static/img/donut.png" alt="n">
                 </div>
                 <!-- Result Description -->
-                <div class="border text-start fs-4 mb-3">
+                <div class="border-s text-start fs-4 mb-3">
                     <div class="col-12 d-flex justify-content-center"><img class= "headers" src="/static/img/header-s1.png" alt="header-1"></div>
                     <ul class="first fs-2"></ul>
                     <div class="col-12 d-flex justify-content-center"><img class= "headers" src="/static/img/header-s2.png" alt="header-2"></div>
@@ -48,7 +47,7 @@
                 </div>
 
                 <!-- MBTI Info -->
-                <div class="border d-grid fs-2">
+                <div class="border-s d-grid fs-2">
                     <div class="col-12 d-flex justify-content-center"><img class= "headers" src="/static/img/header-s1.png" alt="header-1"></div>
                     캐릭터의 MBTI
                     <div class="mbti fs-2"></div>
@@ -56,14 +55,14 @@
                 </div>
 
                 <!-- Good & Bad matching -->
-                <div class="container col-12 d-flex justify-content-center">
+                <div class="col-12 d-flex justify-content-center matching-s">
                     <div class="good col-6 fs-2 pt-3 me-3 col-lg-4"></div>
                     <div class="bad col-6 fs-2 pt-3 col-lg-4"></div>
                 </div>
             </div>
         </div>
 
-        <div class="container text-center col-12">
+        <div class="text-center col-12">
             <br>
             <!-- Kakao talk 공유 버튼 -->
             <a id="kakao-link-btn" href="javascript:sendLink()">
@@ -74,9 +73,9 @@
         <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
         </svg></a></span>
             <!-- 다시하기, 메인으로 가기 버튼 -->
-            <div class="d-flex row text-center">
-                <button class="btn btn-dark fs-4 col-6" type="button" onclick="location.href='/start_simpson'">테스트 다시하기</button></span>
-                <button class="btn btn-dark fs-4 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
+            <div class="btn-s">
+                <button class="btns btn btn-dark fs-4 col-6" type="button" onclick="location.href='/start_simpson'">테스트 다시하기</button></span>
+                <button class="btns btn btn-dark fs-4 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
             </div>
 
             <!-- JS script tag below -->
@@ -127,6 +126,7 @@
             </script>
             <script src="static/js/result_simpson.js"></script>
 
+            <%- include('../common/footer.ejs') %>
 </body>
 
 </html>
