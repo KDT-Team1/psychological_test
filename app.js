@@ -55,6 +55,9 @@ app.get('/result_halloween', function(req, res) {
 app.get('/start_temp', function(req, res) {
     res.render('pages/start_temp')
 })
+app.get('/main_temp', function(req, res) {
+    res.render('pages/main_temp')
+})
 
 
 
