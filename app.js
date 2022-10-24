@@ -55,6 +55,18 @@ app.get('/mypage', function(req, res) {
     res.render('pages/mypage');
 });
 
+app.get('/allresult_simpson', function(req, res) {
+    res.render('pages/allresult_simpson');
+});
+
+app.get('/allresult_disney', function(req, res) {
+    res.render('pages/allresult_halloweeen');
+});
+
+app.get('/allresult_simpson', function(req, res) {
+    res.render('pages/allresult_simpson');
+});
+
 // 연습용 페이지
 app.get('/start_temp', function(req, res) {
     res.render('pages/start_temp')
