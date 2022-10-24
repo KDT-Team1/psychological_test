@@ -23,3 +23,10 @@ console.log('심슨');
 console.log(localStorage.getItem('result_simpson'));
 console.log('할로윈');
 console.log(localStorage.getItem('result_halloween'));
+
+// localStorage.removeItem('result_disney');
+// localStorage.removeItem('result_simpson');
+// localStorage.removeItem('result_halloween')
+
+
+// document.querySelector('.question0').classList.toggle('question-none');
