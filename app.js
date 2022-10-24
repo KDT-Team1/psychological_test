@@ -56,13 +56,9 @@ app.get('/mypage', function(req, res) {
 });
 
 // 연습용 페이지
-app.get('/start_temp', function(req, res) {
-    res.render('pages/start_temp')
+app.get('/temp', function(req, res) {
+    res.render('pages/temp')
 })
-app.get('/main_temp', function(req, res) {
-    res.render('pages/main_temp')
-})
-
 
 
 app.listen(PORT, function() {
