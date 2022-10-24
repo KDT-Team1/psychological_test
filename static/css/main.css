@@ -103,3 +103,29 @@ div {
     height: 100%;
     overflow: hidden;
 }
+
+@media (max-width:576px) {
+    .swiper-container {
+        width: 100%;
+    }
+    .ani {
+        display: none;
+    }
+    .img-box {
+        width: 107px;
+        height: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+        border: 0.2rem solid #222;
+        border-radius: 0.1rem;
+        background-color: #fff;
+    }
+    .swiper-slide {
+        width: 107px;
+        height: 100%;
+        overflow: hidden;
+    }
+    .badge {
+        display: none;
+    }
+}
