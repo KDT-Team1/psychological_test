@@ -4,14 +4,20 @@ main{
 }
 
 .title-container{
+    width:20vw;
     background-color:rgb(115, 111, 188);
+    display:flex;
+    align-items: center;
+    border-style: none;
+    border-radius: 20px 20px 0px 0px ;
 }
 .bi-clipboard-data{
     white-space: nowrap;
 }
 .lh-1{
-    padding-left: 1vw;
-    font-weight:500;
+    padding-left: 0.7vw;
+    font-size:1.1rem;
+    font-weight:600;
 }
 
 li{
@@ -83,6 +89,9 @@ img{
     strong{
         font-size:0.9rem;
     }
+    h1{
+        display: none;
+    }
   }
 
 @media (max-width: 550px) {
@@ -116,6 +125,9 @@ img{
     img{
         width:30vw;
         height:30vh;
+    }
+    .title-container{
+        display:none;
     }
   }
 
@@ -151,5 +163,8 @@ img{
     }
     .img{
         display: none;
+    }
+    .title-container{
+        display:none;
     }
   }
