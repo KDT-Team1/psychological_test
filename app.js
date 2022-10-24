@@ -51,11 +51,26 @@ app.get('/result_halloween', function(req, res) {
     res.render('pages/result_halloween');
 });
 
-// 연습용 페이지
-app.get('/main_test', function(req, res) {
-    res.render('pages/main_test')
-})
+app.get('/mypage', function(req, res) {
+    res.render('pages/mypage');
+});
 
+app.get('/allresult_simpson', function(req, res) {
+    res.render('pages/allresult_simpson');
+});
+
+app.get('/allresult_disney', function(req, res) {
+    res.render('pages/allresult_disney');
+});
+
+app.get('/allresult_halloween', function(req, res) {
+    res.render('pages/allresult_halloween');
+});
+
+// 연습용 페이지
+app.get('/temp', function(req, res) {
+    res.render('pages/temp')
+})
 
 
 app.listen(PORT, function() {

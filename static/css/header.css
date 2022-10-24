@@ -1,18 +1,17 @@
 header{
-    font-family: 'Jua', sans-serif;
-    font-weight: 400;
-    margin: 3vh;
-    /* height:3vh; */
+    font-family: 'Silkscreen', cursive; 
+    display: block;
 }
 
-/* header > .navbar{
-    height:3vh;
-} */
-
 .navbar-brand{
-    font-family: 'Jua', sans-serif;
     font-weight: 700;
     white-space: nowrap;
+    color:rgb(237, 148, 45);
+    font-size:1.3rem;
+}
+.navbar-collapse{
+    font-weight:400;
+    font-size:1rem;
 }
 
 .bi-clipboard-data{
@@ -22,8 +21,23 @@ header{
     white-space: nowrap;
 }
 
+a{
+    text-decoration: none;
+}
 
-@media (max-width: 290px) {
+.mypage{
+    color:gray;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+#search-form{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+  @media (max-width: 500px) {
     .header-text{
         display:none;
     }

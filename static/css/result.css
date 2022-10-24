@@ -1,49 +1,98 @@
 body {
-  font-family: 'Do Hyeon';
-  height: 100%;
-  display: grid;
-  place-content: center;
-  text-align: center;
- }
- .bodys {
-    background-color: #ecebc9;
-  }
-
- .bodyd {
-    background-color: #FAE4E8;
-  }
-
-  .bodyh {
-    color: #1C3238;
-    background-color: rgb(136, 135, 135);
-  }
-
-
-.btn {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
 }
- .btns {
-    background-color: #FAD820;
- }
 
- .btnd {
+.bodys {
+    font-family: 'Gowun Dodum', sans-serif;
+    background-image: url(/static/img/bg_simpson.png);
+    background-size: 100%;
+}
+
+.bodyd {
+    background-color: #FAE4E8;
+}
+
+.bodyh {
+    background-image: url(/static/img/bg_halloween.jpg);
+    background-size: 100% 100%;
+    font-family: 'Kirang Haerang';
+    color: #1b3711;
+}
+
+
+.btnd {
     background-color: pink;
-  }
+}
 
-  .btnh {
-    color: orange;
-    background-color: #1C3238;
-  }
 
-  .border {
+.border-s {
     border-radius: 10px;
     background-color: #fff;
-    border-color: pink;
-    padding-top: 20px;
-    padding-bottom: 20px;;
-  }
+    padding:20px;
+}
 
-  .first {
+.border-h {
+    background-color: #1b3711;
+    color: #eb6123;
+    border-radius: 10px;
+    padding:20px;
+}
+
+.first {
     text-align: center;
-  }
+}
+
+.headers {
+    width: 100%;
+    justify-content: center;
+}
+
+.names {
+    width:130px;
+    height: 100px;
+}
+
+ul, li {margin: 3px; padding: 3px;
+}
+
+.btn-s{
+    display:flex; 
+    justify-content: space-evenly;
+    padding:20px;
+}
+
+.btn-h{
+    display:flex; 
+    justify-content: space-evenly;
+    padding:20px;
+}
+
+.btns{
+    width:40%
+}
+
+.btnh{
+    background-color: #1b3711;
+    color: #eb6123;
+    width:40%;
+}
+
+.profile > img{
+    width:30vw;
+    padding-bottom: 15px;
+}
+
+
+.container {
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:100px;
+}
+
+.matching-s{
+    padding:20px;
+    font-weight:600;
+}

@@ -37,7 +37,7 @@ document.querySelector('.question0').classList.toggle('question-none');
 
 const answer = document.querySelectorAll('.answers');
 
-let result = 0;
+let result_halloween = 0;
 let percent = 0; // test progress meter
 let page = 1; // page progress meter
 progress(percent, page);
@@ -46,15 +46,15 @@ progress(percent, page);
 for (var i = 0; i < answer.length; i++) {
     answer[i].addEventListener('click', function() {
         if (this.id[7] == 0) {
-            result -= 1;
+            result_halloween -= 1;
         } else {
-            result += 1;
+            result_halloween += 1;
         }
 
         for (let j = 0; j < 11; j++) {
             if (j == 10) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
-                localStorage.setItem('result', `${result}`);
+                localStorage.setItem('result_halloween', `${result_halloween}`);
                 // loading page for 1 second
                 progress(100, page);
                 document.querySelector('.loading').classList.toggle('dot-wave-none');
@@ -87,7 +87,7 @@ for (var i = 0; i < answer.length; i++) {
                     page = page - 1;
                     progress(percent, page);
                     // result 값 조정
-                    result = 0;
+                    result_halloween = 0;
                 }
             });
         }
@@ -95,20 +95,25 @@ for (var i = 0; i < answer.length; i++) {
 
 }
 
-// back 버튼 
-
-// const back = document.getElementById('goBack');
-// back.addEventListener('click', function() {
-//     if (page == 1) {
-
-//     }
-// });
-
 // progress bar 진행하게 만들기
 
 function progress(percent, page) {
+    let extra = 4;
+    // 모바일 대응 progress bar width 조정
+    if (window.innerWidth < 578) {
+        extra = 6.5;
+    } else if (window.innerWidth < 768) {
+        extra = 5;
+    }
+    window.onresize = function() {
+        if (window.innerWidth < 768) {
+            extra = 5;
+        } else {
+            extra = 4;
+        }
+    }
     if (percent == 0) {
-        document.querySelector('.progress-bar').style.width = `${percent+4}%`;
+        document.querySelector('.progress-bar').style.width = `${extra}%`;
     } else {
         document.querySelector('.progress-bar').style.width = `${percent}%`;
     }

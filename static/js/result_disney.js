@@ -1,10 +1,10 @@
-if(localStorage.getItem('result')){
-    var result = localStorage.getItem('result')
+if(localStorage.getItem('result_disney')){
+    var result = localStorage.getItem('result_disney')
    }
 
 console.log(result);
 
-// document.querySelector('.getresult').innerHTML = `${result}`;
+// document.querySelector('.getresult').innerHTML = `${result_disney}`;
 
 if (result > 7 && result < 11) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/1.png" alt="01">';
@@ -17,9 +17,7 @@ if (result > 7 && result < 11) {
     document.querySelector('.mbti').innerHTML = 'ESTP - 모험을 즐기는 사업가';
     document.querySelector('.good').innerHTML = '잘 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/4.png" alt="04">라푼젤';
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/2.png" alt="02">신데렐라';
-}
-
-if (result > -11 && result < -6) {
+}else if(result > -11 && result < -6) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/2.png" alt="02">';
     document.querySelector('.name').innerHTML = '신데렐라(Cinderella)';
     document.querySelector('.first').innerHTML = '"Have courage and be kind."<br>"용기를 가지고 항상 친절해야해."';
@@ -30,9 +28,7 @@ if (result > -11 && result < -6) {
     document.querySelector('.mbti').innerHTML = 'ISFJ - 용감한 수호자';
     document.querySelector('.good').innerHTML = '잘 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/3.png" alt="03">인어공주';
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/1.png" alt="01">메리다';
-}
-
-if (result > -4 && result < 1) {
+}else if (result > -4 && result < 1) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/3.png" alt="03">';
     document.querySelector('.name').innerHTML = '인어공주(Ariel)';
     document.querySelector('.first').innerHTML = '"Who says that my dreams have to stay my dreams?"<br>"내 꿈이 그저 꿈으로 남아야 한다고 누가 그래?"';
@@ -43,10 +39,7 @@ if (result > -4 && result < 1) {
     document.querySelector('.mbti').innerHTML = 'ENFP - 재기발랄한 활동가';
     document.querySelector('.good').innerHTML = '잘 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/2.png" alt="02">신데렐라';
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/5.png" alt="05">포카혼타스';
-}
-
-
-if (result > 0 && result < 4) {
+}else if (result > 0 && result < 4) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/4.png" alt="04">';
     document.querySelector('.name').innerHTML = '라푼젤(Rapunzel)';
     document.querySelector('.first').innerHTML = '"Do what you like love what you do."<br>"네가 좋아하고 사랑하는 것을 해."';
@@ -57,9 +50,7 @@ if (result > 0 && result < 4) {
     document.querySelector('.mbti').innerHTML = 'ESFJ - 사교적 외교관';
     document.querySelector('.good').innerHTML = '잘 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/1.png" alt="01">메리다';
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/6.png" alt="06">자스민';
-}
-
-if (result > 3 && result < 6) {
+}else if (result > 3 && result < 6) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/5.png" alt="05">';
     document.querySelector('.name').innerHTML = '포카혼타스(Pocahontas)';
     document.querySelector('.first').innerHTML = 'You must choose your own path."<br>"자신만의 길을 가야해."';
@@ -70,9 +61,7 @@ if (result > 3 && result < 6) {
     document.querySelector('.mbti').innerHTML = 'ISFP - 호기심 많은 예술가';
     document.querySelector('.good').innerHTML = '잘 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/2.png" alt="02">자스민';
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/5.png" alt="05">포카혼타스';
-}
-
-if (result > 5 && result < 9) {
+}else {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/6.png" alt="06">';
     document.querySelector('.name').innerHTML = '자스민(Jasmine)';
     document.querySelector('.first').innerHTML = '"I won&#39;t go speechless."<br>"조용히 있지만은 않을거야."';
@@ -83,4 +72,4 @@ if (result > 5 && result < 9) {
     document.querySelector('.mbti').innerHTML = 'ESTP - 수완좋은 활동가형';
     document.querySelector('.good').innerHTML = '잘 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/5.png" alt="05">포카혼타스';
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/4.png" alt="04">라푼젤';
-}
+} //(result > 5 && result < 9)

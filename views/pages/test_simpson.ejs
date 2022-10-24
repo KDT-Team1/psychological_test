@@ -9,14 +9,13 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../static/css/pTest.css">
-    <link rel="stylesheet" href="../../static/css/main.css">
+    <link rel="stylesheet" href="../../static/css/test.css">
     <link rel="stylesheet" href="../../static/css/header.css">
     <link rel="stylesheet" href="../../static/css/progressBar.css">
-    <link rel="stylesheet" href="../../static/css/buttons.css">
     <link rel="stylesheet" href="../../static/css/loading.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=Gowun+Dodum&family=Jua&family=Kirang+Haerang&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
@@ -26,7 +25,7 @@
     <!-- Header include -->
     <%- include('../common/header.ejs') %>
 
-        <main>
+    <main class="main-s">
 
             <!-- Title of the Test -->
             <div class="wrapper">
@@ -42,7 +41,7 @@
             </div>
 
             <!-- Container -->
-            <div class="container">
+            <div class="question">
                 <!-- Go back -->
                 <a class="goBack goBack-none"><i class="bi bi-backspace "></i> 다시하기</a>
                 <!-- Questions using Js for loop -->
@@ -51,15 +50,15 @@
                     <div class="question<%=i%> question-none">
                         <h2 id="q<%=i%>"></h2><br>
                         <div>
-                            <div class="answer">
+                            <div class="answer glow-s">
                                 <p id="answer<%=i%>0" class="glowPen answers"></p>
                             </div>
                             <hr>
-                            <div class="answer">
+                            <div class="answer glow-s">
                                 <p id="answer<%=i%>1" class="glowPen answers"></p>
                             </div>
                             <hr>
-                            <div class="answer">
+                            <div class="answer glow-s">
                                 <p id="answer<%=i%>2" class="glowPen answers"></p>
                             </div>
                         </div>
@@ -81,6 +80,8 @@
 
 
         </main>
+        
+        <%- include('../common/footer.ejs') %>
 </body>
 
 </html>
