@@ -51,6 +51,10 @@ app.get('/result_halloween', function(req, res) {
     res.render('pages/result_halloween');
 });
 
+app.get('/mypage', function(req, res) {
+    res.render('pages/mypage');
+});
+
 // 연습용 페이지
 app.get('/start_temp', function(req, res) {
     res.render('pages/start_temp')
