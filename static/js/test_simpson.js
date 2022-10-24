@@ -41,7 +41,7 @@ document.querySelector('.question0').classList.toggle('question-none');
 
 const answer = document.querySelectorAll('.answers');
 
-let result = 0;
+let result_simpson = 0;
 let percent = 0; // test progress meter
 let page = 1; // page progress meter
 progress(percent, page);
@@ -49,13 +49,13 @@ progress(percent, page);
 
 for (var i = 0; i < answer.length; i++) {
     answer[i].addEventListener('click', function() {
-        result = result + 1 + parseInt(this.id[7]);
+        result_simpson = result_simpson + 1 + parseInt(this.id[7]);
 
         for (let j = 0; j < 8; j++) {
             if (j == 7) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
-                localStorage.setItem('result', `${result}`);
-                // console.log(result);
+                localStorage.setItem('result_simpson', `${result_simpson}`);
+                // console.log(result_simpson);
                 // loading page for 1 second
                 progress(100, page);
                 document.querySelector('.loading').classList.toggle('dot-wave-none');
@@ -91,7 +91,7 @@ for (var i = 0; i < answer.length; i++) {
             page = page - 1;
             progress(percent, page);
             // result 값 조정
-            result = 0;
+            result_simpson = 0;
         }
     });
 }
