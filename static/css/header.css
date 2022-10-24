@@ -1,16 +1,17 @@
 header{
-    /* font-family: 'Jua', sans-serif; */
     font-family: 'Silkscreen', cursive; 
-    font-weight: 400;
     display: block;
 }
 
 .navbar-brand{
-    /* font-family: 'Jua', sans-serif; */
-    font-family: 'Silkscreen', cursive;
     font-weight: 700;
     white-space: nowrap;
     color:rgb(237, 148, 45);
+    font-size:1.3rem;
+}
+.navbar-collapse{
+    font-weight:400;
+    font-size:1rem;
 }
 
 .bi-clipboard-data{
@@ -20,21 +21,19 @@ header{
     white-space: nowrap;
 }
 
-
 a{
     text-decoration: none;
 }
 
+.mypage{
+    color:gray;
+    text-decoration: none;
+}
 
 #search-form{
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-
-.navbar-collapse{
-    display: flex;
-    justify-content: left;
-}
 
 
   @media (max-width: 500px) {
