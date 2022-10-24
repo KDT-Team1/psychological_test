@@ -60,11 +60,11 @@ app.get('/allresult_simpson', function(req, res) {
 });
 
 app.get('/allresult_disney', function(req, res) {
-    res.render('pages/allresult_halloweeen');
+    res.render('pages/allresult_disney');
 });
 
-app.get('/allresult_simpson', function(req, res) {
-    res.render('pages/allresult_simpson');
+app.get('/allresult_halloween', function(req, res) {
+    res.render('pages/allresult_halloween');
 });
 
 // 연습용 페이지
