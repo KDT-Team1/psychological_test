@@ -3,38 +3,42 @@ header{
     display: block;
 }
 
-.navbar-brand{
+header .navbar-brand-h{
     font-weight: 700;
     white-space: nowrap;
     color:rgb(237, 148, 45);
     font-size:1.3rem;
 }
-.navbar-collapse{
+header .navbar-collapse-h{
     font-weight:400;
     font-size:1rem;
 }
 
-.bi-clipboard-data{
+header .bi-clipboard-data{
     white-space: nowrap;
 }
-.header-text{
+header .header-text{
     white-space: nowrap;
 }
 
-a{
+header a{
     text-decoration: none;
 }
 
-.mypage{
+header .mypage-h{
     color:gray;
     text-decoration: none;
     cursor:pointer;
+    text-align: left;
 }
 
-#search-form{
+header #search-form{
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+.header-search-form{
+    display:flex;
+}
 
 
   @media (max-width: 500px) {
