@@ -1,10 +1,10 @@
-if (localStorage.getItem('result')) {
-    var result = localStorage.getItem('result')
+if (localStorage.getItem('result_simpson')) {
+    var result = localStorage.getItem('result_simpson')
 }
 
 console.log(result);
 
-// document.querySelector('.getresult').innerHTML = `${result}`;
+// document.querySelector('.getresult').innerHTML = `${result_simpson}`;
 
 if (result > 23) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Simpsons/1.png" alt="01">';

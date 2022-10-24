@@ -15,14 +15,14 @@ main{
 
 .main-d{
     background-image:url('/static/img/testbg_disney.jpg');
-    background-size: 100% 100%;
+    /* background-size: 100%; */
 }
 .main-s{
-    background-image:url('/static/img/testbg_simpson.jpg');
+    background-image:url('/static/img/bg_simpson.png');
     background-size: 100% 100%;
 }
 .main-h{
-    background-image:url('/static/img/testbg_halloween.jpg');
+    background-image:url('/static/img/bg_halloween.jpg');
     background-size: 100% 100%;
 }
 .container {
@@ -155,7 +155,7 @@ h3 {
     position: relative;
     left: 0;
     bottom: 0px;
-    background:rgb(170, 239, 224);
+    background:pink;
 }
 .glow-s > .glowPen:after{
     content: '';

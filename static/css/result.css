@@ -16,8 +16,9 @@ body {
 }
 
 .bodyh {
-    background-image: url(/static/img/bg_halloween.png);
-    font-family: 'East Sea Dokdo';
+    background-image: url(/static/img/bg_halloween.jpg);
+    background-size: 100% 100%;
+    font-family: 'Kirang Haerang';
     color: #1b3711;
     background-size: 100%;
 }
