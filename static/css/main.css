@@ -25,14 +25,6 @@ main {
     overflow: hidden;
 }
 
-.card-text {
-    font-size: large;
-}
-
-.col:hover {
-    cursor: pointer;
-}
-
 img:hover {
     transition: transform 2s;
     /* transform: scaleX(1.1);
@@ -50,6 +42,10 @@ div {
     display: block;
 }
 
+.mySwiper {
+    background-image: linear-gradient(#fdb490 60%, #ffffff 40%);
+}
+
 .swiper-frame {
     background-image: linear-gradient(#fdb490 60%, #ffffff 40%);
     width: 100%;
@@ -62,12 +58,38 @@ div {
     height: 100%;
 }
 
+.swiper-wrapper {
+    background-image: linear-gradient(#fdb490 60%, #ffffff 40%);
+}
+
+.badge {
+    display: block;
+    width: 38px;
+    height: 100%;
+    position: relative;
+    top: -125px;
+    right: -155px;
+    z-index: 1;
+}
+
+.badge img {
+    width: 125px;
+    height: 100%;
+}
+
+.badge img:hover {
+    filter: brightness(100%);
+    cursor: default;
+}
+
 .swiper-slide {
+    background-image: linear-gradient(#fdb490 60%, #ffffff 40%)!important;
+    box-sizing: border-box;
     position: relative;
 }
 
 .img-box {
-    width: 240px;
+    width: 220px;
     height: 100%;
     overflow: hidden;
     box-sizing: border-box;
@@ -80,12 +102,4 @@ div {
     width: 240px;
     height: 100%;
     overflow: hidden;
-}
-
-.badge {
-    width: 80px;
-    height: 100%;
-    position: absolute;
-    top: -10px;
-    left: 0px;
 }
