@@ -34,7 +34,7 @@ document.querySelector('.question0').classList.toggle('question-none');
 
 const answer = document.querySelectorAll('.answers');
 
-let result = 0;
+let result_disney = 0;
 let percent = 0; // test progress meter
 let page = 1; // page progress meter
 progress(percent, page);
@@ -43,15 +43,15 @@ progress(percent, page);
 for (var i = 0; i < answer.length; i++) {
     answer[i].addEventListener('click', function() {
         if (this.id[7] == 0) {
-            result -= 1;
+            result_disney -= 1;
         } else {
-            result += 1;
+            result_disney += 1;
         }
 
         for (let j = 0; j < 10; j++) {
             if (j == 9) {
                 document.querySelector('.question' + j).classList.toggle(`question-none`);
-                localStorage.setItem('result', `${result}`);
+                localStorage.setItem('result_disney', `${result_disney}`);
                 // loading page for 1 second
                 progress(100, page);
                 document.querySelector('.loading').classList.toggle('dot-wave-none');
@@ -84,7 +84,7 @@ for (var i = 0; i < answer.length; i++) {
                     page = page - 1;
                     progress(percent, page);
                     // result 값 조정
-                    result = 0;
+                    result_disney = 0;
                 }
             });
         }
