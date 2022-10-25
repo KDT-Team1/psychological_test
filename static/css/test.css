@@ -87,22 +87,6 @@ main {
     text-shadow: 2px 2px 6px rgb(0, 0, 0);
 }
 
-.h1-s {
-    font-size: 6rem;
-    font-weight: 500;
-    font-family: 'Dongle', sans-serif;
-    color: rgb(255, 218, 72);
-    text-shadow: 6px -2px #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-}
-
-.h1-d {
-    font-size: 6rem;
-    font-weight: 500;
-    font-family: 'Nanum Pen Script', cursive;
-    color: rgb(243, 138, 206);
-    text-shadow: 2px 2px 6px rgb(0, 0, 0);
-}
-
 h2 {
     font-size: 1.9rem;
     font-weight: 600;
