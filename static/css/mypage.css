@@ -52,6 +52,10 @@ li {
 .btns-s {
     display: none;
 }
+.btns-m {
+    display: none;
+}
+
 
 .d-block {
     padding-top: 1vh;
@@ -59,20 +63,21 @@ li {
 
 img {
     width: 24vw;
-    height: 20vh;
+    height: 24vh;
 }
 
 .d-flex1 {
     display: flex;
-    padding-left: 2vw;
+    padding-left: 1vw;
     padding-right: 1vw;
+    padding-bottom:2vh;
+    padding-top:2vh;
     align-items: center;
+    justify-content: space-between;
 }
 
 .d-flex2 {
     display: flex;
-    padding-left: 2vw;
-    padding-right: 1vw;
     align-items: center;
 }
 
@@ -90,6 +95,15 @@ img {
 
 .deleteAll a{
     cursor: pointer;
+}
+
+
+.left {
+    display: flex;
+    align-items: center;
+}
+.texts{
+    padding-left: 2vw;
 }
 
 
@@ -116,10 +130,10 @@ img {
         flex-direction: column;
     }
     .btn-myresult {
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
     .btn-allresult {
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
     strong {
         font-size: 1.2rem;
@@ -127,25 +141,38 @@ img {
     .btns-l {
         display: none;
     }
-    .btns-s {
+    .btns-m {
         display: flex;
+        flex-direction: row;
     }
-    .btns-s>.btn-myresult {
-        font-size: 1.1rem;
+    .btns-m>.btn-myresult {
+        font-size: 0.8rem;
+        margin-right:1vw;
+        width: 25vw;
     }
-    .btns-s>.btn-allresult {
-        font-size: 1.1rem;
-    }
+    .btns-m>.btn-allresult {
+        font-size: 0.8rem;
+        margin-left:1vw;
+        width: 25vw;
+    } 
     img {
-        width: 30vw;
+        width: 50vw;
         height: 30vh;
     }
     .title-container {
         display: none;
     }
+    .texts{
+        display: none;
+    }
+    .d-flex1{
+        /* display: flex; */
+        flex-direction: column;
+        padding-bottom: 0;
+    }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 310px) {
     .copyright {
         display: none;
     }
@@ -159,24 +186,35 @@ img {
         font-size: 0.6rem;
     }
     strong {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .btns-l {
         display: none;
+    }
+    .btns-m{
+        display:none;
     }
     .btns-s {
         display: flex;
     }
     .btns-s>.btn-myresult {
         font-size: 1.1rem;
+        margin-right: 1vw
     }
     .btns-s>.btn-allresult {
         font-size: 1.1rem;
+        margin-left: 1vw
     }
     .img {
         display: none;
     }
     .title-container {
         display: none;
+    }
+    .texts{
+        display: flex;
+    }
+    .copyright{
+        display:none;
     }
 }

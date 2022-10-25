@@ -1,52 +1,220 @@
-main{
-    padding-top:80px;
-}
-body{
-    height: 100%;
+main {
+    padding-top: 80px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
-.body-d{
-    background-image:url('/static/img/bg_disney.jpg');
-    background-size: 100% 100%;
-    font-family: 'Gowun Dodum', sans-serif;
+@media (min-width:720px) {
+    .container {
+        width: 720px;
+        margin: 0 auto;
+    }
 }
 
-.card-image{
-    
-}
-img{
-    width:80%;
-    height:80%;
-}
-
-.col{
-    height:300px;
-    width:300px;
-}
-
-.card{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+.title-container {
+    width: 20vw;
+    background-color: rgb(115, 111, 188);
+    display: flex;
     align-items: center;
-    padding:2vw;
+    border-style: none;
+    border-radius: 20px 20px 0px 0px;
 }
 
-/* .col{
-    position: relative;
-    width: 50vw;
+.bi-clipboard-data {
+    white-space: nowrap;
 }
 
-.col:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
+.lh-1 {
+    padding-left: 0.7vw;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-.card {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-} */
+li {
+    text-decoration: none;
+}
+
+.btn-myresult {
+    color: white;
+    background-color: rgb(232, 176, 96);
+}
+
+.btn-allresult {
+    color: white;
+    background-color: rgb(237, 148, 45);
+}
+
+.btns-l {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.btns-s {
+    display: none;
+}
+.btns-m {
+    display: none;
+}
+
+
+.d-block {
+    padding-top: 1vh;
+}
+
+img {
+    width: 24vw;
+    height: 24vh;
+}
+
+.d-flex1 {
+    display: flex;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom:2vh;
+    padding-top:2vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-flex2 {
+    display: flex;
+    align-items: center;
+}
+
+.test-div {
+    justify-content: space-between;
+}
+
+.copyright {
+    padding-top: 1vh;
+}
+
+.display-none {
+    display: none;
+}
+
+.deleteAll a{
+    cursor: pointer;
+}
+
+
+.left {
+    display: flex;
+    align-items: center;
+}
+.texts{
+    padding-left: 2vw;
+}
+
+
+@media (max-width: 800px) {
+    .btns-l>.btn-myresult {
+        font-size: 0.9rem;
+    }
+    .btns-l>.btn-allresult {
+        font-size: 0.9rem;
+    }
+    strong {
+        font-size: 0.9rem;
+    }
+    h1 {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .copyright {
+        display: none;
+    }
+    .test-div {
+        flex-direction: column;
+    }
+    .btn-myresult {
+        font-size: 1rem;
+    }
+    .btn-allresult {
+        font-size: 1rem;
+    }
+    strong {
+        font-size: 1.2rem;
+    }
+    .btns-l {
+        display: none;
+    }
+    .btns-m {
+        display: flex;
+        flex-direction: row;
+    }
+    .btns-m>.btn-myresult {
+        font-size: 0.8rem;
+        margin-right:1vw;
+        width: 25vw;
+    }
+    .btns-m>.btn-allresult {
+        font-size: 0.8rem;
+        margin-left:1vw;
+        width: 25vw;
+    } 
+    img {
+        width: 50vw;
+        height: 30vh;
+    }
+    .title-container {
+        display: none;
+    }
+    .texts{
+        display: none;
+    }
+    .d-flex1{
+        /* display: flex; */
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 310px) {
+    .copyright {
+        display: none;
+    }
+    .test-div {
+        flex-direction: column;
+    }
+    .btn-myresult {
+        font-size: 0.6rem;
+    }
+    .btn-allresult {
+        font-size: 0.6rem;
+    }
+    strong {
+        font-size: 0.9rem;
+    }
+    .btns-l {
+        display: none;
+    }
+    .btns-m{
+        display:none;
+    }
+    .btns-s {
+        display: flex;
+    }
+    .btns-s>.btn-myresult {
+        font-size: 1.1rem;
+        margin-right: 1vw
+    }
+    .btns-s>.btn-allresult {
+        font-size: 1.1rem;
+        margin-left: 1vw
+    }
+    .img {
+        display: none;
+    }
+    .title-container {
+        display: none;
+    }
+    .texts{
+        display: flex;
+    }
+    .copyright{
+        display:none;
+    }
+}
