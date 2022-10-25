@@ -92,9 +92,10 @@
     // .tiger click event : change the contents of the textCon
     document.querySelector('.tiger').addEventListener('click', function() {
         if (document.querySelector('.tiger').classList.contains('tiger-clicked')) {
-            document.querySelector('.testCon').classList.toggle('tiger-clicked');
+            document.querySelector('.tiger').classList.toggle('tiger-clicked');
             document.querySelector('.testCon').innerHTML = 'Grrrr....';
-        } else {
+        } else if (!document.querySelector('.tiger').classList.contains('tiger-clicked')) {
+            document.querySelector('.tiger').classList.toggle('tiger-clicked');
             document.querySelector('.testCon').innerHTML = 'Rwar!';
         }
     });
