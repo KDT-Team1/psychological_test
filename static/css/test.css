@@ -81,6 +81,12 @@ main {
     text-shadow: 2px 2px 6px rgb(0, 0, 0);
 }
 
+.page-h {
+    font-family: 'Kirang Haerang', cursive;
+    color: rgb(200, 110, 25);
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+}
+
 .h1-s {
     font-size: 6rem;
     font-weight: 500;
