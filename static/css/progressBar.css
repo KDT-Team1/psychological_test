@@ -8,6 +8,21 @@
     font-size: 75%;
 }
 
+.progress-bar-s {
+    background-color: rgb(239, 40, 133);
+    font-size: 75%;
+}
+
+.progress-bar-d {
+    background-color: rgb(226, 194, 242);
+    font-size: 75%;
+}
+
+.progress-bar-h {
+    background-color: rgb(250, 90, 1);
+    font-size: 75%;
+}
+
 .page {
     margin-top: 5px;
     margin-right: 100px;
