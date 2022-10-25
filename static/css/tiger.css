@@ -101,7 +101,7 @@
     }
     .testCon {
         transform: scale(0.8);
-        right: 4vh;
+        right: 0vh;
         bottom: 33vh;
     }
 }

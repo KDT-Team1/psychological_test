@@ -27,23 +27,3 @@ body {
     -webkit-align-items: center;
     align-items: center;
 }
-
-
-/* 튀어오르는 pop up animation 효과 */
-
-@keyframes pop {
-    0% {
-        transform: scale(0);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.swiper-slide-pop {
-    animation-name: pop;
-    animation-duration: 1.5s;
-}
