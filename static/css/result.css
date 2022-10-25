@@ -43,11 +43,16 @@ body {
 
 .first {
     text-align: center;
+    font-weight: 600;
 }
 
 .headers {
     width: 100%;
     justify-content: center;
+}
+
+.name {
+    font-weight: 800;
 }
 
 .names {
@@ -56,6 +61,10 @@ body {
 }
 
 ul, li {margin: 3px; padding: 3px;
+}
+
+.mbti-s {
+    font-weight: 600;
 }
 
 .btn-s{
@@ -133,8 +142,3 @@ ul, li {margin: 3px; padding: 3px;
         font-size:0.8rem;
     }
 }
-
-.allresult_first {
-    color:#eb6123;
-}
-
