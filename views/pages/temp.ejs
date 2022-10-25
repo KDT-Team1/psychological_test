@@ -5,173 +5,164 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>마이페이지</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../../static/css/temp.css">
     <link rel="stylesheet" href="../../static/css/header.css">
     <!-- CDN Link (icon) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <!-- font -->
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=Gowun+Dodum&family=Jua&family=Kirang+Haerang&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<style>
-    img{
-        width:20vw;
-        height:20vh;
-    }
-    .name{
-        padding-top:2vh;
-        font-size:1.5rem;
-    }
-    .col-12{
-        padding:0px;
-        padding-top:2vh;
-        padding-bottom:2vh;
-        padding-left:1vw;
-        padding-right:1vw;
-    }
 
-</style>
-
-<body class="body-d">
-
+<body>
     <%- include('../common/header.ejs') %>
 
-                    <!-- 
-                    <img src="/static/img/testResult_Disney/1.png" alt="1">
-                    <div class="name">메리다(Merida)</div>
-                    <img src="/static/img/testResult_Disney/2.png" alt="2">
-                    <div class="name">신데렐라(Cinderella)</div>
-                    <img src="/static/img/testResult_Disney/3.png" alt="3">
-                    <div class="name">인어공주(Ariel)</div>
-                    <img src="/static/img/testResult_Disney/4.png" alt="4">
-                    <div class="name">라푼젤(Rapunzel)</div>
-                    <img src="/static/img/testResult_Disney/5.png" alt="5">
-                    <div class="name">포카혼타스(Pocahontas)</div>
-                    <img src="/static/img/testResult_Disney/6.png" alt="6">
-                    <div class="name">자스민(Jasmine)</div>
-                     -->
+        <main class="container">
 
-                    <!-- 다시하기, 메인으로 가기 버튼 -->
-                    <!-- <div class="btn-h">
-                        <button class="btnd btn btn-dark fs-4 col-6" type="button" onclick="location.href='/mypage'">뒤로 가기</button></span>
-                    </div> -->
-
-        <main>
-
-            <div class="container">
-
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-
-                  <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-image"><img src="/static/img/testResult_Disney/1.png" alt="1"></div>
-                        <div class="card-text">메리다(Merida)</div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-muted">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-muted">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-muted">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-muted">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-muted">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col">
-                    <div class="card shadow-sm">
-                      <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="btn-group">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                          </div>
-                          <small class="text-muted">9 mins</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+            <div class="title-container p-3 my-3 text-white bg-purple shadow-sm">
+                <i class="bi bi-circle-square"></i>
+                <div class="lh-1">
+                    <h1 class="h1-title h6 mb-0 text-white lh-1"> 결과 모아보기</h1>
                 </div>
+            </div>
+
+            <div class="my-3 p-3 bg-body rounded shadow-sm">
+                <h6 class="border-bottom pb-2 mb-0">내가 했던 테스트</h6>
+
+
+                <div class="simpson-test d-flex1 text-muted border-bottom">
+                  <div class="left">  
+                    <div class="img"><img class="bd-placeholder-img flex-shrink-0 me-2 rounded col-12" src="/static/img/main_simpson.png" alt="card_simpson"></div>
+                    <div class="texts mb-0 small lh-sm">
+                      <strong class="text-gray-dark">심슨 테스트</strong>
+                      <div class="copyright">@simpson-kdt</div>
+                    </div>
+                  </div>
+                  <div class="right d-flex2 test-div">
+                      <div class="btns-l">
+                          <div onclick="location.href='/result_simpson'" class="btn btn-myresult col mt-2 mb-2">나의 테스트 결과</div>
+                          <div onclick="location.href='/allresult_simpson'" class="btn btn-allresult col mt-2 mb-2">모든 유형 보러가기</div>
+                      </div>
+                      <div class="btns-m">
+                        <div onclick="location.href='/result_simpson'" class="btn btn-myresult col mt-3 mb-3">내 결과</div>
+                        <div onclick="location.href='/allresult_simpson'" class="btn btn-allresult col mt-3 mb-3">모든 유형</div>
+                      </div>
+                      <div class="btns-s">
+                          <div onclick="location.href='/result_simpson'" class="btn btn-myresult col mt-3 mb-3">MY</div>
+                          <div onclick="location.href='/allresult_simpson'" class="btn btn-allresult col mt-3 mb-3">ALL</div>
+                      </div>
+                  </div>
+                </div>
+
+
+                <div class="disney-test d-flex1 text-muted border-bottom">
+                  <div class="left">  
+                    <div class="img"><img class="bd-placeholder-img flex-shrink-0 me-2 rounded col-12" src="/static/img/main_disney.png" alt="card_disney"></div>
+                    <div class="texts mb-0 small lh-sm">
+                      <strong class="text-gray-dark">디즈니 공주 테스트</strong>
+                      <div class="copyright">@disney-kdt</div>
+                    </div>
+                  </div>
+                  <div class="right d-flex2 test-div">
+                      <div class="btns-l">
+                          <div onclick="location.href='/result_disney'" class="btn btn-myresult col mt-2 mb-2">나의 테스트 결과</div>
+                          <div onclick="location.href='/allresult_disney'" class="btn btn-allresult col mt-2 mb-2">모든 유형 보러가기</div>
+                      </div>
+                      <div class="btns-m">
+                        <div onclick="location.href='/result_disney'" class="btn btn-myresult col mt-3 mb-3">내 결과</div>
+                        <div onclick="location.href='/allresult_disney'" class="btn btn-allresult col mt-3 mb-3">모든 유형</div>
+                      </div>
+                      <div class="btns-s">
+                          <div onclick="location.href='/result_disney'" class="btn btn-myresult col mt-3 mb-3">MY</div>
+                          <div onclick="location.href='/allresult_disney'" class="btn btn-allresult col mt-3 mb-3">ALL</div>
+                      </div>
+                  </div>
+                </div>
+
+
+                <div class="halloween-test d-flex1 text-muted border-bottom">
+                  <div class="left">  
+                    <div class="img"><img class="bd-placeholder-img flex-shrink-0 me-2 rounded col-12" src="/static/img/main_halloween.png" alt="card_halloween"></div>
+                    <div class="texts mb-0 small lh-sm">
+                      <strong class="text-gray-dark">할로윈 테스트</strong>
+                      <div class="copyright">@halloween-kdt</div>
+                    </div>
+                  </div>
+                  <div class="right d-flex2 test-div">
+                      <div class="btns-l">
+                          <div onclick="location.href='/result_halloween'" class="btn btn-myresult col mt-2 mb-2">나의 테스트 결과</div>
+                          <div onclick="location.href='/allresult_halloween'" class="btn btn-allresult col mt-2 mb-2">모든 유형 보러가기</div>
+                      </div>
+                      <div class="btns-m">
+                        <div onclick="location.href='/result_halloween'" class="btn btn-myresult col mt-3 mb-3">내 결과</div>
+                        <div onclick="location.href='/allresult_halloween'" class="btn btn-allresult col mt-3 mb-3">모든 유형</div>
+                      </div>
+                      <div class="btns-s">
+                          <div onclick="location.href='/result_halloween'" class="btn btn-myresult col mt-3 mb-3">MY</div>
+                          <div onclick="location.href='/allresult_halloween'" class="btn btn-allresult col mt-3 mb-3">ALL</div>
+                      </div>
+                  </div>
+                </div>
+
+                <!-- <div class="disney-test d-flex1 text-muted pt-3 pb-3 border-bottom">
+                    <div class="img"><img class="bd-placeholder-img flex-shrink-0 me-2 rounded col-12" src="/static/img/main_disney.png" class="card-img-top" alt="card_simpson"></div>
+                    <div class="mb-0 small lh-sm w-70">
+                        <div class="d-flex2 test-div">
+                            <div class="texts">
+                                <strong class="text-gray-dark">디즈니 공주 테스트</strong>
+                                <div class="copyright">@disney-kdt</div>
+                            </div>
+                            <div class="btns-l">
+                                <div onclick="location.href='/result_disney'" class="btn btn-myresult col mt-3 mb-3">나의 테스트 결과</div>
+                                <div onclick="location.href='/allresult_disney'" class="btn btn-allresult col mb-3">모든 유형 보러가기</div>
+                            </div>
+                            <div class="btns-s">
+                                <div onclick="location.href='/result_disney'" class="btn btn-myresult col mt-3 mb-3">MY</div>
+                                <div onclick="location.href='/allresult_disney'" class="btn btn-allresult col mt-3 mb-3">ALL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="halloween-test d-flex1 text-muted pt-3 pb-3 border-bottom">
+                    <div class="img"><img class="bd-placeholder-img flex-shrink-0 me-2 rounded col-12" src="/static/img/main_halloween.png" class="card-img-top" alt="card_simpson"></div>
+                    <div class="mb-0 small lh-sm w-70">
+                        <div class="d-flex2 test-div">
+                            <div class="texts">
+                                <strong class="text-gray-dark">할로윈 테스트</strong>
+                                <div class="copyright">@halloween-kdt</div>
+                            </div>
+                            <div class="btns-l">
+                                <div onclick="location.href='/result_halloween'" class="btn btn-myresult col mt-3 mb-3">나의 테스트 결과</div>
+                                <div onclick="location.href='/allresult_halloween'" class="btn btn-allresult col mb-3">모든 유형 보러가기</div>
+                            </div>
+                            <div class="btns-s">
+                                <div onclick="location.href='/result_halloween'" class="btn btn-myresult mt-3 mb-3">MY</div>
+                                <div onclick="location.href='/allresult_halloween'" class="btn btn-allresult mt-3 mb-3">ALL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="none-test d-flex1 text-muted pt-3 pb-3 border-bottom display-none">
+                  <div>테스트 결과가 없습니다.</div>
               </div>
+
+
+              <small class="d-block text-end mt-3 deleteAll">
+                <a onclick="deleteAll()">모두 지우기</a>
+              </small>
+
+            </div>
         </main>
 
-
-
-
-    <%- include('../common/footer.ejs') %>
+        <%- include('../common/footer.ejs') %>
 </body>
 
+
 </html>
+
+<script src="static/js/mypage.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
