@@ -72,7 +72,6 @@ main{
 .back{
     display:flex; 
     justify-content: space-evenly;
-    padding:20px;
 }
 /* ########################################################### */
 .container {
@@ -174,8 +173,8 @@ ul,li {margin:3px; padding:3px;}
         padding:10px;
     }
     .btnd{
-        width:30%;
-        font-size:0.6em;
+        /* width:40vw; */
+        font-size:0.1em;
     }
     .matching-d{
         padding:10px;
