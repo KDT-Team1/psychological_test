@@ -16,3 +16,11 @@ if(localStorage.getItem('result_halloween') || localStorage.getItem('result_simp
 // localStorage.removeItem('result_disney');
 // localStorage.removeItem('result_simpson');
 // localStorage.removeItem('result_halloween')
+
+
+function deleteAll(){
+    localStorage.removeItem('result_disney');
+    localStorage.removeItem('result_simpson');
+    localStorage.removeItem('result_halloween');
+    location.reload();
+}
