@@ -13,10 +13,6 @@ if(localStorage.getItem('result_halloween') || localStorage.getItem('result_simp
     document.querySelector('.none-test').classList.toggle('display-none');
 }
 
-// localStorage.removeItem('result_disney');
-// localStorage.removeItem('result_simpson');
-// localStorage.removeItem('result_halloween')
-
 
 function deleteAll(){
     localStorage.removeItem('result_disney');
