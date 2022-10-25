@@ -22,16 +22,19 @@
 .title-d {
     font-family: 'disney';
     text-shadow: 0 0 10px #fff;
+    font-size: 3.7rem;
 }
 
 .page-d {
     font-family: 'disney';
     text-shadow: 0 0 10px #fff;
+    font-size: 95%;
 }
 
 .title-s {
     font-family: 'simpson-char';
     text-shadow: 0 0 10px #fff;
+    font-size: 3.7rem;
 }
 
 .title-s-sp {
