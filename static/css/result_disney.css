@@ -12,7 +12,7 @@ body {
 
 .body-d {
     /* background-color: #ecebc9; */
-    background-image:url('/static/img/bg_disney.jpg');
+    background-image:url('/static/img/bg_disney.png');
     background-size: 100% 100%;
     font-family: 'Gowun Dodum', sans-serif;
 }
