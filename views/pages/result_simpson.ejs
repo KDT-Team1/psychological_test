@@ -22,9 +22,10 @@
 </head>
 
 <body class="body-s">
-
+  
     <%- include('../common/header.ejs') %>
 
+    <main class="result-s">
         <div class="container">
             <div class="row justify-content-center">
                 <!-- Result Image -->
@@ -33,14 +34,14 @@
                 <!-- Result Name -->
                 <div class="border-s justify-content-center col-12 mt-2 mb-2">
                     <div class="col-12 d-flex justify-content-center"><img class="headers" src="/static/img/header-s1.png" alt="header-1"></div>
-                    <p class="name fs-1 mt-2"></p>
+                    <p class="name mt-2"></p>
                     <div class="col-12 d-flex justify-content-center"><img class="headers" src="/static/img/header-s2.png" alt="header-2"></div>
 
                 </div>
                 <!-- Result Description -->
-                <div class="border-s text-start fs-4 mt-2 mb-3">
+                <div class="border-s text-start mt-2 mb-3">
                     <div class="col-12 d-flex justify-content-center"><img class="headers" src="/static/img/header-s1.png" alt="header-1"></div>
-                    <ul class="first fs-2"></ul>
+                    <ul class="first"></ul>
                     <div class="col-12 d-flex justify-content-center"><img class="headers" src="/static/img/header-s2.png" alt="header-2"></div>
                     <ul class="second mt-2"></ul>
                     <ul class="third"></ul>
@@ -49,43 +50,51 @@
                 </div>
 
                 <!-- MBTI Info -->
-                <div class="border-s d-grid fs-2 mbti-s">
+                <div class="border-s d-grid mbti-s">
                     <div class=" col-12 d-flex justify-content-center"><img class="headers" src="/static/img/header-s1.png" alt="header-1"></div>
                     MBTI
-                    <div class="mbti fs-2"></div>
+                    <div class="mbti"></div>
                     <div class="col-12 d-flex justify-content-center"><img class="headers" src="/static/img/header-s2.png" alt="header-2"></div>
                 </div>
 
                 <!-- Good & Bad matching -->
                 <div class="col-12 d-flex justify-content-center matching-s">
-                    <div class="good col-6 fs-2 pt-3 me-3 col-lg-4"></div>
-                    <div class="bad col-6 fs-2 pt-3 col-lg-4"></div>
+                    <div class="good col-6 me-3 col-lg-4"></div>
+                    <div class="bad col-6 col-lg-4"></div>
                 </div>
             </div>
         </div>
 
         <div class="text-center col-12">
-            <br>
-            <!-- Kakao talk 공유 버튼 -->
-            <a id="kakao-link-btn" href="javascript:sendLink()">
-                <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png">
-            </a>
-            <!-- url 복사 버튼 -->
-            <span class="button"><a href="#" onclick="clip(); return false;"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="dark" class="bi bi-share" viewBox="0 0 16 16">
-            <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z">
-            </svg></a></span>
+        <!-- Test Share -->
+        <div class="share col-12">
+          <!-- Kakao talk 공유 버튼 -->
+          <a id="kakao-link-btn" href="javascript:sendLink()">
+              <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+          </a>
+          <!-- url 복사 버튼 -->
+          <span class="button">
+              <a href="#" onclick="clip(); return false;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="dark" class="bi bi-share" viewBox="0 0 16 16">
+                      <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                  </svg>
+              </a>
+          </span>
+      </div>
 
             <!-- 다시하기, 메인으로 가기 버튼 -->
             <!-- 500px보다 클때 -->
             <div class="btn-s">
-                <button class="btns btn btn-dark fs-4 col-6" type="button" onclick="location.href='/start_simpson'">테스트 다시하기</button></span>
-                <button class="btns btn btn-dark fs-4 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
+                <button class="btns btn btn-dark col-6" type="button" onclick="location.href='/start_simpson'">테스트 다시하기</button></span>
+                <button class="btns btn btn-dark col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
             </div>
             <!-- 500px보다 작을때 -->
             <div class="btn-ss">
-                <button class="btns btn btn-dark fs-4 col-6" type="button" onclick="location.href='/start_simpson'">다시하기</button></span>
-                <button class="btns btn btn-dark fs-4 col-6" type="button" onclick="location.href='/'">메인으로</button></span>
+                <button class="btns btn btn-dark col-6" type="button" onclick="location.href='/start_simpson'">다시하기</button></span>
+                <button class="btns btn btn-dark col-6" type="button" onclick="location.href='/'">메인으로</button></span>
             </div>
+
+          </main>
 
             <!-- JS script tag below -->
             <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>

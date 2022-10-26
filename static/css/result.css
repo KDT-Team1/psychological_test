@@ -25,6 +25,10 @@ main{
     padding-right: 10vw;
 }
 
+.allresult-s{
+    padding-top:20px;
+}
+
 .row{
     margin:10px;
 }
@@ -105,6 +109,10 @@ ul, li {
     padding-top: 100px;
 }
 
+.result-s .container{
+    padding-top:20px;
+}
+
 .matching-s{
     padding: 20px;
     font-weight: 600;
@@ -117,6 +125,73 @@ ul, li {
     display: none;
 }
 
+.allresult-s img{
+    width:80%;
+}
+
+.allresult-h img{
+    width:80%;
+}
+
+.allresult-s{
+    padding-top:40px;
+}
+
+.allresult-s .name{
+    font-size:1.3em;
+    padding-top:1vh;
+}
+
+.allresult-s .back{
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.allresult-s .btn{
+    font-size:1.4em;
+}
+
+.result-s .btns{
+    font-size:1.1em;
+}
+
+.result-s .good{
+    font-size:1.4em;
+    padding-top : 1vh;
+    padding-bottom:1vh;
+}
+
+.result-s .bad{
+    font-size:1.4em;
+    padding-top : 1vh;
+    padding-bottom:1vh;
+}
+
+
+
+.result-s .mbti-s{
+    font-size: 1.7em;
+}
+.result-s .name{
+    font-size: 1.7em;
+}
+.result-s .text-start{
+    font-size: 1.4em;
+}
+.result-s .first{
+    font-size: 1.7rem;
+}
+
+.share{
+    padding-bottom:2vh
+}
+
+.share a{
+    padding-right: 2vw;
+}
+.share span{
+    padding-left: 2vw;
+}
 
 @media (max-width: 500px) {
     .btn-s{
@@ -145,10 +220,93 @@ ul, li {
         width: 30%;
         font-size: 0.8rem;
     }
+    .allresult-s .btn{
+        font-size:1em;
+        width:30vw;
+    }
+    .result-s .btns{
+        font-size:1.1em;
+    }
 }
 
-.back{
-    display: flex; 
-    justify-content: space-evenly;
-    padding: 20px;
+@media (max-width: 450px) {
+    .result-s .good{
+        font-size:1em;
+    }
+    
+    .result-s .bad{
+        font-size:1em;
+    }
+    .result-s .btns{
+        width:30vw;
+        font-size:0.8em;
+    }
+    .result-s .mbti-s{
+        font-size: 1.2em;
+    }
+    .result-s .name{
+        font-size: 1.2em;
+    }
+    .result-s .text-start{
+        font-size: 1em;
+    }
+    .result-s .first{
+        font-size: 1.2rem;
+    }
+    
+    
+}
+
+
+
+@media (max-width: 400px) {
+    .allresult-s .btn{
+        width:50vw;
+        font-size:0.8em;
+    }
+    .allresult-s .name{
+        font-size:1em;
+    }
+}
+
+
+
+@media (max-width: 370px) {
+    .result-s .btns{
+        font-size:0.8em;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .allresult-s .name{
+        font-size:0.7em;
+    }
+    .result-s .good{
+        font-size:0.7em;
+    }
+    
+    .result-s .bad{
+        font-size:0.7em;
+    }
+    .result-s .mbti-s{
+        font-size: 1em;
+    }
+    .result-s .name{
+        font-size: 1em;
+    }
+    .result-s .text-start{
+        font-size: 0.8em;
+    }
+    .result-s .first{
+        font-size: 1rem;
+    }
+    .result-s .share img{
+        width:15vw;
+    }
+    .result-s .share svg{
+        width:15vw;
+    }
+    
 }

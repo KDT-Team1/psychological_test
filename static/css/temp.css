@@ -1,235 +1,312 @@
 body {
-    font-size: 156.25%;
+    height: 100%;
+    display: grid;
+    place-content: center;
     text-align: center;
 }
 
-main {
+.body-s {
     font-family: 'Gowun Dodum', sans-serif;
-    /* height: 90vh; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 15vh;
-    padding-bottom: 5vh;
+    background-image: url(/static/img/bg_simpson.png);
+    background-size: 100%;
 }
 
-.main-d {
-    background-image: url('/static/img/testbg_disney.jpg');
-    /* background-size: 100%; */
-}
-
-.main-s {
-    background-image: url('/static/img/bg_simpson.png');
-    /* background-size: 100%; */
-}
-
-.main-h {
-    background-image: url('/static/img/bg_halloween.png');
+.body-h {
+    font-family: 'Kirang Haerang';
+    background-image: url(/static/img/bg_halloween.png);
     background-size: 100% 100%;
+    color: #1b3711;
 }
 
-.container {
-    width: 80vw;
-    height: 80vh;
+main{
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
-.question {
-    /* padding-bottom: 0px; */
-    width: 80%;
-    height: 50vh;
-    position: relative;
-    background-color: white;
-    border-style: none;
+.allresult-s{
+    padding-top:20px;
+}
+
+.row{
+    margin:10px;
+}
+
+.border-s {
     border-radius: 10px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 4%;
-    padding-bottom: 2%;
+    background-color: #fff;
+    padding:20px;
 }
 
-.question-block {
-    padding-bottom: 5vh;
-    display: block;
+.border-h {
+    background-color: #1b3711;
+    color: #eb6123;
+    border-radius: 10px;
+    padding:20px;
 }
 
-
-/* @media (min-width: 668px) {
-    .container {
-        width: 90%;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 80%;
-    }
-} */
-
-
-/* h1 { 
-    font-size: 2.2rem;
-    font-weight: 700;
-} */
-
-.h1-h {
-    font-size: 4rem;
-    font-family: 'Kirang Haerang', cursive;
-    color: rgb(200, 110, 25);
-    text-shadow: 2px 2px 6px rgb(0, 0, 0);
-}
-
-.page-h {
-    font-family: 'Kirang Haerang', cursive;
-    color: rgb(200, 110, 25);
-    text-shadow: 2px 2px 6px rgb(0, 0, 0);
-}
-
-h2 {
-    font-size: 1.9rem;
+.first {
+    text-align: center;
     font-weight: 600;
 }
 
-h3 {
-    text-align: center;
-    font-family: 'Gowun Dodum', sans-serif;
-    font-size: 1.3rem;
-}
-
-.goBack {
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 8px;
-    left: 10px;
-    color: #000;
-    font-size: 1rem;
-    text-decoration: none;
-    font-style: normal;
-    cursor: pointer;
-}
-
-.goBack-none {
-    display: none;
-}
-
-.question-none {
-    display: none;
-}
-
-.answer {
-    color: #aaa;
-    margin-bottom: 10px;
-    font-size: 100%;
-    /* 27.5px */
-}
-
-.answer:hover {
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-}
-
-.glowPen:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 5px;
-    position: relative;
-    left: 0;
-    bottom: 0px;
-    background: rgba(200, 125, 220, .6);
-}
-
-.glow-h>.glowPen:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 5px;
-    position: relative;
-    left: 0;
-    bottom: 0px;
-    background: rgba(243, 139, 69, 0.6);
-}
-
-.glow-d>.glowPen:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 5px;
-    position: relative;
-    left: 0;
-    bottom: 0px;
-    background: pink;
-}
-
-.glow-s>.glowPen:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 5px;
-    position: relative;
-    left: 0;
-    bottom: 0px;
-    background: rgba(255, 218, 34, 0.6);
-}
-
-.answer:hover .glowPen:after {
+.headers {
     width: 100%;
-    transition: width .3s;
+    justify-content: center;
 }
 
-h2{
-    padding-bottom: 5vh;
+.name {
+    font-weight: 800;
 }
 
-@media (max-width: 768px) {
-    .wrapper {
-        display: none;
-    }
-    .page {
-        display: none;
-    }
-    .question {
-        height: 50vh;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    .answer {
-        font-size: 1.3rem;
-    }
-    .goBack {
-        font-size: 0.75rem;
-    }
+.names {
+    width: 130px;
+    height: 100px;
+}
+
+ul, li {
+    margin: 3px;
+    padding: 3px;
+}
+
+.mbti-s {
+    font-weight: 600;
+}
+
+.btn-s{
+    display: flex; 
+    justify-content: space-evenly;
+    padding:20px;
+}
+
+.btn-h{
+    display: flex; 
+    justify-content: space-evenly;
+    padding:20px;
+}
+
+.btns{
+    background-color: #000;
+    color: #FAD820;
+    width: 40%;
+}
+
+.btnh{
+    background-color: #1b3711;
+    color: #eb6123;
+    width: 40%;
+}
+
+.profile > img{
+    width: 30vw;
+    padding-bottom: 15px;
+}
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 100px;
+}
+
+.result-s .container{
+    padding-top:20px;
+}
+
+.matching-s{
+    padding: 20px;
+    font-weight: 600;
+}
+
+.btn-ss{
+    display: none;
+}
+.btn-hs{
+    display: none;
+}
+
+.allresult-s img{
+    width:80%;
+}
+
+.allresult-h img{
+    width:80%;
+}
+
+.allresult-s{
+    padding-top:40px;
+}
+
+.allresult-s .name{
+    font-size:1.3em;
+    padding-top:1vh;
+}
+
+.allresult-s .back{
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.allresult-s .btn{
+    font-size:1.4em;
+}
+
+.result-s .btns{
+    font-size:1.1em;
+}
+
+.result-s .good{
+    font-size:1.4em;
+    padding-top : 1vh;
+    padding-bottom:1vh;
+}
+
+.result-s .bad{
+    font-size:1.4em;
+    padding-top : 1vh;
+    padding-bottom:1vh;
+}
+
+
+
+.result-s .mbti-s{
+    font-size: 1.7em;
+}
+.result-s .name{
+    font-size: 1.7em;
+}
+.result-s .text-start{
+    font-size: 1.4em;
+}
+.result-s .first{
+    font-size: 1.7rem;
+}
+
+.share{
+    padding-bottom:2vh
+}
+
+.share a{
+    padding-right: 2vw;
+}
+.share span{
+    padding-left: 2vw;
 }
 
 @media (max-width: 500px) {
-    h2 {
-        font-size: 1.4rem;
-        font-weight: 700;
+    .btn-s{
+        display: none;
     }
-    .answer {
-        font-size: 1.1rem;
-        font-weight: 500;
+    .btn-h{
+        display: none;
+    }
+    .btn-ss{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .btn-hs{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    .btns{
+        width: 30%;
+        font-size: 0.8rem;
+    }
+    .btnh{
+        width: 30%;
+        font-size: 0.8rem;
+    }
+    .allresult-s .btn{
+        font-size:1em;
+        width:30vw;
+    }
+    .result-s .btns{
+        font-size:1.1em;
     }
 }
 
-@media (max-width: 300px) {
-    h2 {
-        font-size: 0.7em;
-        padding-bottom: 2.5vh;
+@media (max-width: 450px) {
+    .result-s .good{
+        font-size:1em;
     }
-    .answer {
-        font-size: 0.6em;
+    
+    .result-s .bad{
+        font-size:1em;
     }
-    .answer-container{
-        padding-top:2vh;
-        padding-bottom:2vh;
+    .result-s .btns{
+        width:30vw;
+        font-size:0.8em;
     }
-    .question-block{
-        padding-bottom: 0;
+    .result-s .mbti-s{
+        font-size: 1.2em;
     }
+    .result-s .name{
+        font-size: 1.2em;
+    }
+    .result-s .text-start{
+        font-size: 1em;
+    }
+    .result-s .first{
+        font-size: 1.2rem;
+    }
+    
+    
+}
+
+
+
+@media (max-width: 400px) {
+    .allresult-s .btn{
+        width:50vw;
+        font-size:0.8em;
+    }
+    .allresult-s .name{
+        font-size:1em;
+    }
+}
+
+
+
+@media (max-width: 370px) {
+    .result-s .btns{
+        font-size:0.8em;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .allresult-s .name{
+        font-size:0.7em;
+    }
+    .result-s .good{
+        font-size:0.7em;
+    }
+    
+    .result-s .bad{
+        font-size:0.7em;
+    }
+    .result-s .mbti-s{
+        font-size: 1em;
+    }
+    .result-s .name{
+        font-size: 1em;
+    }
+    .result-s .text-start{
+        font-size: 0.8em;
+    }
+    .result-s .first{
+        font-size: 1rem;
+    }
+    .result-s .share img{
+        width:15vw;
+    }
+    .result-s .share svg{
+        width:15vw;
+    }
+    
 }

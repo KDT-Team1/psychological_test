@@ -12,6 +12,12 @@ main{
     padding-left: 10vw;
     padding-right:10vw;
 }
+
+.name-container{
+    padding-top:1vh;
+    padding-bottom: 1vh;
+}
+
 .row{
     margin:10px;
 }
@@ -163,6 +169,17 @@ ul,li {margin:3px; padding:3px;}
     font-size: 1em;
 }
 
+.share-d{
+    padding-bottom:2vh
+}
+
+.share-d a{
+    padding-right: 2vw;
+}
+.share-d span{
+    padding-left: 2vw;
+}
+
 @media (max-width: 500px) {
     .btn-d{
         display:none;
@@ -178,6 +195,7 @@ ul,li {margin:3px; padding:3px;}
     }
     .matching-d{
         padding:10px;
+        font-size:0.7em;
     }
     .good{
         font-size:1.2em;
@@ -189,12 +207,32 @@ ul,li {margin:3px; padding:3px;}
         font-size:1em;
     }
     .border-d > .first{
-        font-size:1.3em;
+        font-size:1.2em;
     }
     .border-d2{
-        font-size:1.3em;
+        font-size:1em;
     }
     .mbti{
         font-size: 1em;
+    }
+    .mbti-d{
+        font-size:1.2em;
+    }
+}
+
+.back-btn{
+    font-size: 1.3em;
+}
+
+@media (max-width: 300px) {
+    .back-btn{
+        width:50vw;
+        font-size: 1em;
+    }
+    .share-d img{
+        width:15vw;
+    }
+    .share-d svg{
+        width:15vw;
     }
 }
