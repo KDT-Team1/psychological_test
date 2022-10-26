@@ -27,9 +27,6 @@ app.get('/start_halloween', function(req, res) {
 });
 
 
-app.get('/pTest', function(req, res) {
-    res.render('pages/pTest');
-});
 app.get('/test_simpson', function(req, res) {
     res.render('pages/test_simpson');
 });
@@ -67,10 +64,6 @@ app.get('/allresult_halloween', function(req, res) {
     res.render('pages/allresult_halloween');
 });
 
-// 연습용 페이지
-app.get('/temp', function(req, res) {
-    res.render('pages/temp')
-})
 
 
 app.listen(PORT, function() {
