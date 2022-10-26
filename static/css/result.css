@@ -250,6 +250,9 @@ ul, li {
     .body-h .back .btn{
         width:50vw;
     }
+    .allresult-h .name1{
+        color:#eb6123;
+    }
 }
 
 @media(max-width: 570px ){
