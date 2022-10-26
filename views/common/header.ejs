@@ -1,13 +1,13 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
-      <div class="container-fluid">
-        <a class="navbar-brand navbar-brand-h" href="/"><i class="bi bi-circle-square"></i><span class="header-text">  Psychological Test</span></a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand-h" href="/"><i class="bi bi-circle-square"></i><span class="header-text">  Psychological Test</span></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse navbar-collapse-h" id="navbarCollapse">
+            <div class="navbar-collapse collapse navbar-collapse-h" id="navbarCollapse">
 
-          <!-- <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <!-- <ul class="navbar-nav me-auto mb-2 mb-md-0">
             메뉴를 더 만든다면 이부분 활용!!
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">MyPage</a>
@@ -17,49 +17,48 @@
             </li>
             <li class="nav-item">
               <a class="nav-link disabled">Disabled</a> -->
-            </li>
-          </ul>
-          
-          <div class="mypage-h me-auto mb-2 mb-md-0" onclick="location.href='/mypage'">MyPage</div>
+                </li>
+                </ul>
 
-          <form class="d-flex" id="search-form" role="search">
-            <input class="form-control me-3" type="text" placeholder="Search" aria-label="Search" name="search-input">
-            <button class="btn btn-white" type="submit"><i class="bi bi-search"></i></button>
-          </form>
+                <div class="mypage-h me-auto mb-2 mb-md-0" onclick="location.href='/mypage'">MyPage</div>
+
+                <form class="d-flex" id="search-form" role="search">
+                    <input class="form-control me-3" type="text" placeholder="Search" aria-label="Search" name="search-input">
+                    <button class="btn btn-white" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
 
-  <script>
-
+<script>
     const searchForm = document.querySelector('#search-form');
 
-    searchForm.addEventListener('submit',function(e){
+    searchForm.addEventListener('submit', function(e) {
 
         // preventDefault : 브라우저에서 구현된 기본 동작취소
         // 폼 이벤트 : 폼이 제출되면 새로고침되는 기본동작을 취소
         e.preventDefault();
 
-        const searchInput=document.querySelector('input[name="search-input"]');
-        let search = searchInput.value;     // 사용자가 input에 입력한 값
+        const searchInput = document.querySelector('input[name="search-input"]');
+        let search = searchInput.value; // 사용자가 input에 입력한 값
         console.log(search);
 
         console.log('clicked');
-        
-        if(search.indexOf('심슨')!=-1 || search.indexOf('simpson')!=-1 || search.indexOf('Simpson')!=-1 || search.indexOf('SIMPSON')!=-1){
-          location.href='/start_simpson';
-        }else if(search.indexOf('디즈니')!=-1 || search.indexOf('disney')!=-1 || search.indexOf('Disney')!=-1 || search.indexOf('DISNEY')!=-1 || search.indexOf('공주')!=-1 || search.indexOf('princess')!=-1){
-          location.href='/start_disney';
-        }else if(search.indexOf('할로윈')!=-1 || search.indexOf('halloween')!=-1 || search.indexOf('Halloween')!=-1 || search.indexOf('HALLOWEEN')!=-1 || search.indexOf('코스튬')!=-1 || search.indexOf('custome')!=-1){
-          location.href='/start_halloween';
-        }else{
-          location.href='/';  
+
+        if (search.indexOf('심슨') != -1 || search.indexOf('simpson') != -1 || search.indexOf('Simpson') != -1 || search.indexOf('SIMPSON') != -1) {
+            location.href = '/start_simpson';
+        } else if (search.indexOf('디즈니') != -1 || search.indexOf('disney') != -1 || search.indexOf('Disney') != -1 || search.indexOf('DISNEY') != -1 || search.indexOf('공주') != -1 || search.indexOf('princess') != -1) {
+            location.href = '/start_disney';
+        } else if (search.indexOf('할로윈') != -1 || search.indexOf('halloween') != -1 || search.indexOf('Halloween') != -1 || search.indexOf('HALLOWEEN') != -1 || search.indexOf('코스튬') != -1 || search.indexOf('costume') != -1) {
+            location.href = '/start_halloween';
+        } else {
+            location.href = '/';
         }
 
-        searchInput.value="";   // input의 content를 빈 문자열로 초기화
+        searchInput.value = ""; // input의 content를 빈 문자열로 초기화
 
     });
-  </script>
+</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
