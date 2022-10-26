@@ -5,28 +5,29 @@ body {
     text-align: center;
 }
 
-.bodys {
+.body-s {
     font-family: 'Gowun Dodum', sans-serif;
     background-image: url(/static/img/bg_simpson.png);
     background-size: 100%;
 }
 
-.bodyd {
-    background-color: #FAE4E8;
-}
-
-.bodyh {
+.body-h {
+    font-family: 'Kirang Haerang';
     background-image: url(/static/img/bg_halloween.png);
     background-size: 100% 100%;
-    font-family: 'Kirang Haerang';
     color: #1b3711;
 }
 
-
-.btnd {
-    background-color: pink;
+main{
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
+.row{
+    margin:10px;
+}
 
 .border-s {
     border-radius: 10px;
@@ -56,11 +57,13 @@ body {
 }
 
 .names {
-    width:130px;
+    width: 130px;
     height: 100px;
 }
 
-ul, li {margin: 3px; padding: 3px;
+ul, li {
+    margin: 3px;
+    padding: 3px;
 }
 
 .mbti-s {
@@ -68,49 +71,50 @@ ul, li {margin: 3px; padding: 3px;
 }
 
 .btn-s{
-    display:flex; 
+    display: flex; 
     justify-content: space-evenly;
     padding:20px;
 }
 
 .btn-h{
-    display:flex; 
+    display: flex; 
     justify-content: space-evenly;
     padding:20px;
 }
 
 .btns{
-    width:40%
+    background-color: #000;
+    color: #FAD820;
+    width: 40%;
 }
 
 .btnh{
     background-color: #1b3711;
     color: #eb6123;
-    width:40%;
+    width: 40%;
 }
 
 .profile > img{
-    width:30vw;
+    width: 30vw;
     padding-bottom: 15px;
 }
 
-
 .container {
-    padding-left:5%;
-    padding-right:5%;
-    padding-top:100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 100px;
 }
 
 .matching-s{
-    padding:20px;
-    font-weight:600;
+    padding: 20px;
+    font-weight: 600;
 }
 
 .btn-ss{
     display: none;
 }
 .btn-hs{
-    display:none;
+    display: none;
 }
 
 
@@ -119,26 +123,32 @@ ul, li {margin: 3px; padding: 3px;
         display: none;
     }
     .btn-h{
-        display:none;
+        display: none;
     }
     .btn-ss{
-        display:flex;
+        display: flex;
         justify-content: space-evenly;
-        padding:10px;
+        padding: 10px;
     }
 
     .btn-hs{
-        display:flex;
+        display: flex;
         justify-content: space-evenly;
-        padding:10px;
+        padding: 10px;
     }
 
     .btns{
-        width:30%;
-        font-size:0.8rem;
+        width: 30%;
+        font-size: 0.8rem;
     }
     .btnh{
-        width:30%;
-        font-size:0.8rem;
+        width: 30%;
+        font-size: 0.8rem;
     }
+}
+
+.back{
+    display: flex; 
+    justify-content: space-evenly;
+    padding: 20px;
 }
