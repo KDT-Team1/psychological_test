@@ -51,6 +51,10 @@ main {
     padding-bottom: 2%;
 }
 
+.question-s{
+    height:55vh;
+}
+
 .question-block {
     padding-bottom: 5vh;
     display: block;
@@ -194,6 +198,9 @@ h2{
     }
     .question {
         height: 50vh;
+    }
+    .question-s{
+        height:55vh;
     }
     h2 {
         font-size: 1.5rem;
