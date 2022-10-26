@@ -1,4 +1,3 @@
-
 if(localStorage.getItem('result_disney')){}else{
     document.querySelector('.disney-test').classList.add('display-none');
 }
