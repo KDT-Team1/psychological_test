@@ -1,5 +1,4 @@
 @import "reset.css";
-
 main {
     padding-top: 80px;
     font-family: 'Nanum Gothic', sans-serif;
@@ -54,10 +53,10 @@ li {
 .btns-s {
     display: none;
 }
+
 .btns-m {
     display: none;
 }
-
 
 .d-block {
     padding-top: 1vh;
@@ -72,8 +71,8 @@ img {
     display: flex;
     padding-left: 1vw;
     padding-right: 1vw;
-    padding-bottom:2vh;
-    padding-top:2vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
     align-items: center;
     justify-content: space-between;
 }
@@ -95,19 +94,18 @@ img {
     display: none;
 }
 
-.deleteAll a{
+.deleteAll a {
     cursor: pointer;
 }
-
 
 .left {
     display: flex;
     align-items: center;
 }
-.texts{
+
+.texts {
     padding-left: 2vw;
 }
-
 
 @media (max-width: 800px) {
     .btns-l>.btn-myresult {
@@ -149,14 +147,14 @@ img {
     }
     .btns-m>.btn-myresult {
         font-size: 0.8rem;
-        margin-right:1vw;
+        margin-right: 1vw;
         width: 25vw;
     }
     .btns-m>.btn-allresult {
         font-size: 0.8rem;
-        margin-left:1vw;
+        margin-left: 1vw;
         width: 25vw;
-    } 
+    }
     img {
         width: 50vw;
         height: 30vh;
@@ -164,10 +162,10 @@ img {
     .title-container {
         display: none;
     }
-    .texts{
+    .texts {
         display: none;
     }
-    .d-flex1{
+    .d-flex1 {
         /* display: flex; */
         flex-direction: column;
         padding-bottom: 0;
@@ -193,8 +191,8 @@ img {
     .btns-l {
         display: none;
     }
-    .btns-m{
-        display:none;
+    .btns-m {
+        display: none;
     }
     .btns-s {
         display: flex;
@@ -213,10 +211,10 @@ img {
     .title-container {
         display: none;
     }
-    .texts{
+    .texts {
         display: flex;
     }
-    .copyright{
-        display:none;
+    .copyright {
+        display: none;
     }
 }
