@@ -64,8 +64,13 @@ li {
 
 img {
     width: 24vw;
-    max-width: 138.94px;
     height: 24vh;
+}
+
+@media (min-width:550px) {
+    img {
+        max-width: 138.94px;
+    }
 }
 
 .d-flex1 {
