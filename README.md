@@ -14,7 +14,7 @@ npm install express
 npm install ejs
 node app.js
 ```
-localhost:8080 접속
+- localhost:8080 접속
 <br>
 
 > ## 실행 화면
