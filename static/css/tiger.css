@@ -89,6 +89,23 @@
     height: 3rem;
 }
 
+@media (max-width: 576px) {
+    .ani {
+        height: 40vh;
+        overflow: hidden;
+    }
+    .tiger {
+        transform: scale(0.5);
+        left: 14vh;
+        top: -1vh;
+    }
+    .testCon {
+        transform: scale(0.8);
+        right: 0vh;
+        bottom: 29vh;
+    }
+}
+
 .tiger *,
 .tiger *::before,
 .tiger *::after {

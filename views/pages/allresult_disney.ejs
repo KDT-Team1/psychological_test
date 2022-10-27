@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>결과모음</title>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -14,55 +14,53 @@
     <link rel="stylesheet" href="../../static/css/header.css">
     <!-- CDN Link (icon) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <!-- font -->
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=Gowun+Dodum&family=Jua&family=Kirang+Haerang&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="body-d">
 
     <%- include('../common/header.ejs') %>
-
-        <div class="container row text-center justify-content-center col-12">
-                <div class="pt-3 col-12 border-d mb-3">
+        <main>
+            <div class="row justify-content-around">
+                <div class="col-xs-6 col-md-4  pt-3 mb-3 row-d">
                     <img src="/static/img/testResult_Disney/1.png" alt="1">
-                    <div class="fs-1">메리다(Merida)</div>
+                    <div class="fs-3 pt-2">메리다(Merida)</div>
                 </div>
 
-                <div class="pt-3 col-12 border-d mb-3">
+                <div class="col-xs-6 col-md-4 pt-3 mb-3 row-d">
                     <img src="/static/img/testResult_Disney/2.png" alt="2">
-                        <div class="fs-1">신데렐라(Cinderella)</div>
+                    <div class="fs-3 pt-2">신데렐라(Cinderella)</div>
                 </div>
 
-                <div class="pt-3 col-12 border-d mb-3">
+                <div class="col-xs-6 col-md-4 pt-3 mb-3 row-d">
                     <img src="/static/img/testResult_Disney/3.png" alt="3">
-                        <div class="fs-1">인어공주(Ariel)</div>
+                    <div class="fs-3 pt-2">인어공주(Ariel)</div>
                 </div>
 
-                <div class="pt-3 col-12 border-d mb-3">
+                <div class="col-xs-6 col-md-4 pt-3 mb-3 row-d">
                     <img src="/static/img/testResult_Disney/4.png" alt="4">
-                        <div class="fs-1">라푼젤(Rapunzel)</div>
+                    <div class="fs-3 pt-2">라푼젤(Rapunzel)</div>
                 </div>
 
-                <div class="pt-3 col-12 border-d mb-3">
+                <div class="col-xs-6 col-md-4 pt-3 mb-3 row-d">
                     <img src="/static/img/testResult_Disney/5.png" alt="5">
-                        <div class="fs-1">포카혼타스(Pocahontas)</div>
+                    <div class="fs-3 pt-2">포카혼타스(Pocahontas)</div>
                 </div>
 
-                <div class="pt-3 col-12 border-d mb-3">
+                <div class="col-xs-6 col-md-4 pt-3 mb-3 row-d">
                     <img src="/static/img/testResult_Disney/6.png" alt="6">
-                        <div class="fs-1">자스민(Jasmine)</div>
+                    <div class="fs-3 pt-2">자스민(Jasmine)</div>
                 </div>
             </div>
+        </main>
 
+        <!-- 뒤로 가기 버튼 -->
+        <div class="back">
+            <button class="back-btn btnd btn col-6" type="button" onclick="location.href='/mypage'">뒤로 가기</button></span>
+        </div>
 
-
-
-            <!-- 다시하기, 메인으로 가기 버튼 -->
-            <div class="btn-h">
-                <button class="btnd btn btn-dark fs-4 col-6" type="button" onclick="location.href='/mypage'">뒤로 가기</button></span>
-            </div>
-
-            <%- include('../common/footer.ejs') %>
+        <%- include('../common/footer.ejs') %>
 </body>
 
 </html>

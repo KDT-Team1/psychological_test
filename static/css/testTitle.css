@@ -1,0 +1,44 @@
+@font-face {
+    src: url('../font/SimpsonsMmmmfont-e5ye.woff') format('woff');
+    font-family: 'simpson-logo';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url('../font/Simpsonfont.woff') format('woff');
+    font-family: 'simpson-char';
+}
+
+@font-face {
+    src: url('../font/NewWaltDisneyFontRegular-BPen.woff') format('woff');
+    font-family: 'disney';
+}
+
+.title-d {
+    font-family: 'disney';
+    text-shadow: 0 0 10px #fff;
+    font-size: 3.7rem;
+}
+
+.page-d {
+    font-family: 'disney';
+    text-shadow: 0 0 10px #fff;
+    font-size: 95%;
+}
+
+.title-s {
+    font-family: 'simpson-char';
+    text-shadow: 0 0 10px #fff;
+    font-size: 3.7rem;
+}
+
+.title-s-sp {
+    font-family: 'simpson-logo';
+    text-shadow: 0 0 10px #fff;
+}
+
+.page-s {
+    font-family: 'simpson-char';
+    text-shadow: 0 0 10px #fff;
+}

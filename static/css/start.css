@@ -3,12 +3,67 @@
     padding-top: 10px;
 }
 
-address, article, aside, audio, body, button, canvas, caption, cite, code, dd, del, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, img, input, ins, label, legend, li, mark, nav, ol, p, pre a, section, span, strong, summary, table, tbody, td, textarea, tfoot, th, thead, time, tr, ul, video {
+address,
+article,
+aside,
+audio,
+body,
+button,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+input,
+ins,
+label,
+legend,
+li,
+mark,
+nav,
+ol,
+p,
+pre a,
+section,
+span,
+strong,
+summary,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+video {
     margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -16,11 +71,11 @@ address, article, aside, audio, body, button, canvas, caption, cite, code, dd, d
 div {
     display: block;
 }
+
 body {
     font-size: 15px;
     line-height: 1.5;
     text-align: left;
-    /* background-color: var(--poomang-colors-gray-100); */
     word-break: keep-all;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -29,6 +84,13 @@ body {
     color: #000;
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+@media (min-width:880px) {
+    body {
+        width: 880px;
+        margin: 0 auto;
+    }
 }
 
 .GongbangLayout_gongbang_layout__j1NE2 {
@@ -94,6 +156,7 @@ element.style {
     margin: 20px 0px 0px;
     padding: 0px 15px;
 }
+
 .css-m7zl8e {
     display: flex;
     flex-wrap: wrap;
@@ -103,6 +166,7 @@ element.style {
     font-weight: 400;
     color: rgb(37, 40, 43);
 }
+
 .css-1bvx17o {
     display: -webkit-box;
     display: -webkit-flex;
@@ -144,76 +208,79 @@ element.style {
     padding: 8px 15px;
     border-radius: 4px;
     background-color: black;
-    color:white;
+    color: white;
 }
 
-img{
-    width:60%;
-    height:60%;
+img {
+    width: 60%;
+    height: auto;
     border-style: none;
     border-radius: 4%;
     margin: auto;
     display: block;
 }
 
-.img-container{
-    padding-top:30px;
+.img-container {
+    padding-top: 30px;
     align-items: center;
     max-width: 90%;
     margin: 4%;
 }
 
-hr{
-    color:gray;
+hr {
+    color: gray;
 }
 
-.css-8flipp{
+.css-8flipp {
     display: none;
 }
-.btn{
+
+.btn {
     text-align: center;
 }
 
-.media-button{
-    display:none;
+.media-button {
+    display: none;
 }
 
-
-
 @media (min-width: 880px) {
-    .img-container{
-        display:none;
+    .img-container {
+        display: none;
     }
-    .GongbangLayout_gongbang_layout__j1NE2{
-        padding-top:80px;
+    .GongbangLayout_gongbang_layout__j1NE2 {
+        padding-top: 80px;
     }
-    .css-8flipp{
+    .css-8flipp {
         display: block;
-        position:relative;
+        position: relative;
         padding-right: 0px;
-        float:right;
+        float: right;
         padding: 0px 15px;
     }
-    img{
-        width:60%;
-        height:90%;
+    img {
+        width: 60%;
+        height: auto;
         border-style: none;
         border-radius: 4%;
         margin: auto;
         display: block;
-        float:right;
+        float: right;
     }
-    .GongbangLayout_gongbang_area__hBLdq{
+    .GongbangLayout_gongbang_area__hBLdq {
         display: flex;
         justify-content: space-around;
-        padding-right:50px;
-        padding-left:50px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
-    .css-1x1sa4f{
-        display:none;
+    .css-1x1sa4f {
+        display: none;
     }
-    .media-button{
-        display:block;
-        text-align:center;
+    .media-button {
+        display: block;
+        text-align: center;
     }
-  }
+}
+
+a{
+    text-decoration: none;
+}

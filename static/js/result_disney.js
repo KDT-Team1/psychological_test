@@ -4,8 +4,6 @@ if(localStorage.getItem('result_disney')){
 
 console.log(result);
 
-// document.querySelector('.getresult').innerHTML = `${result_disney}`;
-
 if (result > 7 && result < 11) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/1.png" alt="01">';
     document.querySelector('.name').innerHTML = '메리다(Merida)';

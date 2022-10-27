@@ -3,35 +3,34 @@ body {
     text-align: center;
 }
 
-main{
+main {
     font-family: 'Gowun Dodum', sans-serif;
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-top:15vh;
-    padding-bottom:5vh;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
 }
 
-.main-d{
-    background-image:url('/static/img/testbg_disney.jpg');
-    /* background-size: 100%; */
+.main-d {
+    background-image: url('/static/img/testbg_disney.jpg');
 }
-.main-s{
-    background-image:url('/static/img/bg_simpson.png');
+
+.main-s {
+    background-image: url('/static/img/bg_simpson.png');
+}
+
+.main-h {
+    background-image: url('/static/img/bg_halloween.png');
     background-size: 100% 100%;
 }
-.main-h{
-    background-image:url('/static/img/bg_halloween.jpg');
-    background-size: 100% 100%;
-}
+
 .container {
-    width:80vw;
-    height:80vh;
+    width: 80vw;
+    height: 80vh;
 }
 
 .question {
-    /* padding-bottom: 0px; */
     width: 80%;
     height: 50vh;
     position: relative;
@@ -39,48 +38,34 @@ main{
     border-style: none;
     border-radius: 10px;
     margin: auto;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-left: 3%;
     padding-right: 3%;
+    padding-top: 4%;
+    padding-bottom: 2%;
 }
 
-/* @media (min-width: 668px) {
-    .container {
-        width: 90%;
-    }
+.question-s{
+    height:55vh;
 }
 
-@media (min-width: 992px) {
-    .container {
-        width: 80%;
-    }
-} */
-
-
-h1 {
-    /* font-size: 2.2rem;
-    font-weight: 700; */
+.question-block {
+    padding-bottom: 5vh;
+    display: block;
 }
+
 .h1-h {
     font-size: 4rem;
     font-family: 'Kirang Haerang', cursive;
-    color:rgb(200, 110, 25);
+    color: rgb(200, 110, 25);
     text-shadow: 2px 2px 6px rgb(0, 0, 0);
 }
-.h1-s {
-    font-size: 6rem;
-    font-weight: 500;
-    font-family: 'Dongle', sans-serif;
-    color:rgb(255, 218, 72);
-    text-shadow: 6px -2px #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-}
-.h1-d {
-    font-size: 6rem;
-    font-weight: 500;
-    font-family: 'Nanum Pen Script', cursive;
-    color:rgb(243, 138, 206);
+
+.page-h {
+    font-family: 'Kirang Haerang', cursive;
+    color: rgb(200, 110, 25);
     text-shadow: 2px 2px 6px rgb(0, 0, 0);
 }
 
@@ -96,6 +81,8 @@ h3 {
 }
 
 .goBack {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
     position: absolute;
     top: 8px;
     left: 10px;
@@ -137,7 +124,7 @@ h3 {
     background: rgba(200, 125, 220, .6);
 }
 
-.glow-h > .glowPen:after{
+.glow-h>.glowPen:after {
     content: '';
     display: block;
     width: 0;
@@ -147,7 +134,8 @@ h3 {
     bottom: 0px;
     background: rgba(243, 139, 69, 0.6);
 }
-.glow-d > .glowPen:after{
+
+.glow-d>.glowPen:after {
     content: '';
     display: block;
     width: 0;
@@ -155,9 +143,10 @@ h3 {
     position: relative;
     left: 0;
     bottom: 0px;
-    background:pink;
+    background: pink;
 }
-.glow-s > .glowPen:after{
+
+.glow-s>.glowPen:after {
     content: '';
     display: block;
     width: 0;
@@ -173,16 +162,31 @@ h3 {
     transition: width .3s;
 }
 
+h2{
+    padding-bottom: 5vh;
+}
 
-@media (max-width: 700px) {
-    .wrapper{
-        display:none;
-    }
-    .page{
+@media (max-width: 768px) {
+    .wrapper {
         display: none;
     }
-    .question{
-        height:50vh;
+    .page {
+        display: none;
+    }
+    .question {
+        height: 50vh;
+    }
+    .question-s{
+        height:55vh;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .answer {
+        font-size: 1.3rem;
+    }
+    .goBack {
+        font-size: 0.75rem;
     }
 }
 
@@ -191,8 +195,25 @@ h3 {
         font-size: 1.4rem;
         font-weight: 700;
     }
-    .answer{
+    .answer {
         font-size: 1.1rem;
-        font-weight:500;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 300px) {
+    .answer {
+        font-size: 0.6em;
+    }
+    .answer-container{
+        padding-top:1vh;
+    }
+    h2{
+        font-size: 0.7em;
+        padding-bottom: 2vh;
+        padding-top:2vh;
+    }
+    .question-block{
+        padding-bottom: 1vh;
     }
 }

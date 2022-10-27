@@ -1,9 +1,28 @@
 body {
-    /* font-family: 'Do Hyeon'; */
     height: 100%;
     display: grid;
     place-content: center;
     text-align: center;
+}
+
+main{
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 10vw;
+    padding-right:10vw;
+}
+
+.name-container{
+    padding-top:1vh;
+    padding-bottom: 1vh;
+}
+
+.row{
+    margin:10px;
+}
+
+.row img{
+    width:80%;
 }
 
 .bodys {
@@ -11,8 +30,7 @@ body {
 }
 
 .body-d {
-    /* background-color: #ecebc9; */
-    background-image:url('/static/img/bg_disney.jpg');
+    background-image:url('/static/img/bg_disney.png');
     background-size: 100% 100%;
     font-family: 'Gowun Dodum', sans-serif;
 }
@@ -40,19 +58,15 @@ body {
     background-color: #1C3238;
 }
 
-/* .border {
-    border-radius: 10px;
-    background-color: #fff;
-    border-color: pink;
-    padding-top: 20px;
-    padding-bottom: 20px;
-} */
 
 .first {
     text-align: center;
 }
+.back{
+    display:flex; 
+    justify-content: space-evenly;
+}
 
-/* ########################################################### */
 .container {
     padding-left:5%;
     padding-right:5%;
@@ -65,10 +79,10 @@ body {
 }
 
 .border-d{
-    padding:5%;
+    padding:4%;
     background-color:white;
     border-style: dashed;
-    border-width:5px;
+    border-width:4px;
     border-color:rgb(255, 161, 241);
     border-radius: 20px;
 }
@@ -76,17 +90,12 @@ body {
     padding:20px;
     background-color:white;
     border-style: dashed;
-    border-width:5px;
+    border-width:4px;
     border-color:rgb(161, 181, 255);
     border-radius: 20px;
 }
 .border-d3{
     padding:20px;
-    /* background-color:white;
-    border-style: dashed;
-    border-width:5px;
-    border-color:rgb(161, 255, 202);
-    border-radius: 20px; */
 }
 .first-d{
     font-style: italic;
@@ -102,6 +111,13 @@ body {
     font-weight:600;
 }
 
+.profile > img{
+    width:30vw;
+}
+
+ul,li {margin:3px; padding:3px;}
+
+
 .btn-d{
     display:flex; 
     justify-content: space-evenly;
@@ -111,8 +127,94 @@ body {
 .btnd{
     width:40%
 }
-.profile > img{
-    width:30vw;
+
+.btn-ds{
+    display:none;
 }
 
-ul,li {margin:3px; padding:3px;}
+.good{
+    font-size:1.5em;
+}
+.bad{
+    font-size:1.5em;
+}
+.border-d{
+    font-size:1.2em;
+}
+.border-d > .first{
+    font-size:1.6em;
+}
+.border-d2{
+    font-size:1.6em;
+}
+.mbti{
+    font-size: 1em;
+}
+
+.share-d{
+    padding-bottom:2vh
+}
+
+.share-d a{
+    padding-right: 2vw;
+}
+.share-d span{
+    padding-left: 2vw;
+}
+
+@media (max-width: 500px) {
+    .btn-d{
+        display:none;
+    }
+    .btn-ds{
+        display:flex;
+        justify-content: space-evenly;
+        padding:10px;
+    }
+    .btnd{
+        /* width:40vw; */
+        font-size:0.1em;
+    }
+    .matching-d{
+        padding:10px;
+        font-size:0.7em;
+    }
+    .good{
+        font-size:1.2em;
+    }
+    .bad{
+        font-size:1.2em;
+    }
+    .border-d{
+        font-size:1em;
+    }
+    .border-d > .first{
+        font-size:1.2em;
+    }
+    .border-d2{
+        font-size:1em;
+    }
+    .mbti{
+        font-size: 1em;
+    }
+    .mbti-d{
+        font-size:1.2em;
+    }
+}
+
+.back-btn{
+    font-size: 1.3em;
+}
+
+@media (max-width: 300px) {
+    .back-btn{
+        width:50vw;
+        font-size: 1em;
+    }
+    .share-d img{
+        width:15vw;
+    }
+    .share-d svg{
+        width:15vw;
+    }
+}

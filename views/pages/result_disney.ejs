@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>결과</title>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -17,8 +17,8 @@
     <!-- CDN Link (icon) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
-      <!-- font -->
-      <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=Gowun+Dodum&family=Jua&family=Kirang+Haerang&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=Gowun+Dodum&family=Jua&family=Kirang+Haerang&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <style>
 
     </style>
@@ -35,25 +35,26 @@
             <!-- Result Image -->
             <div class="profile col-12 pt-3"></div>
             <!-- Result Name -->
-            <div class="col-12 mt-2">
+            <div class="col-12 mt-2 name-container">
                 <p class="name fs-1 name-d"></p>
             </div>
             <!-- Result Description -->
-            <div class="border-d text-start fs-4 mb-3">
-                <ul class="first fs-2 first-d"></ul>
+            <div class="border-d text-start mb-3">
+                <ul class="first first-d"></ul>
                 <ul class="second"></ul>
                 <ul class="third"></ul>
                 <ul class="fourth"></ul>
                 <ul class="fifth"></ul>
             </div>
             <!-- MBTI Info -->
-            <div class="border-d2 d-grid fs-2"><p class="mbti-d">MBTI</p>
-                <div class="mbti fs-2"></div>
+            <div class="border-d2 d-grid">
+                <p class="mbti-d">MBTI</p>
+                <div class="mbti"></div>
             </div>
             <!-- Good & Bad matching -->
             <div class="col-12 d-flex justify-content-center matching-d">
-                <div class="border-d3 good col-6 fs-3 pt-3 me-3 col-lg-4"></div>
-                <div class="border-d3 bad col-6 fs-3 pt-3 col-lg-4"></div>
+                <div class="border-d3 good col-6 pt-3 me-3 col-lg-4"></div>
+                <div class="border-d3 bad col-6 pt-3 col-lg-4"></div>
             </div>
         </div>
         <!-- Test Share -->
@@ -65,17 +66,22 @@
             <!-- url 복사 버튼 -->
             <span class="button">
                 <a href="#" onclick="clip(); return false;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-share" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="dark" class="bi bi-share" viewBox="0 0 16 16">
                         <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
                     </svg>
                 </a>
             </span>
         </div>
 
+        <!-- 500px보다 클때 -->
         <div class="btn-d">
-            <!-- 다시하기, 메인으로 가기 버튼 -->
-            <button class="btnd btn fs-4 col-6" type="button" onclick="location.href='/start_disney'">테스트 다시하기</button></span>
-            <button class="btnd btn fs-4 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
+            <button class="btnd btn fs-5 col-6" type="button" onclick="location.href='/start_disney'">테스트 다시하기</button></span>
+            <button class="btnd btn fs-5 col-6" type="button" onclick="location.href='/'">메인으로 가기</button></span>
+        </div>
+        <!-- 500px보다 작을때 -->
+        <div class="btn-ds">
+            <button class="btnd btn fs-6 col-6" type="button" onclick="location.href='/start_disney'">다시하기</button></span>
+            <button class="btnd btn fs-6 col-6" type="button" onclick="location.href='/'">메인으로</button></span>
         </div>
 
         <!-- JS script tag below -->
@@ -84,24 +90,13 @@
         <script>
             Kakao.init("59a4be849355fc1bc58ae7023a9c2724");
 
-            // function sendLink() {
-            //   Kakao.Link.sendCustom({
-            //     templateId: 84301,
-            //     templateArgs: {
-            //     title: "{{ page.title }}",
-            //     description: "{{ page.excerpt }}",
-            //     url : "{{ page.url }}",
-            //     },
-            //   });
-            // }
-
             function sendLink() {
                 Kakao.Link.sendDefault({
                     objectType: 'feed',
                     content: {
-                        title: '디즈니 공주',
+                        title: '디즈니 공주 테스트',
                         description: '디즈니 공주 테스트 함께해요!',
-                        imageUrl: 'http://115.85.180.118:8080/static/img/main_halloween.png',
+                        imageUrl: 'http://115.85.180.118:8080/static/img/main_disney.png',
                         link: {
                             mobileWebUrl: 'http://115.85.180.118:8080/start_disney',
                             webUrl: 'http://115.85.180.118:8080/start_disney',
@@ -126,11 +121,8 @@
             }
         </script>
         <script src="static/js/result_disney.js"></script>
-    
+
         <%- include('../common/footer.ejs') %>
 </body>
 
 </html>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
