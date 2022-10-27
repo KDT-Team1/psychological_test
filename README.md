@@ -9,21 +9,14 @@
 
 > ## 설치 방법
 - git clone https://github.com/KDT-Team1/psychological_test.git
-- git init
 - npm install express
 - npm install ejs
 - node app.js
+- localhost:8080 실행
 <br>
 
-> ## 파일 구조
-* static<br>
- ㄴ css<br>
- ㄴ image<br>
- ㄴ js<br>
-* views<br>
- ㄴ common - header, footer 등<br>
- ㄴ pages - ejs 파일<br>
-* app.js
+> ## 사용 방법
+
 <br>
 
 > ## NCP 서버
