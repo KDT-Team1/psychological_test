@@ -4,7 +4,6 @@ if(localStorage.getItem('result_halloween')){
 
 console.log(result);
 
-// document.querySelector('.getresult').innerHTML = `${result_halloween}`;
 
 if (result > 8 && result < 12) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Halloween/1.png" alt="01">';

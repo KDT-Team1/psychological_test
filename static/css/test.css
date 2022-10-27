@@ -5,7 +5,6 @@ body {
 
 main {
     font-family: 'Gowun Dodum', sans-serif;
-    /* height: 90vh; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -15,12 +14,10 @@ main {
 
 .main-d {
     background-image: url('/static/img/testbg_disney.jpg');
-    /* background-size: 100%; */
 }
 
 .main-s {
     background-image: url('/static/img/bg_simpson.png');
-    /* background-size: 100%; */
 }
 
 .main-h {
@@ -34,7 +31,6 @@ main {
 }
 
 .question {
-    /* padding-bottom: 0px; */
     width: 80%;
     height: 50vh;
     position: relative;
@@ -59,25 +55,6 @@ main {
     padding-bottom: 5vh;
     display: block;
 }
-
-
-/* @media (min-width: 668px) {
-    .container {
-        width: 90%;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 80%;
-    }
-} */
-
-
-/* h1 { 
-    font-size: 2.2rem;
-    font-weight: 700;
-} */
 
 .h1-h {
     font-size: 4rem;
