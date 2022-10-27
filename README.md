@@ -8,11 +8,13 @@
 <br>
 
 > ## 설치 방법
-- git clone https://github.com/KDT-Team1/psychological_test.git
-- npm install express
-- npm install ejs
-- node app.js
-- localhost:8080 실행
+```
+git clone https://github.com/KDT-Team1/psychological_test.git
+npm install express
+npm install ejs
+node app.js
+```
+localhost:8080 접속
 <br>
 
 > ## 실행 화면
