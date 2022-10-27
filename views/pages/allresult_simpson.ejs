@@ -8,51 +8,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>결과모음</title>
 
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../static/css/result.css">
-    <link rel="stylesheet" href="../../static/css/header.css">
-    <!-- CDN Link (icon) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=Gowun+Dodum&family=Jua&family=Kirang+Haerang&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <!-- include favicon -->
+    <%- include('../common/favicon.ejs') %>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../static/css/result.css">
+        <link rel="stylesheet" href="../../static/css/header.css">
+        <!-- CDN Link (icon) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@700&family=Gowun+Dodum&family=Jua&family=Kirang+Haerang&family=Nanum+Gothic&family=Nanum+Pen+Script&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="body-s">
 
     <%- include('../common/header.ejs') %>
-    <main class="allresult-s">
-        <div class="row justify-content-around mt-5 pt-3">
-            <div class="col-xs-6 col-md-6 pt-3 mb-3 row-d">
-                <img src="/static/img/testResult_Simpsons/1.png" alt="1">
-                <div class="name">호머 심슨(Homer Simpson)</div>
+        <main class="allresult-s">
+            <div class="row justify-content-around mt-5 pt-3">
+                <div class="col-xs-6 col-md-6 pt-3 mb-3 row-d">
+                    <img src="/static/img/testResult_Simpsons/1.png" alt="1">
+                    <div class="name">호머 심슨(Homer Simpson)</div>
+                </div>
+
+                <div class="col-xs-6 col-md-6 pt-3 mb-3 row-d">
+                    <img src="/static/img/testResult_Simpsons/2.png" alt="2">
+                    <div class="name">마지 심슨(Marge Simpson)</div>
+                </div>
+
+                <div class="col-xs-6 col-md-6 pt-3 mb-3 row-d">
+                    <img src="/static/img/testResult_Simpsons/3.png" alt="3">
+                    <div class="name">바트 심슨(Bart Simpson)</div>
+                </div>
+
+                <div class="col-xs-6 col-md-6 pt-3 mb-3 row-d">
+                    <img src="/static/img/testResult_Simpsons/4.png" alt="4">
+                    <div class="name">리사 심슨(Lisa Simpson)</div>
+                </div>
+
             </div>
 
-            <div class="col-xs-6 col-md-6 pt-3 mb-3 row-d">
-                <img src="/static/img/testResult_Simpsons/2.png" alt="2">
-                <div class="name">마지 심슨(Marge Simpson)</div>
+            <!-- 뒤로 가기 버튼 -->
+            <div class="back">
+                <button class="btn btns" type="button" onclick="location.href='/mypage'">뒤로 가기</button></span>
             </div>
 
-            <div class="col-xs-6 col-md-6 pt-3 mb-3 row-d">
-                <img src="/static/img/testResult_Simpsons/3.png" alt="3">
-                <div class="name">바트 심슨(Bart Simpson)</div>
-            </div>
-
-            <div class="col-xs-6 col-md-6 pt-3 mb-3 row-d">
-                <img src="/static/img/testResult_Simpsons/4.png" alt="4">
-                <div class="name">리사 심슨(Lisa Simpson)</div>
-            </div>
-
-        </div>
-
-        <!-- 뒤로 가기 버튼 -->
-        <div class="back">
-            <button class="btn btns" type="button" onclick="location.href='/mypage'">뒤로 가기</button></span>
-        </div>
-
-        <%- include('../common/footer.ejs') %>
-    </main>
+            <%- include('../common/footer.ejs') %>
+        </main>
 </body>
 
 </html>
