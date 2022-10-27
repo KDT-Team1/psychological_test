@@ -4,8 +4,6 @@ if(localStorage.getItem('result_disney')){
 
 console.log(result);
 
-// document.querySelector('.getresult').innerHTML = `${result_disney}`;
-
 if (result > 7 && result < 11) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Disney/1.png" alt="01">';
     document.querySelector('.name').innerHTML = '메리다(Merida)';
@@ -72,4 +70,4 @@ if (result > 7 && result < 11) {
     document.querySelector('.mbti').innerHTML = 'ESTP - 수완좋은 활동가형';
     document.querySelector('.good').innerHTML = '잘 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/5.png" alt="05">포카혼타스';
     document.querySelector('.bad').innerHTML = '안 맞는 유형<img class="col-12" src="/static/img/testResult_Disney/4.png" alt="04">라푼젤';
-} //(result > 5 && result < 9)
+}

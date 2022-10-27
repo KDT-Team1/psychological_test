@@ -4,8 +4,6 @@ if(localStorage.getItem('result_halloween')){
 
 console.log(result);
 
-// document.querySelector('.getresult').innerHTML = `${result_halloween}`;
-
 if (result > 8 && result < 12) {
     document.querySelector('.profile').innerHTML = '<img class ="col-12 col-lg-4" src="/static/img/testResult_Halloween/1.png" alt="01">';
     document.querySelector('.name').innerHTML = '확신의 관종 할리퀸 룩';
@@ -56,4 +54,4 @@ if (result > 8 && result < 12) {
     document.querySelector('.fifth').innerHTML = '-그치만 우울함에 절대 깊이 빠져있지 않는다! 금방 이겨내고 다시 아좌좌~';
     document.querySelector('.good').innerHTML = '잘 맞는 애<img class="col-12" src="/static/img/testResult_Halloween/3.png" alt="03">스폰지밥 룩';
     document.querySelector('.bad').innerHTML = '안 맞는 애<img class="col-12" src="/static/img/testResult_Halloween/4.png" alt="04">해리포터 룩';
-} //(result > 4 && result < 9)
+}
