@@ -20,14 +20,19 @@ node app.js
 > ### 실행 화면
 >> ### 웹
 #### 메인 페이지
+- pyschological_test 메인 페이지입니다. 슬라이드를 움직여 원하는 테스트를 선택합니다.
 ![pt-1](https://user-images.githubusercontent.com/56117742/198188530-ed6ef449-3ea3-462f-a4a2-7631f679cbfe.PNG)
 #### 테스트 시작 페이지
+- 테스트 시작 페이지입니다.
 ![pt-2](https://user-images.githubusercontent.com/56117742/198188613-cad20196-b42f-4d65-b8ff-6ecdade1a6de.PNG)
 #### 테스트 페이지
+- 테스트 페이지에서는 localstorage로 결과값을 저장합니다.
 ![pt-3](https://user-images.githubusercontent.com/56117742/198188617-936db70d-76ad-4254-9bbf-6794918aca49.PNG)
 #### 결과 페이지
+- localstorage에 저장된 결과값을 가져와 해당하는 결과를 보여줍니다.
 ![pt-4](https://user-images.githubusercontent.com/56117742/198188633-66ce7743-ecc8-454c-b211-251e6b530ca8.PNG)
 #### 마이 페이지
+- 이전 테스트 결과들을 확인할 수 있습니다.
 ![pt-5](https://user-images.githubusercontent.com/56117742/198188565-e5b56b2f-4574-4320-aa21-6d117e35a006.PNG)
 >> ### 모바일
 #### 메인 페이지
