@@ -34,8 +34,7 @@ node app.js
 > #### - 마이 페이지
 > 이전 테스트 결과들을 확인할 수 있습니다.
 > ![pt-5](https://user-images.githubusercontent.com/56117742/198188565-e5b56b2f-4574-4320-aa21-6d117e35a006.PNG)
-<br>
-## 실행화면
+
 > ### 모바일
 > #### 메인 페이지
 > ![pt-11](https://user-images.githubusercontent.com/56117742/198188571-ba3a6891-282c-4e6e-911f-2d7414d93ca8.PNG)
