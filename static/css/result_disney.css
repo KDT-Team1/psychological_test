@@ -1,5 +1,4 @@
 body {
-    /* font-family: 'Do Hyeon'; */
     height: 100%;
     display: grid;
     place-content: center;
@@ -26,16 +25,11 @@ main{
     width:80%;
 }
 
-.row-d{
-    /* margin: 5px 5px 5px 5px; */
-}
-
 .bodys {
     background-color: #ecebc9;
 }
 
 .body-d {
-    /* background-color: #ecebc9; */
     background-image:url('/static/img/bg_disney.png');
     background-size: 100% 100%;
     font-family: 'Gowun Dodum', sans-serif;
@@ -64,13 +58,6 @@ main{
     background-color: #1C3238;
 }
 
-/* .border {
-    border-radius: 10px;
-    background-color: #fff;
-    border-color: pink;
-    padding-top: 20px;
-    padding-bottom: 20px;
-} */
 
 .first {
     text-align: center;
@@ -79,7 +66,7 @@ main{
     display:flex; 
     justify-content: space-evenly;
 }
-/* ########################################################### */
+
 .container {
     padding-left:5%;
     padding-right:5%;
@@ -109,11 +96,6 @@ main{
 }
 .border-d3{
     padding:20px;
-    /* background-color:white;
-    border-style: dashed;
-    border-width:5px;
-    border-color:rgb(161, 255, 202);
-    border-radius: 20px; */
 }
 .first-d{
     font-style: italic;

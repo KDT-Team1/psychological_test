@@ -8,15 +8,11 @@
 @font-face {
     src: url('../font/Simpsonfont.woff') format('woff');
     font-family: 'simpson-char';
-    /* font-style: normal;
-    font-weight: 400; */
 }
 
 @font-face {
     src: url('../font/NewWaltDisneyFontRegular-BPen.woff') format('woff');
     font-family: 'disney';
-    /* font-style: normal;
-    font-weight: 400; */
 }
 
 .title-d {
