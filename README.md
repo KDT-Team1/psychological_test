@@ -15,8 +15,10 @@
 - localhost:8080 실행
 <br>
 
-> ## 사용 방법
-
+> ## 실행 화면
+### 웹
+![pt-1](https://user-images.githubusercontent.com/56117742/198188530-ed6ef449-3ea3-462f-a4a2-7631f679cbfe.PNG)
+### 모바일
 <br>
 
 > ## NCP 서버
